@@ -1,0 +1,5 @@
+After loading from a file, transforming from web content, or enhancing with custom margins, headers, or footers, IronPDF provides functionality to output PDF pages as images. These images can then be saved locally, stored in a database, or transmitted via network and more.
+
+The method `toBufferedImages` yields a `List` of `BufferedImage` instances, where each `BufferedImage` encapsulates the image data of a single PDF page. The images in the list are sequentially ordered according to their page numbers. By including a `PageSelection` parameter, developers can specify a range of pages to convert into images.
+
+In the provided code snippet, a `ToImageOptions` object is initialized to define the desired dimensions of the output images. This object also features a method, `setDpi`, for adjusting the image resolution. Developers can use both the `ToImageOptions` and `PageSelection` classes together to fine-tune the dimensions, scope, and resolution of the PDF-to-image conversion process.

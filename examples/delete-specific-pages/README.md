@@ -1,0 +1,5 @@
+Removing pages from a PDF with IronPDF is not only straightforward but also efficient.
+
+In the provided example, the `removePages` method is utilized to alter a four-page PDF created for demonstration. The PDF, ultimately stored on the local file system, retains only the first and last pages of the originating document—effectively omitting the second and third pages.
+
+Utilizing the `PageSelection` class, developers can dictate which pages the `removePages` method should exclude from a given `PdfDocument` instance. The class's static `pageRange` method enables the removal of a consecutive sequence of pages (for example, from page 4 to 18 of a hypothetical document). Alternatively, to excise a collection of non-consecutive pages, one should supply a `List` of page indices to the `pageRange` method:

@@ -1,0 +1,5 @@
+IronPDF automatically generates new PDF documents with default margins of 25 millimeters on each side. Nonetheless, it offers flexibility for developers to customize margins according to specific layout requirements.
+
+To customize margins for PDFs, developers utilize the `ChromePdfRenderOptions`. The illustrative example below demonstrates how to adjust the margins to 20 millimeters for the left and right sides, and 40 millimeters for the top and bottom sides.
+
+It's possible to tailor PDF margins for various document types, including letters, posters, and postcards, or even produce borderless documents ideal for commercial printing by setting all margins to zero. The `ChromePdfRenderOptions` object can be integrated with PDF rendering methods, such as `renderUrlAsPdf`, `renderHtmlAsPdf`, and `renderHtmlFileAsPdf`. This combination allows developers to specify other print-related settings beyond just margin sizes—like paper type, DPI, and the inclusion of headers and footers. For further details on the customization capabilities, refer to the [ChromePdfRenderOptions API Reference page](https://ironpdf.com).

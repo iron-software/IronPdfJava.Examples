@@ -1,0 +1,5 @@
+Leverage IronPDF to transform your RTF (Rich Text Format) documents, including those with embedded images, into PDF files.
+
+To convert Rich-Text content into PDF documents, use the `PdfDocument.renderRtfAsPdf` method. This function is capable of processing rich text content from both a raw string data format and external files, utilizing either a valid `Path` object or a string path. The output is a `PdfDocument` which can be further customized by the developer prior to saving it to local storage through the `saveAs` method.
+
+When converting strings of raw rich-text data to PDFs, it is essential to ensure that the string is correctly formatted. The `renderRtfAsPdf` method will generate an `IOException` if the data is improperly formatted or contains elements that are not recognized, such as unusual symbols or tags.
