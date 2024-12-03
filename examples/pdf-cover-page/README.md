@@ -1,18 +1,19 @@
-IronPDF's `PdfDocument.merge` function seamlessly combines the content of one PDF into another.
+***Based on <https://ironpdf.com/examples/pdf-cover-page/>***
+
+The `PdfDocument.merge` function of IronPDF skillfully concatenates the contents of one PDF to another.
 
 ```java
-PdfDocument.merge(PdfDocument a, PdfDocument b);
+PdfDocument.merge(PdfDocument firstPDF, PdfDocument secondPDF);
 ```
 
-Upon execution, `PdfDocument.merge` incorporates all the pages from PDF document B into PDF document A in a sequential manner.
+Upon execution, this function seamlessly integrates all pages of the second PDF (secondPDF) to the end of the first PDF (firstPDF).
 
-The following code example illustrates how to append a cover page to an existing PDF document. Start by creating or loading a cover page using `PdfDocument.renderHtmlAsPdf`. Next, load the main PDF document. To merge them, call `PdfDocument.merge`, placing the cover page as the first parameter and the existing document as the second.
+The following example illustrates how to employ this function to append a cover page to an existing PDF document. Begin by creating the desired cover page using `PdfDocument.renderHtmlAsPdf`, or by loading an existing one with `PdfDocument.fromFile`. Next, load or create the main PDF document that requires the cover page. Utilize `PdfDocument.merge` by passing the cover page as the first parameter and the main document as the second.
 
-Notice the application of `setFirstPageNumber` to a `ChromePdfRenderOptions` object, setting it to Page 2, as shown in the 15th line of the example. This adjustment accounts for the additional cover page by altering the numbering of the ensuing pages in a PDF created from scratch. For pre-existing PDFs, adjustments to page numbers must be handled separately before merging.
+Please note the implementation of `setFirstPageNumber` on a `ChromePdfRenderOptions` object, setting it to page 2 as seen in line 15 of the example. This adjustment modifies the page numbering of the resultant PDF document to accommodate the newly added cover page before the merger. Remember, this adjustment applies only to PDFs generated dynamically; for pre-existing PDF documents, you must change the page numbers before merging.
 
-Additionally, developers can prepend a cover page to a PDF document using the `<a href="https://ironpdf.com/java/object-reference/api/com/ironsoftware/ironpdf/PdfDocument.html#prependPdf(com.ironsoftware.ironpdf.PdfDocument)" target="_blank">PdfDocument.prependPdf</a>` method.
+Additionally, a cover page can be attached at the beginning of a PDF document using the [`PdfDocument.prependPdf method`](https://ironpdf.com/docs/object-reference/api/com/ironsoftware/ironpdf/PdfDocument.html#prependPdf(com.ironsoftware.ironpdf.PdfDocument)).
 
 ```java
 PdfDocument.prependPdf(PdfDocument anotherPdfFile)
 ```
-This method attaches another PDF file in front of the current PDF document, facilitating easy addition of cover pages or other preliminary content.

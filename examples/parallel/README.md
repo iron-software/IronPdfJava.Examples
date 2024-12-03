@@ -1,9 +1,13 @@
-IronPDF boasts robust support for multithreading and parallel processing, utilizing the Chrome Rendering API from 2021.
+***Based on <https://ironpdf.com/examples/parallel/>***
 
-Our preferred method for handling multiple threads in batch HTML-to-PDF conversion is `Parallel.ForEach`.
+IronPDF is equipped with robust support for multithreading and parallelism, utilizing the latest Chrome Rendering API from 2021.
 
-In .NET, various threading options are available, such as:
+Our preferred method for handling multiple threads in batch HTML-to-PDF conversions is via `Parallel.ForEach`.
+
+In .NET, there are various methods to implement threading, which include:
 
 - `System.Threading.Tasks`
 - `async/await`
-- `Parallel.ForEach` (detailed later)
+- `Parallel.ForEach` (learn more about threading capabilities in IronPDF)
+
+For more information on IronPDF's capabilities, you can visit [IronPDF's feature page](https://ironpdf.com/features/overview/), where a wealth of resources and tutorials are available.

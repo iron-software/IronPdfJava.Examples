@@ -1,5 +1,7 @@
-The code snippet provided illustrates how IronPDF empowers developers to create custom headers and footers in PDF documents, whether they are imported from the file system or crafted from HTML sources.
+***Based on <https://ironpdf.com/examples/headers-and-footers/>***
 
-With the `TextHeaderFooter` class, developers have the ability to insert text into the left, right, or center sections of a PDF document's header or footer. As demonstrated, the use of IronPDF's integrated templating tokens—such as `{date}`, `{time}`, and `{page}`—simplifies the construction of headers and footers. These tokens are not mandatory; IronPDF allows the integration of any text in any quantity at these positions.
+The following code sample illustrates how IronPDF grants developers the capability to assign headers and footers in PDF documents, whether they’re sourced from a filesystem or created from HTML.
 
-For enhanced creative control over the design, consider opting for the `HtmlHeaderFooter` class instead of the `TextHeaderFooter` class.
+Utilizing the `TextHeaderFooter` class, developers can designate text for the left, center, or right sections of a PDF document's header or footer. The example above demonstrates how developers can effortlessly construct headers and footers with the help of IronPDF's predefined templating tags such as `{date}`, `{time}`, and `{page}`. There's no obligation to stick strictly to these tags; IronPDF allows the inclusion of any text in any quantity at these positions for enhanced customization.
+
+For added creativity and design control, consider the `HtmlHeaderFooter` class as an alternative to the `TextHeaderFooter` class. This substitution significantly enhances the aesthetic appeal and presentation of your documents within IronPDF.

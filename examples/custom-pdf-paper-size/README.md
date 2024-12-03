@@ -1,20 +1,23 @@
-IronPDF empowers developers to create PDF documents in various sizes beyond the conventional A4 dimensions (8½ x 11 inches or 21.59 x 27.94 cm).
+***Based on <https://ironpdf.com/examples/custom-pdf-paper-size/>***
 
-To build PDFs with custom paper sizes, utilize the `ChromePdfRenderOptions` object and employ the `setPaperSize` method to define your desired size using a predefined `PaperSizes` value. Simply configure the paper size within the method parameters and produce the PDF from any source like an HTML string, URL, or HTML file.
+IronPDF provides developers with the capability to create PDF documents in custom sizes beyond the traditional A4 format, which measures 8½ by 11 inches or 21.59 by 27.94 centimeters.
 
-```java
-ChromePdfRenderOptions renderOptions = new ChromePdfRenderOptions();
-renderOptions.setPaperSize(PaperSize.B5);
-PdfDocument.renderHtmlFileAsPdf("mycontent.html", renderOptions);
-```
-
-The `PaperSize` enumeration supports a wide variety of over 100 recognized printing sizes, catering to most business requirements. If you need a size that isn't offered in the `PaperSize` enumeration, select `PaperSize.Custom` and specify your desired page dimensions manually:
+To produce PDF files with various paper sizes, developers can define the dimensions within a `ChromePdfRenderOptions` object using the `setPaperSize` method. Here, you can select from a predefined list of `PaperSizes`. Once set, generate the PDF from your source material (which can be an HTML string, a URL, or an HTML file) as you usually would.
 
 ```java
 ChromePdfRenderOptions renderOptions = new ChromePdfRenderOptions();
-renderOptions.setPaperSize(PaperSize.Custom);
-renderOptions.setCustomPaperWidth(11);  // width in inches
-renderOptions.setCustomPaperHeight(17); // height in inches
+renderOptions.setPaperSize(PaperSize.B5); // Set to B5 size
+PdfDocument.renderHtmlFileAsPdf("https://ironpdf.com/mycontent.html", renderOptions); // Render HTML to PDF
 ```
 
-In the examples shown above, methods like `setCustomPaperWidth` and `setCustomPaperHeight` accept numerical values denoting dimensions in inches. To specify dimensions in centimeters, you would use `setCustomPaperSizeInCentimeters`, for millimeters, `setCustomPaperSizeInMillimeters`, and for dimensions in pixels or points, use `setCustomPaperSizeInPixelsOrPoints`.
+The `PaperSize` enumeration supports over 100 familiar print sizes, typically sufficient for most business applications. However, if you require a print size not available in the `PaperSize` enumeration, you can select `PaperSize.Custom`. This option allows you to manually specify the dimensions of the page width and height:
+
+```java
+ChromePdfRenderOptions renderOptions = new ChromePdfRenderOptions();
+renderOptions.setPaperSize(PaperSize.Custom);  // Use custom size
+renderOptions.setCustomPaperWidth(11);        // Width in inches
+renderOptions.setCustomPaperHeight(17);       // Height in inches
+PdfDocument.renderHtmlAsStringAsPdf("<p>Custom Size Content</p>", renderOptions); // Example HTML string rendered as PDF
+```
+
+As demonstrated, the methods `setCustomPaperWidth` and `setCustomPaperHeight` are used to define dimensions in inches. For specifications in centimeters, the method `setCustomPaperSizeInCentimeters` should be utilized. Likewise, use `setCustomPaperSizeInMillimeters` for millimeters, and `setCustomPaperSizeInPixelsOrPoints` for pixel or point measurements.

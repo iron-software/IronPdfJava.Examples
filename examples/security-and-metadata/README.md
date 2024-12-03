@@ -1,22 +1,17 @@
-IronPDF provides functionality for editing PDF metadata and security parameters. Security options include turning a PDF into a read-only file, making it unprintable, securing it with a password, and encrypting it. Regarding metadata, the library allows users to add new attributes or modify existing ones.
+***Based on <https://ironpdf.com/examples/security-and-metadata/>***
 
-To manipulate PDF metadata using IronPDF for Java, developers need to first obtain a reference to the `MetadataManager`. This class offers methods that provide direct access and the ability to change the metadata of the PDF. Developers can conveniently read and modify frequently-used metadata properties using predefined getters and setters.
+IronPDF provides robust tools for adjusting PDF metadata and security parameters. It allows for setting PDF files as read-only, unprintable, password-protected, and encrypted. Additionally, developers can manipulate metadata by creating new properties or altering existing ones.
 
-The comprehensive list of metadata properties that can be easily modified using getters and setters includes:
+When utilizing IronPDF for Java to modify a PDF's metadata, a `MetadataManager` instance must be acquired first. This manager class facilitates easy and direct manipulation of metadata through its various methods. Developers can conveniently manage standard metadata attributes such as `Producer`, `CreationDate`, `Creator`, `Author`, `Keywords`, `Subject`, `Title`, and `ModifiedDate` using getters and setters named identically to these properties.
 
-- `Producer`
-- `CreationDate`
-- `Creator`
-- `Author`
-- `Keywords`
-- `Subject`
-- `Title`
-- `ModifiedDate`
+Here’s how to modify several attributes of a PDF using IronPDF:
 
-Below is an example where the `setAuthor`, `setTitle`, `setKeywords`, and `setModifiedDate` methods are utilized to adjust the document's author, title, keywords, and modification date.
+- Use `setAuthor`, `setTitle`, `setKeywords`, and `setModifiedDate` methods to update the author, title, keywords, and modification date of the PDF document.
 
-For properties not listed above, you can employ the `getAnyMetadata` and `setAnyMetadata` methods by specifying the name of the property you wish to handle.
+For properties not included in the standard list, the `getAnyMetadata` and `setAnyMetadata` methods can be used to access and set any metadata attribute by specifying its name.
 
-Adjusting security settings on a PDF also involves specific steps. You need to use the `SecurityManager`, which can be accessed by calling `getSecurity` on a `PdfDocument`. With the `SecurityManager`, restrictions can be applied to the PDF as necessary.
+Security modifications in a PDF are managed by accessing its `SecurityManager`. By invoking `getSecurity` on a `PdfDocument`, one can obtain this manager and apply various restrictions based on the document's intended usage.
 
-For finer control over the security settings of a PDF, Java developers can use the `SecurityOptions` object. This tool allows for detailed customization of security measures depending on the needs of the application.
+Developers have the option to use a `SecurityOptions` object to finely tune the security settings of a PDF document.
+
+For a more comprehensive understanding of IronPDF's functionalities across different development environments and further exploration, visit [IronPDF Documentation and Features](https://ironpdf.com/technology/html-to-pdf/). To explore more solutions from Iron Software, check out [Iron Software's Official Website](https://ironsoftware.com/).

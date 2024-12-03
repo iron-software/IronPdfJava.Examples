@@ -1,14 +1,18 @@
-IronPDF, known for its robust suite of PDF creation and modification capabilities, also offers precise content extraction options from PDF documents.
+***Based on <https://ironpdf.com/examples/extract-image-from-pdf/>***
 
-The method `extractAllImages` retrieves all images embedded in a PDF, where each image is encapsulated as a `BufferedImage` object.
+IronPDF, a well-rounded library within Iron Software's suite, offers a comprehensive selection of tools for creating and editing PDF files, including advanced content extraction capabilities.
 
-A typical business application for this function is the extraction and individual saving of images from PDF files. An illustrative code example provided earlier demonstrates how to achieve this using the `extractAllImages` method in conjunction with Java's `ImageIO` class.
+One such functionality is the `extractAllImages` method, which gathers all images embedded within a PDF and outputs each as a `BufferedImage` object.
 
-Furthermore, IronPDF enables the extraction of images in their original byte format by utilizing the `extractAllRawImages` method.
+This method is predominantly used in business scenarios where there is a need to store images from a PDF document into individual files. An example provided previously illustrates how to implement this by utilizing the `extractAllImages` method in conjunction with the Java `ImageIO` class.
 
-Additionally, it is feasible to extract images from specific pages of a PDF instead of the entire document. The following code snippet illustrates the extraction of images from selected pages using the `extractAllImagesFromPages` method, specifically from pages 3 and 7 of a document:
+Additionally, IronPDF supports extraction of images in their original byte format using the `extractAllRawImages` method.
+
+For scenarios where image extraction is required from specific pages rather than the entire document, IronPDF provides the `extractAllImagesFromPages` method. The example below demonstrates fetching images from pages 3 and 7 of a sample PDF document.
 
 ```java
 PdfDocument document = PdfDocument.fromFile(Paths.get("sample.pdf"));
 List<BufferedImage> pageRangeImages = document.extractAllImagesFromPages(PageSelection.pageRange(3, 7));
 ```
+
+In this code snippet, the `PageSelection.pageRange(3, 7)` function specifies the range of pages from which images are to be extracted, illustrating IronPDF's capability to target specific sections of a PDF document.

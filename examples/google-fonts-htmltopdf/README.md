@@ -1,7 +1,9 @@
-IronPDF achieves immaculate reproduction of PDF files from HTML, accurately portraying custom web fonts, including those from libraries like [Font Awesome](https://fontawesome.com/) and [Bootstrap](https://getbootstrap.com/docs/3.3/components/).
+***Based on <https://ironpdf.com/examples/google-fonts-htmltopdf/>***
 
-The library also caters to custom WOFF and SVG CSS font packages from sources like [Google Fonts](https://fonts.google.com/).
+IronPDF delivers flawless PDF conversion from HTML, capturing every detail of custom web fonts, including those offered by libraries like [Font Awesome](https://fontawesome.com/) and [Bootstrap Components](https://getbootstrap.com/docs/3.3/components/).
 
-For a successful conversion of a webpage that uses these special fonts to PDF, developers must introduce a delay in IronPDF’s HTML-to-PDF conversion process. This is achieved by adjusting the `renderDelay` attribute of a `ChromePdfRenderOptions` object to an appropriate value, ideally using the `setRenderDelay` method. Generally, a delay of at least 500 milliseconds (half a second) is adequate to ensure complete loading of all custom fonts and icons before the conversion.
+The tool also embraces support for WOFF and SVG CSS font packages from online type foundries such as [Google Fonts](https://fonts.google.com/).
 
-It's important to note, though, that custom web fonts might not function in Windows Apps running on Azure because of certain security constraints.
+When converting web pages that incorporate custom fonts to PDF, it's essential for developers to apply a rendering delay in IronPDF's HTML-to-PDF conversion engine. This can be accomplished by setting the `renderDelay` parameter of a `ChromePdfRenderOptions` instance. Assign a minimum delay of 500 milliseconds (half a second) using the `setRenderDelay` method to ensure all font and icon assets are completely loaded before the conversion process begins.
+
+It is important to mention that due to security restrictions, web fonts may not function in Windows Apps hosted on Azure.

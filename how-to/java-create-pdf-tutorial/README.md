@@ -1,158 +1,153 @@
-# How to Generate PDF Files in Java
+# How to Create PDF Files in Java
 
-*Automating the creation of PDF documents via Java can be immensely beneficial, such as devising invoices, reports, or any other kind of PDFs on demand. This guide elaborates on using IronPDF to construct PDF documents within Java-based applications.*
+***Based on <https://ironpdf.com/how-to/java-create-pdf-tutorial/>***
 
-## Overview of IronPDF Java PDF Library
 
-IronPDF serves as a straightforward Java library capable of producing PDF documents directly from HTML. It includes features like:
+Creating PDFs programmatically via Java equips developers to automate their PDF document generation within applications, useful for crafting invoices, reports, or other dynamic documents.
 
-1. Incorporating text, images, and various other content into PDFs
-2. Selecting fonts and colors, and managing layout and document formatting
+This guide elucidates how IronPDF facilitates PDF creation in Java applications.
 
-This library is based on the .NET Framework, enabling its integration into both .NET and Java environments, thus offering flexibility across different programming scenarios.
+## IronPDF Java PDF Library
 
-Moreover, IronPDF extends its capabilities beyond PDF creation to include tasks like file format conversions, extracting text and data from PDFs, and adding password protection to PDF documents.
+IronPDF stands out as a Java library capable of creating PDFs directly from HTML. It's engineered for simplicity and offers a plethora of functionalities for PDF creation and customization, such as:
 
-## Steps for Creating PDF Documents in Java Applications
+1. Incorporating text, images, and more into documents
+2. Customizing fonts, colors, and managing the overall document styling and layout
+
+Originally based on the .NET Framework, IronPDF is versatile enough for use in both .NET and Java environments, which enhances its utility across different programming contexts.
+
+Beyond simply generating PDFs, IronPDF supports converting between file formats, extracting content from existing PDFs, and enhancing PDF security via password protection.
+
+## Steps for Creating a PDF Document in Java Applications
 
 ### Prerequisites
 
-Before you commence using IronPDF in your Maven project, make sure the following software is installed on your machine:
+For incorporating IronPDF in a Maven project, ensure these prerequisites are installed:
 
-1. **Java Development Kit (JDK):** Essential for compiling and executing Java applications. Available for download at [Oracle’s website](https://www.oracle.com/java/technologies/javase-downloads.html).
-2. **Maven:** Necessary for managing project dependencies. Download it from the [Apache Maven website](https://maven.apache.org/download.cgi).
-3. **IronPDF Library:** Add IronPDF as a dependency in your Maven project’s `pom.xml` using the following snippet:
+1. **Java Development Kit (JDK):** Essential for Java application development, available from the [Oracle website](https://www.oracle.com/java/technologies/javase-downloads.html).
+2. **Maven:** Necessary for managing project dependencies, downloadable from the [Apache Maven website](https://maven.apache.org/download.cgi).
+3. **IronPDF Library:** Add this library to your project by including its Maven dependency in your `pom.xml`:
 
 ```xml
 <dependency>
     <groupId>com.ironsoftware</groupId>
     <artifactId>ironpdf</artifactId>
-    <version>%s</version>
+    <version>LATEST_VERSION</version>
 </dependency>
 ```
 
-### Preliminary Code Setup
+### Initial Setup
 
-Begin by importing IronPDF's library classes at the start of your Java source file.
+Begin by importing the IronPDF library into your project:
 
 ```java
 import com.ironsoftware.ironpdf.*;
 ```
 
-Next, activate IronPDF with a valid license key by calling `setLicenseKey` in your `main` method.
+Then, initialize IronPDF with an active license key right in the `main` method:
 
 ```java
 License.setLicenseKey("Your license key");
 ```
 
-**Note**: *Acquire a license key to enable watermark-free PDF creation. [Buy a license](https://ironsoftware.com/java/licensing/) or [get a free trial](https://ironsoftware.com/java/licensing/#trial-license) license key.*
+**Note**: Obtain a [license key](ironsoftware.com/java/licensing/) or a [Free Trial License Key](ironsoftware.com/java/licensing/#trial-license) to create non-watermarked PDFs. Without this, the documents will include a watermark.
 
-## Generating a PDF from HTML Content
+## Creating a PDF from an HTML String in Java
 
-To turn HTML content into a PDF, use the `renderHtmlAsPdf()` function.
+To convert HTML content into a PDF, use the `renderHtmlAsPdf()` method:
 
 ```java
-String htmlContent = "<h1>Greetings from IronPDF!</h1><p>This is a sample HTML snippet.</p>";
-PdfDocument pdf = PdfDocument.renderHtmlAsPdf(htmlContent);
+String htmlContent = "<h1>Hello World!</h1><p>This is an example HTML content.</p>";
+PdfDocument document = PdfDocument.renderHtmlAsPdf(htmlContent);
+document.saveAs(Paths.get("html.pdf"));
 ```
 
-Save the document locally:
+The above snippet generates a PDF named "html.pdf" from the provided HTML.
+
+## Generating PDFs from HTML Files in Java
+
+To create a PDF from a locally stored HTML file:
 
 ```java
-pdf.saveAs(Paths.get("sample.pdf"));
+PdfDocument documentFromFile = PdfDocument.renderHtmlFileAsPdf("localfile.html");
+documentFromFile.saveAs(Paths.get("output_pdf_from_html.pdf"));
 ```
 
-## Creating PDFs from HTML Files
+The `renderHtmlFileAsPdf` method processes the HTML file with all associated styling and scripts, similar to web browser rendering.
 
-To create a PDF from a local HTML file:
+## Converting Web Pages to PDFs in Java
+
+To convert a webpage into a PDF:
 
 ```java
-PdfDocument pdfFromFile = PdfDocument.renderHtmlFileAsPdf("sample.html");
-pdfFromFile.saveAs(Paths.get("output.pdf"));
+PdfDocument webPageToPdf = PdfDocument.renderUrlAsPdf("https://ironpdf.com");
+webPageToPdf.saveAs(Paths.get("webpage_output.pdf"));
 ```
 
-IronPDF will process the HTML and its styles just like a web browser does.
+For more details on web-to-PDF conversions, visit [Converting a URL to a PDF example](ironsoftware.com/java/examples/converting-a-url-to-a-pdf/).
 
-## Generating PDFs from URLs
+## Customizing PDF Format
 
-The `renderUrlAsPdf` method enables generating a PDF from a webpage:
+To customize PDF settings like orientation and margins, utilize the `ChromePdfRenderOptions`:
 
 ```java
-PdfDocument webPdf = PdfDocument.renderUrlAsPdf("https://ironpdf.com");
-webPdf.saveAs(Paths.get("webOutput.pdf"));
+ChromePdfRenderOptions options = new ChromePdfRenderOptions();
+// Configuration settings here
 ```
 
-Learn more about this from the [URL to PDF Guide](https://ironpdf.com/java/examples/converting-a-url-to-a-pdf/).
+Refer to [PDF Generation Settings](ironsoftware.com/java/examples/pdf-generation-settings/) for detailed usage.
 
-## Customizing PDF Formats
+## Securing PDF Files
 
-Use the `ChromePdfRenderOptions` class to define specifics like orientation and margin sizes. Enhance your PDF generation by visiting [PDF Generation Settings Guide](https://ironpdf.com/java/examples/pdf-generation-settings/).
-
-## Securing PDF Documents
-
-Secure PDFs with a password using the `SecurityOptions` class:
+To password-protect a PDF:
 
 ```java
-SecurityOptions security = new SecurityOptions();
-security.setUserPassword("YOUR_PASSWORD");
+SecurityOptions options = new SecurityOptions();
+options.setUserPassword("securepassword");
+
+SecurityManager securityManager = webPageToPdf.getSecurity();
+securityManager.setSecurityOptions(options);
+webPageToPdf.saveAs("secured_webpage.pdf");
 ```
 
-Apply this security to your document:
+View details on additional security settings at [Security and Metadata settings](ironsoftware.com/java/examples/security-and-metadata/).
+
+## Complete Source Code
+
+Below is the complete source code for this guide:
 
 ```java
-SecurityManager manager = webPdf.getSecurity();
-manager.setSecurityOptions(security);
-webPdf.saveAs("secureOutput.pdf");
-```
-
-See the secured PDF prompt for a password upon opening.
-
-Images showing the PDF creation process:
-
-![Java Create PDFs - Step 1](https://ironpdf.com/static-assets/ironpdf-java/howto/java-create-pdf/java-create-pdf-1.webp)
-
-![Java Create PDFs - Step 2](https://ironpdf.com/static-assets/ironpdf-java/howto/java-create-pdf/java-create-pdf-2.webp)
-
-Further details on securing PDFs can be found [here](https://ironpdf.com/java/examples/security-and-metadata/).
-
-## Full Source Code Example
-
-Below is a complete Java application showcasing the described functionalities:
-
-```java
-// Imports for IronPDF
+// Import IronPDF classes
 import com.ironsoftware.ironpdf.*;
 import java.io.IOException;
 import java.nio.file.Paths; 
 
-public class PDFGenerator
+public class CreatePDFApp 
 {
-    public static void main(String[] args) throws IOException
+    public static void main(String [] args) throws Exception
     {
         License.setLicenseKey("Your License Key");
-        String htmlContent = "<h1>Hello World!</h1><p>This is a sample HTML snippet.</p>";
+        String htmlContent = "<h1>Hello World!</h1><p>This is sample HTML content.</p>";
         PdfDocument pdf = PdfDocument.renderHtmlAsPdf(htmlContent);
-        pdf.saveAs(Paths.get("html.pdf"));
-        PdfDocument pdfFromFile = PdfDocument.renderHtmlFileAsPdf("sample.html");
-        pdfFromFile.saveAs(Paths.get("fileOutput.pdf"));
-        PdfDocument webPdf = PdfDocument.renderUrlAsPdf("https://ironpdf.com");
-        webPdf.saveAs(Paths.get("webOutput.pdf"));
+        pdf.saveAs(Paths.get("example_output.pdf"));
+
+        PdfDocument documentFromFile = PdfDocument.renderHtmlFileAsPdf("local_file.html");
+        documentFromFile.saveAs(Paths.get("from_local_html.pdf"));
+
+        PdfDocument urlPdf = PdfDocument.renderUrlAsPdf("https://ironpdf.com");
+        urlPdf.saveAs(Paths.get("url_based_pdf.pdf"));
 
         SecurityOptions security = new SecurityOptions();
-        security.setUserPassword("YOUR_PASSWORD");
-        SecurityManager manager = webPdf.getSecurity();
-        manager.setSecurityOptions(security);       
-        webPdf.saveAs(Paths.get("secureOutput.pdf"));
+        security.setUserPassword("YourPassword");
+        SecurityManager securityManager = urlPdf.getSecurity();
+        securityManager.setSecurityOptions(security);
+        urlPdf.saveAs(Paths.get("secured_output.pdf"));
     }
 }
 ```
 
-IronPDF ensures that all graphics and interactive elements remain functional within the generated PDF.
-
 ## Summary
 
-This guide explored how Java integrates with IronPDF to efficiently generate and manage PDF files. IronPDF offers an easy-to-use API for transforming HTML, XML, or other data into PDF format, suitable for various document generation needs like reports and invoices.
+This guide demonstrates how IronPDF provides Java developers robust tools to create and manipulate PDF documents from HTML sources or direct URLs, making PDF generation straightforward and efficient.
 
-IronPDF is a commercially licensed product, not open-source, with [licensing options starting](https://ironsoftware.com/java/licensing/) from `$liteLicense`. Test its capabilities with a [free trial](https://ironsoftware.com/java/licensing/#trial-license).
-
-*[Download IronPDF to start creating advanced PDFs](https://ironpdf.com/java/how-to/java-create-pdf-tutorial/).*
+IronPDF is commercially licensed, and you can start with a [free trial](ironsoftware.com/java/how-to/java-create-pdf-tutorial/) to assess its capabilities in real-world scenarios.

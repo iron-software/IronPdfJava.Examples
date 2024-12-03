@@ -1,5 +1,7 @@
-The code snippet highlighted showcases the document printing feature provided by IronPDF.
+***Based on <https://ironpdf.com/examples/printing-pdfs/>***
 
-Utilizing the `print` method, developers have the ability to integrate PDF document printing within their application workflows. By employing the `print` method as illustrated, the system's print dialog is triggered, allowing users to configure various print settings such as the printer selection, paper size, and copy quantity. An optional parameter allows for paper customization.
+The code snippet showcased below highlights the document printing functionalities of IronPDF.
 
-For immediate printing of a PDF with the system's preset settings, opt for the `printWithoutDialog` method instead of the standard `print` method.
+Using the `print` method, developers have the ability to integrate PDF document printing directly into their application workflows. When you apply the `print` method as shown, it triggers the default print dialog of the operating system. This allows end-users to adjust various print settings such as the printer selection, paper size, and the number of copies to print.
+
+For those scenarios where you would like to immediately print the PDF with the system's default printer settings, the `printWithoutDialog` method is the alternative to consider instead of the standard `print` method.

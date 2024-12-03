@@ -1,7 +1,9 @@
-IronPdf leverages the 2021 Chrome Rendering API to provide robust support for multithreading.
+***Based on <https://ironpdf.com/examples/threading/>***
 
-Different techniques for implementing threading in .NET are:
+IronPDF boasts significant support for multithreading, leveraging the Chrome Rendering API of 2021.
 
-- `System.Threading.Tasks`
+In .NET, methods to implement threading encompass:
+
+- `System.Threading.Tasks` (detailed below)
 - `async`/`await`
 - `Parallel.ForEach`

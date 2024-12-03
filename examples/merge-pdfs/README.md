@@ -1,16 +1,18 @@
-Using IronPDF, you can merge multiple PDF documents into a single file. This functionality is particularly useful for tasks such as adding cover pages to existing PDFs or compiling several related documents into one file, enhancing ease of printing and distribution.
+***Based on <https://ironpdf.com/examples/merge-pdfs/>***
 
-In the given code snippet, the `PdfDocument.merge` method is employed to amalgamate the contents of two `PdfDocument` instances that have been created from HTML content. When called, this method generates a new `PdfDocument` by appending the second document to the first.
+IronPDF facilitates the merging of multiple PDF files into a single document. This feature is particularly useful for adding cover pages to existing PDFs or creating a consolidated file that encapsulates various related documents. Such functionality is handy for streamlining the printing process or simplifying document transportation.
 
-If you need to merge over three PDFs, start by initiating a `List` of `PdfDocument` objects. Subsequently, merge these documents into one by passing the list to the `PdfDocument.merge` method like this:
+In the given example, the `PdfDocument.merge` method is employed to amalgamate two `PdfDocument` objects that originated from HTML content. The approach results in a new `PdfDocument` instance where the second document’s content is appended to the first.
+
+Should there be a need to merge more than three PDFs, initiate this process by generating a list of `PdfDocument` objects. Following this, submit this list to the `PdfDocument.merge` method as a single parameter:
 
 ```java
-List<PdfDocument> pdfDocuments = new ArrayList<>();
-pdfDocuments.add(documentA);
-pdfDocuments.add(documentB);
-pdfDocuments.add(documentC);
-pdfDocuments.add(documentD);
-PdfDocument finalMergedDocument = PdfDocument.merge(pdfDocuments);
+List<PdfDocument> pdfs = new ArrayList<>();
+pdfs.add(pdfA); // Add first PDF document
+pdfs.add(pdfB); // Add second PDF document
+pdfs.add(pdfC); // Add third PDF document
+pdfs.add(pdfD); // Add fourth PDF document
+PdfDocument merged = PdfDocument.merge(pdfs); // Merge all PDF documents into one
 ```
 
-Here, each `PdfDocument` is added to the list `pdfDocuments`, and the entire list is then merged into a new `PdfDocument`, `finalMergedDocument`, using the static method `PdfDocument.merge`. This method effectively consolidates all PDF contents into a single document, making it a versatile tool for handling multiple PDF files programmatically.
+For additional insights into IronPDF's capabilities and usage, please visit the [IronPDF Documentation](https://ironpdf.com/docs/).

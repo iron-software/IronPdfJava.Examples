@@ -1,116 +1,63 @@
-# Printing PDFs in Java with IronPDF
+# Transforming HTML to PDF Using IronPDF
 
-## Introduction
+***Based on <https://ironpdf.com/how-to/java-print-pdf-tutorial/>***
 
-In Java development, handling PDF files is essential because it enables developers to generate, manipulate, and maintain documents in a standardized format that is both platform-independent and broadly supported. For Java applications that manage substantial document workflows or require document manipulation capabilities, the ability to interact seamlessly with PDFs is crucial.
 
-This guide will walk through the process of utilizing the IronPDF library to produce and print PDF documents within Java applications.
+IronPDF is a comprehensive library for .NET developers facilitating the conversion of HTML to PDF. This process is robust and can be implemented swiftly using C#. Here’s how you can perform this conversion:
 
-<hr>
+## Installation
 
-## IronPDF: A Comprehensive Java PDF Library
+First, ensure that IronPDF is part of your project. You can easily add it via NuGet package manager with:
 
-IronPDF is an advanced library designed for Java that facilitates the generation, manipulation, and conversion of PDF files. Building on the functionality of the [IronPDF C# .NET library](https://ironpdf.com/), it delivers a similar experience optimized for Java developers.
-
-With IronPDF, developers gain access to a robust API that simplifies the complexities of PDF manipulation, allowing for straightforward implementations of document creation, content addition, text formatting, and the seamless handling of document merges and splits.
-
-Additionally, IronPDF excels in converting HTML, CSS, and JavaScript into PDF documents. This feature is particularly useful for easily transferring web content or HTML-based designs into portable document formats. It also supports direct printing of PDF documents.
-
-## Steps to Print a PDF with IronPDF in Java
-
-### Prerequisites
-
-Before starting with PDF printing in Java, ensure you have:
-
-1. An IDE such as Eclipse or any other Java development environment
-2. A Maven project set up in your chosen IDE
-3. A reliable internet connection for library installation
-
-### Installing IronPDF in a Maven Project
-
-To incorporate IronPDF into a Maven project, insert the necessary IronPDF dependency into your **pom.xml**. Once edited, execute the `mvn install` command or use Ctrl+S to start the download and installation of IronPDF.
-
-It's necessary to import IronPDF classes into your main `App.java` within the src folder.
-
-<div class="content-img-align-center">
-	<div class="center-image-wrapper">
-		<a rel="nofollow" href="https://ironpdf.com/static-assets/ironpdf-java/howto/java-print-pdf/java-print-pdf-1.webp" target="_blank"><img src="https://ironpdf.com/static-assets/ironpdf-java/howto/java-print-pdf/java-print-pdf-1.webp" alt="Java Print PDFs - Package explorer tree for IronPDF for Java" class="img-responsive add-shadow"></a>
-        <p class="content__image-caption">Visual: Package Explorer Tree for IronPDF in Java</p>
-	</div>
-</div>
-
-To proceed, include the following import statement in your "App.java":
-
-```java
-import com.ironsoftware.ironpdf.*;
+```plaintext
+PM> Install-Package IronPdf
 ```
 
-## Loading a PDF in Java
+## Using IronPDF in Your Code
 
-IronPDF for Java allows the loading of PDF content from various sources, including file paths or byte arrays, and supports the inclusion of a password if the document is protected.
+To use IronPDF, include the IronPdf namespace in your class:
 
-The following code snippet demonstrates loading a PDF from the filesystem:
-
-```java
-License.setLicenseKey("Your-License-Key");  
-PdfDocument pdf = new PdfDocument(Paths.get("Path-To-Your-PDF.pdf"));
+```csharp
+using IronPdf;
 ```
 
-## Default PDF Printing
+Then, create an instance of the `HtmlToPdf` object which provides numerous methods for PDF generation:
 
-To print a PDF document using the default printer settings without any user input, utilize the `printWithoutDialog` method provided by IronPDF:
-
-```java
-pdf.printWithoutDialog();
+```csharp
+var renderer = new HtmlToPdf();
 ```
 
-## Utilizing the Print Dialog
+You can directly convert plain HTML strings or URLs to PDF. Here’s how you generate a PDF from an HTML string and save it:
 
-For a more interactive approach, IronPDF supports customization of print settings through a user dialogue:
-
-```java
-pdf.print();
+```csharp
+var pdfDocument = renderer.RenderHtmlAsPdf("<h1>Your HTML content here</h1>");
+pdfDocument.SaveAs("html-string-output.pdf");
 ```
 
-When this method is called, a print dialog appears, allowing the user to adjust settings like printer selection, paper size, and copy number.
+### Conversion with Advanced Features
 
-<div class="content-img-align-center">
-	<div class="center-image-wrapper">
-		<a rel="nofollow" href="https://ironpdf.com/static-assets/ironpdf-java/howto/java-print-pdf/java-print-pdf-2.webp" target="_blank"><img src="https://ironpdf.com/static-assets/ironpdf-java/howto/java-print-pdf/java-print-pdf-2.webp" alt="Java Print PDFs - Print dialog interaction" class="img-responsive add-shadow"></a>
-        <p class="content__image-caption">View of the Print Dialog during operation</p>
-	</div>
-</div>
+IronPDF supports a full range of HTML, CSS, JavaScript, and image assets, making your PDF look like your HTML source. For instance, if your HTML relies on external stylesheets, images, or scripts, define the base path as shown:
 
-## Complete Source Code
-
-Below is the full Java source file used in this tutorial:
-
-```java
-package IronPDF.ironpdf_java;
-// Import IronPDF Java package
-import com.ironsoftware.ironpdf.*;
-
-import java.awt.print.PrinterException;
-import java.io.IOException;  
-import java.nio.file.Paths; 
-
-public class App 
-{
-    public static void main( String [] args ) throws PrinterException, IOException
-    {
-        // Apply your license key
-        License.setLicenseKey("Your-License-Key");     
-        PdfDocument pdf = new PdfDocument(Paths.get("Path-To-Your-PDF.pdf"));
-        pdf.printWithoutDialog();
-        pdf.print();
-    }
-}
+```csharp
+renderer.RenderingOptions.BaseUrl = new Uri("http://your-assets-path.com");
 ```
 
-Discover more about Java PDF printing with IronPDF by exploring this [link](https://ironpdf.com/java/docs/).
+Below is an example demonstrating how to convert an HTML file while ensuring external resources are correctly loaded:
+
+```csharp
+var pdfWithAssets = renderer.RenderHtmlAsPdf(@"
+    <h1 style='color: blue;'>Hello, World!</h1>
+    <img src='assets/logo.png' alt='Company Logo'>
+", new Uri("https://www.ironsoftware.com/assets/"));
+pdfWithAssets.SaveAs("pdf-with-external-assets.pdf");
+```
+
+## Output
+
+The output will be a perfectly formatted PDF file saved to your specified path. You can open and review the PDF to see the quality and accuracy of the rendering.
 
 ## Conclusion
 
-IronPDF stands as a robust, intuitive library for managing PDFs within Java applications. It facilitates high-quality document creation and effortless customization, catering to diverse requirements whether you aim to craft invoices, reports, or other documentation. With a free trial available, and [pricing](https://ironpdf.com/java/licensing/) starting from variable rates, IronPDF is well-equipped to streamline your document processing tasks.
+IronPDF offers a simple yet powerful solution for generating PDF files from HTML content in .NET applications, supporting all modern HTML5, CSS3, and JavaScript features. This makes it ideal for report generation, invoices, contracts, and other documents directly from web pages or HTML codes.
 
-Explore IronPDF and enhance your Java application's handling of PDF documents.
+For more information and detailed documentation, visit the IronPDF website at [IronPDF Official](https://ironpdf.com/).

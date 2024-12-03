@@ -1,9 +1,11 @@
-IronPDF enables the conversion of HTML files from a local or networked file path into PDFs. This is achieved by utilizing the `PdfDocument.renderHtmlFileAsPdf` method showcased in the example provided.
+***Based on <https://ironpdf.com/examples/file-to-pdf/>***
 
-Upon successful execution, the `PdfDocument.renderHtmlFileAsPdf` method returns a new `PdfDocument` object that encapsulates the contents from the specified HTML file. This method meticulously renders all associated assets referenced relatively in the HTML file—including stylesheets, scripts, and images—to ensure they appear correctly in their intended context within the PDF.
+IronPDF enables the conversion of HTML files from local or network directories. To perform this conversion, utilize the method `PdfDocument.renderHtmlFileAsPdf`, as demonstrated in the example provided.
 
-Essentially, the HTML file is presented in the PDF precisely as it would appear in a web browser, complete with all visual elements and styles intact.
+Once executed successfully, the `PdfDocument.renderHtmlFileAsPdf` method will generate a new `PdfDocument` object that encapsulates the contents of the HTML file located at the specified path. This method also ensures that all related assets within the HTML file, such as stylesheets, scripts, and images, are correctly rendered within their respective contexts in the file.
 
-Should there be an issue locating or accessing the HTML file, `PdfDocument.renderHtmlFileAsPdf` will issue an `IOException`.
+Essentially, the HTML file is reproduced as a PDF just as it is displayed in a web browser, complete with all visual elements and styling preserved!
 
-For further details on customizing the PDF output, please consult the [API Documentation page for the `ChromePdfRenderOptions` class](https://ironpdf.com/java/object-reference/api/com/ironsoftware/ironpdf/render/ChromePdfRenderOptions.html), which provides additional information on enhancing the appearance of PDFs generated from the `renderHtmlFileAsPdf` method.
+However, if `PdfDocument.renderHtmlFileAsPdf` encounters issues in accessing or reading the HTML file, it will raise an `IOException`.
+
+For additional details on adjusting the PDF output through customization options, refer to the [IronPDF API Documentation for ChromePdfRenderOptions](https://ironpdf.com/java/object-reference/api/com/ironsoftware/ironpdf/render/ChromePdfRenderOptions.html). This resource provides guidance on how to tailor the appearance of PDFs created using the `renderHtmlFileAsPdf` method.

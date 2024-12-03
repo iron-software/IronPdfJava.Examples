@@ -1,15 +1,17 @@
-IronPDF efficiently handles the conversion of web pages that incorporate complex visual elements like charts and graphs developed using modern JavaScript frameworks.
+***Based on <https://ironpdf.com/examples/js-charts-to-pdf/>***
 
-IronPDF is proficient in rendering web canvas elements by leveraging WebGL technology, which utilizes the machine's native graphic processing capabilities.
+IronPDF is capable of rendering web pages that include charts, graphs, and other complex visual elements crafted with contemporary JavaScript technologies.
 
-The library is compatible with all major third-party charting libraries, such as:
+IronPDF also integrates WebGL technology, enabling it to effectively handle elements constructed using web canvas through the hardware's graphical capabilities.
+
+IronPDF is compatible with all notable third-party chart libraries, such as:
 
 - C3.js
 - D3.js
 - Highcharts
 
-By using the `setEnableJavaScript` method on the `ChromePdfRenderOptions` object, developers can activate JavaScript processing for web pages. This setting must be enabled to ensure that IronPDF can properly render JavaScript-driven content such as charts and graphics.
+Through the `ChromePdfRenderOptions` class, developers can use the `setEnableJavaScript` method to activate JavaScript processing. This is essential for executing internal or external JavaScript necessary for rendering visual content on web pages.
 
-Furthermore, IronPDF offers the `setRenderDelay` method, which delays the processing of a web page’s JavaScript until after the DOM has fully loaded. This delay, specified in milliseconds, accommodates the execution of asynchronous JavaScript that might not complete immediately upon page load. This feature is crucial for capturing dynamically-loaded content in the final PDF.
+Additionally, the `setRenderDelay` method allows IronPDF to delay the interpretation of a web page’s JavaScript by a defined time in milliseconds post the loading of the DOM. This delay is crucial for capturing web content that only appears several seconds after the initial page load, particularly when dealing with asynchronous JavaScript.
 
-For a deep dive into how these settings can be configured, check out the [rendering options code example](https://ironpdf.com/java/examples/js-charts-to-pdf/) which provides further insights into the capabilities of the `ChromePdfRenderOptions` class.
+For further reading and additional methods provided by the `ChromePdfRenderOptions`, check out the [JavaScript Charts to PDF Code Example](https://ironpdf.com/java/examples/js-charts-to-pdf/).
