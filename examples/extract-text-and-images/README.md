@@ -1,19 +1,17 @@
 ***Based on <https://ironpdf.com/examples/extract-text-and-images/>***
 
-Within the extensive toolkit available through IronPDF for handling PDF files, IronPDF includes capabilities for detailed content extraction from PDF documents. 
+IronPDF is renowned for its broad spectrum of capabilities in PDF generation and editing, and it also provides thorough content extraction functionalities.
 
-IronPDF allows for comprehensive content extraction via `PdfDocument` objects. The method `extractAllText` returns a `String` containing all the text across every page of the PDF. Similarly, the method `extractAllImages` gathers all embedded images in a PDF, returning them as `BufferedImage` objects. For raw byte retrieval of the images, utilize the `extractAllRawImages` method.
+Every `PdfDocument` object is equipped with the `extractAllText` method, which aggregates all the text from each page of a PDF into a single `String`. Additionally, `extractAllImages` is utilized to gather all images embedded in the document, each represented as a `BufferedImage` object. For those needing the images in their raw byte form, the method `extractAllRawImages` should be utilized.
 
-These methods offer efficient solutions for extracting content from extensive PDFs which have a large number of pages. The extracted data—be it text or images—can be manipulated according to the specific needs of the business logic, such as analyzing text with advanced algorithms or storing each image separately. An example of how to use IronPDF for extracting content efficiently is illustrated below.
+These methods offer efficient document-level content extraction, particularly useful for lengthy PDFs that span numerous pages. Once extracted, the text and images can be further processed according to the specific requirements of your application, such as applying line-by-line text analysis with AI systems or storing each image separately. The following sample code illustrates how you can leverage IronPDF for content extraction:
 
-For projects requiring selective extraction rather than comprehensive page-by-page analysis, IronPDF provides the methods `extractTextFromPage` and `extractAllImagesFromPages`. These functions support the `PageSelection` enum to specify certain pages for text or image extraction, making the process more efficient.
+If the necessity arises to extract content in a more selective manner—avoiding a blanket extraction—developers have the option of using `extractTextFromPage` and `extractAllImagesFromPages`. These functions accept a `PageSelection` parameter, allowing for precise content extraction from chosen pages.
 
-Here's an example demonstrating how to extract the textual content from the premiere page and the images from selected pages of a PDF document:
+Here is a concise code sample illustrating the extraction of text from the first page and images from pages 3 and 7 within a PDF document:
 
 ```java
-PdfDocument document = PdfDocument.fromFile(Paths.get("sample.pdf"));  
-String firstPageText = document.extractTextFromPage(PageSelection.firstPage());  
+PdfDocument document = PdfDocument.fromFile(Paths.get("sample.pdf"));
+String firstPageText = document.extractTextFromPage(PageSelection.firstPage());
 List<BufferedImage> pageRangeImages = document.extractAllImagesFromPages(PageSelection.pageRange(3, 7));
-``` 
-
-By utilizing these targeted extraction methods, developers can streamline processing and cater to specific requirements within their applications.
+```

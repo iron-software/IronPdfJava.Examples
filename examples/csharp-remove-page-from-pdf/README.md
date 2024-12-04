@@ -1,3 +1,3 @@
 ***Based on <https://ironpdf.com/examples/csharp-remove-page-from-pdf/>***
 
-Please provide the content of the article you want to be paraphrased, or if the content is in an uploaded file, specify a keyword or relevant detail so I can locate and paraphrase it.
+Please provide the article that you'd like paraphrased. You can either paste its contents here or if it's part of a file you've uploaded, I can search for it if you provide a keyword or description.

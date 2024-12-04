@@ -1,10 +1,10 @@
 ***Based on <https://ironpdf.com/examples/ironpdf-website-and-system-logins/>***
 
-When converting web pages that are behind HTML forms and password-protected directories to PDF, it's generally recommended to avoid using programmatic authentication and form submissions. Instead, it's more efficient to utilize the direct rendering of the markup from local files or HTML strings, as detailed in [the IronPDF login procedures resource page](https://ironpdf.com/how-to/logins/). Nevertheless, there are circumstances where it's challenging, time-consuming, or impractical to manually access the source code of the target web pages. In such cases, IronPDF facilitates the straightforward conversion of these restricted web pages into PDF files.
+To transform web pages that lie behind HTML forms and password-protected directories into PDF files efficiently, it is often recommended to bypass programmatic authentication and instead utilize either local files or HTML strings directly for rendering, as detailed on [the IronPDF login procedures resource page](https://ironpdf.com/how-to/logins/). Nonetheless, if obtaining the source code of web pages for manual conversion is too difficult, time-consuming, or simply not possible, IronPDF offers a straightforward solution to smoothly generate PDFs from these restricted areas.
 
-To transform web pages from password-protected directories into PDFs, you need to initialize a `ChromeHttpLoginCredentials` object with valid network credentials tailored for IronPDF's PDF Renderer. Subsequently, provide this `ChromeHttpLoginCredentials` object along with the URL of the password-protected page to the `PdfDocument.renderUrlAsPdf` method:
+For pages tucked away in password-protected directories, you first need to create a `ChromeHttpLoginCredentials` object with valid network credentials tailored for use with IronPDF's PDF Renderer. Subsequently, provide this credentials object and the URL of the secure webpage to the `PdfDocument.renderUrlAsPdf` method:
 
 ```java
-// Converts a password-protected URL to a PDF file
+// Create a PDF from a password-protected URL using specified login credentials
 PdfDocument.renderUrlAsPdf(restrictedUrl, loginCredentials).saveAs(Paths.get("output.pdf"));
 ```

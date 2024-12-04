@@ -1,18 +1,14 @@
 ***Based on <https://ironpdf.com/examples/pdf-page-orientation/>***
 
-IronPDF for Java offers functionality to change the page orientation of both new and existing PDF files.
+IronPDF for Java provides functionalities for modifying the page orientation of both new and existing PDF documents.
 
-When generating new PDFs using IronPDF, they default to a portrait orientation. However, developers can alter this orientation by employing the `ChromePdfRenderOptions` during the PDF creation process. This is achieved using HTML, RTF, URL content, and more. By utilizing the `setPaperOrientation` method and passing it a `PaperOrientation` value, the orientation of the resultant PDF can be modified as needed. An example in the code demonstrates this process from lines 21 to 23, where a PDF document is created in landscape orientation. By using `setPaperOrientation(PaperOrientation.LANDSCAPE)` on line 21, the landscape mode is activated. Alternatively, using `PaperOrientation.PORTRAIT` in this setup would generate the PDF of the [IronPDF homepage](https://ironpdf.com) in portrait mode.
+By default, new PDF documents created with IronPDF are set to a portrait orientation. This setting can be changed by leveraging a `ChromePdfRenderOptions` instance when converting various content formats such as HTML, RTFs, or URLs into PDFs. The `setPaperOrientation` method within this instance accepts a `PaperOrientation` value, allowing developers to customize the page orientation of the resulting PDFs to meet their requirements. For instance, within the provided code snippet (lines 21 to 23), the document is configured to have a landscape orientation by using `setPaperOrientation(PaperOrientation.LANDSCAPE)` on line 21. Changing this to `PaperOrientation.PORTRAIT` would instead render the [IronPDF homepage](https://ironpdf.com) in portrait orientation.
 
-For changing the orientation of existing PDF documents, such as those returned from previous rendering operations or loaded through `PdfDocument.fromFile`, `ChromePdfRenderOptions` is not applicable. Instead, IronPDF provides the `rotateAllPages` method for applying rotation-based transformations to adjust the orientation.
-
-The `rotateAllPages` function takes a `PageRotation` enum, offering predefined rotation values. For example, line 40 in another code snippet provided rotates every page of a PDF document 270 degrees clockwise. If selective page rotation is needed, instead of rotating all pages, the `rotatePage` method should be utilized.
-
-The following refined Java code demonstrates the selective page rotation:
+However, `ChromePdfRenderOptions` cannot modify the orientation of existing PDF documents (such as those generated previously or loaded via `PdfDocument.fromFile`). Instead, the orientation of these documents can be adjusted through rotation-based transformations provided by IronPDF. The `rotateAllPages` function is particularly useful, accepting a `PageRotation` enum that defines possible rotation angles. In the code example provided, line 40 demonstrates how each page of a selected PDF can be rotated clockwise by 270 degrees. For scenarios where only specific pages need rotation, the `rotatePage` method should be used instead of `rotateAllPages`.
 
 ```java
-existingPdf.rotatePage(PageRotation.CLOCKWISE_270, PageSelection.firstPage());  // Rotate the first page 270 degrees clockwise
-existingPdf.rotatePage(PageRotation.CLOCKWISE_180, PageSelection.lastPage());  // Rotate the last page 180 degrees clockwise
-existingPdf.rotatePage(PageRotation.CLOCKWISE_90, PageSelection.singlePage(8)); // Rotate page 9 ninety degrees clockwise
-existingPdf.rotatePage(PageRotation.CLOCKWISE_270, PageSelection.pageRange(9, 14)); // Rotate pages 10 to 15, 270 degrees clockwise
+existingPdf.rotatePage(PageRotation.CLOCKWISE_270, PageSelection.firstPage());  
+existingPdf.rotatePage(PageRotation.CLOCKWISE_180, PageSelection.lastPage());  
+existingPdf.rotatePage(PageRotation.CLOCKWISE_90, PageSelection.singlePage(8)); // Rotates the 9th page  
+existingPdf.rotatePage(PageRotation.CLOCKWISE_270, PageSelection.pageRange(9, 14)); // Rotates pages 10 to 15
 ```

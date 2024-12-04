@@ -1,9 +1,9 @@
 ***Based on <https://ironpdf.com/examples/rasterize-a-pdf-to-images/>***
 
-After loading from a file, converting from various sources (such as webpages, URLs, HTML), or adjusting for things like margins, headers, and footers, IronPDF allows for the exporting of PDF document pages into image formats. These images can then be saved locally, stored in a database, or transmitted over networks, among other applications.
+Once you've loaded a PDF from a file, transformed it from a webpage, URL, or HTML, or customized it by adjusting margins or adding headers and footers, IronPDF offers the functionality to take any page of your PDF and convert it into image formats. These images can then be saved on a file system, stored in a database, or transmitted across network connections, serving a myriad of applications.
 
-The method `toBufferedImages` produces a `List` of `BufferedImage` objects. Each `BufferedImage` holds the image data for an individual page of the `PdfDocument`. The list of `BufferedImage` objects is sorted by the page numbers in ascending order. By passing a `PageSelection` object to the method, developers can create an image list for a specific range of pages within the PDF.
+The method `toBufferedImages` yields a `List` of `BufferedImage` instances. Each `BufferedImage` encapsulates the image data of a single PDF page. These images are sorted in the `List` by the ascending order of their respective page numbers. Additionally, developers can pass a `PageSelection` object when calling this method to select a specific range of pages from the PDF for conversion.
 
-In the provided code snippet, a `ToImageOptions` object is utilized to specify the desired dimensions of the output images after conversion. This class also allows for the adjustment of the image’s DPI through the `setDpi` method. By combining `ToImageOptions` with `PageSelection`, developers can fine-tune the conversion process in terms of scope, size, and resolution of the images derived from a PDF.
+In the provided code snippet, a `ToImageOptions` object is created for specifying the desired dimensions of the output images. This class also features a method, `setDpi`, for adjusting the resolution (DPI) of the resulting images. By combining `ToImageOptions` with `PageSelection`, developers can finely tune the conversion process, effectively managing the dimensions and resolution of the image outputs.
 
-For further details on IronPDF and its capabilities, please visit the [IronPDF Documentation and Resources](https://ironpdf.com/).
+For further details on IronPDF and its array of features, please visit the [IronPDF Documentation and Resources](https://ironpdf.com/).

@@ -1,9 +1,9 @@
 ***Based on <https://ironpdf.com/examples/google-fonts-htmltopdf/>***
 
-IronPDF delivers flawless PDF conversion from HTML, capturing every detail of custom web fonts, including those offered by libraries like [Font Awesome](https://fontawesome.com/) and [Bootstrap Components](https://getbootstrap.com/docs/3.3/components/).
+IronPDF offers meticulous PDF creation from HTML sources, ensuring precise renderings of elaborate web fonts, including those from resources like [Font Awesome](https://fontawesome.com/) and [Bootstrap Components](https://getbootstrap.com/docs/3.3/components/).
 
-The tool also embraces support for WOFF and SVG CSS font packages from online type foundries such as [Google Fonts](https://fonts.google.com/).
+It fully supports custom WOFF and SVG font packs often sourced from popular online type foundries such as [Google Fonts](https://fonts.google.com/).
 
-When converting web pages that incorporate custom fonts to PDF, it's essential for developers to apply a rendering delay in IronPDF's HTML-to-PDF conversion engine. This can be accomplished by setting the `renderDelay` parameter of a `ChromePdfRenderOptions` instance. Assign a minimum delay of 500 milliseconds (half a second) using the `setRenderDelay` method to ensure all font and icon assets are completely loaded before the conversion process begins.
+For converting HTML pages that include various custom fonts into a complete PDF document, it is critical for developers to implement a proper PDF rendering delay via IronPDF's conversion engine. This involves setting the `renderDelay` attribute of the `ChromePdfRenderOptions` object to an appropriate duration using its `setRenderDelay` method. Typically, a pause of at least 500 milliseconds, or half a second, will generally be adequate to allow all fonts and icons to fully load before the conversion process begins.
 
-It is important to mention that due to security restrictions, web fonts may not function in Windows Apps hosted on Azure.
+It's important to be aware that web fonts are not supported in Windows Apps that operate on Azure, due to security constraints.

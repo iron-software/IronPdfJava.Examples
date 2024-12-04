@@ -1,11 +1,11 @@
 ***Based on <https://ironpdf.com/examples/html-headers-and-footers/>***
 
-IronPDF offers functionality that lets developers add custom headers and footers to PDF documents. This demonstration utilizes the `ChromePdfRenderOptions` class together with the `HtmlHeaderFooter` class to achieve such customizations.
+IronPDF enables developers to enhance PDF documents by adding tailored headers and footers. The following code example illustrates how to implement this customization using the `ChromePdfRenderOptions` class in conjunction with the `HtmlHeaderFooter` class.
 
-The `HtmlHeaderFooter` class provides the ability to enhance a PDF's header or footer using HTML, a more dynamic option compared to the `TextHeaderFooter` class, which limits customization to plain text. To embed HTML into the header or footer, utilize the `addHtmlFragment` method of this class. This method requires a string filled with valid HTML5, CSS3, and JavaScript (ECMAScript 6) content. IronPDF then renders this content into the PDF, mimicking the display capabilities of a common web browser.
+The `HtmlHeaderFooter` class provides the capability to design a PDF's header or footer with HTML content, moving beyond the simpler plain text options available with the `TextHeaderFooter` class. To apply HTML to a header or footer, utilize the `addHtmlFragment` method on an instance of this class. This method requires a string that contains valid HTML5, CSS3, and JavaScript (ECMAScript 6). IronPDF will process this string, rendering the detailed hypertext markup within the PDF exactly as a web browser would render it.
 
-This class enables the incorporation of advanced design elements in headers such as images, diverse color schemes, and specialized fonts.
+Developers can leverage this feature to craft dynamic headers that feature images, diverse color schemes, specific fonts, and other sophisticated design elements.
 
-For developers seeking simpler text-based customizations for headers or footers, the `TextHeaderFooter` class is recommended as an alternative.
+For those seeking more basic text-centric header and footer customizations, the `TextHeaderFooter` class is a suitable alternative.
 
-For further details on how to personalize PDF headers and footers, along with comprehensive documentation, please check out the [IronPDF Documentation](https://ironpdf.com).
+For comprehensive insights on customizing PDF headers and footers, along with detailed documentation, please visit the [IronPDF Documentation](https://ironpdf.com).

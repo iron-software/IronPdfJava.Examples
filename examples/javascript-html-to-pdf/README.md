@@ -1,11 +1,11 @@
 ***Based on <https://ironpdf.com/examples/javascript-html-to-pdf/>***
 
-IronPDF supports the direct embedding of images into PDF documents, enabling users to integrate images right into HTML strings instead of managing them as external assets:
+IronPDF empowers users to seamlessly integrate images into PDFs by embedding them directly into HTML strings, rather than relying on them as external assets. This capability is applicable to:
 
-- Image Files
+- Image files
 - `System.Drawing.Image`
 - `System.Drawing.Bitmap`
 
-This capability is particularly beneficial for bypassing the need to load external assets during the _HTML to PDF_ conversion process. It enhances performance and facilitates storing entire rendering processes in non-traditional storage mediums like strings or databases.
+Incorporating images this way can enhance the speed of the _HTML to PDF_ conversion process and facilitates storing rendering jobs in alternative storage options like strings or databases instead of traditional file-systems.
 
-For additional details on PDF creation and editing features, refer to the [IronPDF Documentation](https://ironpdf.com/docs/).
+For additional details on PDF creation and editing, check out the [IronPDF Documentation](https://ironpdf.com/docs/).
