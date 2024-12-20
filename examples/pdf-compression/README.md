@@ -1,13 +1,13 @@
 ***Based on <https://ironpdf.com/examples/pdf-compression/>***
 
-IronPDF offers a feature to decrease the PDF file sizes by compressing embedded images through the `PdfDocument` class's `compressImages` method. This technique is particularly beneficial for reducing the space needed on storage devices and minimizing data transfer costs when sending PDFs over email or other data transmission modes.
+IronPDF offers functionality to optimize PDF file sizes by minimizing the dimensions of embedded images. Developers can leverage the `PdfDocument` class and its `compressImages` method to effectively reduce the PDF size, specifically when dealing with large images and graphics. This capability significantly saves on storage, expedites file transmission, and cuts associated costs when sharing PDFs via email or other media.
 
 ```java
 PdfDocument compressImages(int quality);
 ```
 
-The `compressImages` method takes an integer parameter, ranging from 0 to 100, specifying the preferred quality percentage for the embedded images. This method works under principles similar to those used in optimizing JPEG files where a value of 100 implies no quality loss, preserving the images in their original state. Conversely, lower values mean a greater reduction in image quality.
+The `compressImages` method takes an integer parameter between 0 and 100, representing the desired quality percentage of the images after compression. This approach mirrors the compression techniques used for lossy image formats such as JPEG. A parameter value of 100 means no quality loss—preserving images in their original form—whereas a lower value indicates a higher level of compression.
 
-An example from the IronPDF image compression tutorial showcases the creation of two PDFs from a single source file by employing varying degrees of image compression. For instance, a compression setting of less than 70 (see line 9) will typically result in a PDF with significantly reduced image quality but notably smaller file size. On the other hand, a setting of 90, as used on line 14, produces a PDF where the image quality is higher, but the reduction in file size is less drastic.
+In a coding example from IronPDF's documentation on image compression, two distinct PDFs are generated from one source file but with differing quality settings for image compression. In the example, a lower quality setting (below 70, as shown in line 9 of the code example), results in significantly reduced image quality but also achieves much smaller file sizes. Conversely, a setting of 90% (as seen in line 14) maintains higher image quality but reduces file sizes to a lesser extent.
 
-Determining the optimal quality setting demands some trials, as the best value depends on balancing the necessity for acceptable image quality against the need for file size reduction. Adjusting this setting allows developers to tailor the compression to fit specific needs and constraints.
+Determining the best quality setting involves a balance between file size and image clarity and may require some trial and error to optimize based on specific needs.

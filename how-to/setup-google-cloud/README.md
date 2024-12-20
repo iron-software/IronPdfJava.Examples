@@ -1,16 +1,16 @@
-# How to Implement IronPDF for Java in Google Cloud
+# Deploying IronPDF for Java on Google Cloud
 
 ***Based on <https://ironpdf.com/how-to/setup-google-cloud/>***
 
 
-<small>Note: Full compatibility with Google Cloud is not yet established, but we provide the necessary settings for preliminary trials.</small>
+<small>Note: IronPDF support for Google Cloud has not been comprehensively verified, but here are some essential settings to assist those who wish to implement it.</small>
 
-## Critical: Required Settings
+## Critical Deployment Requirements
 
-* Zip Deployment is unsupported as IronPDF needs to run binaries during execution.
-* Standard Cloud Function Docker images do not work due to missing packages essential for proper Chrome operation. For further details, refer to the [Google Cloud System Packages](https://cloud.google.com/functions/docs/reference/system-packages).
-* Opt for a custom Dockerfile and ensure all necessary packages are installed. More instructions can be found in our [Linux Deployment Guide](https://ironpdf.com/how-to/linux/).
-* Integrate the `ironpdf-engine-linux-x64` dependency into your project: (ensure to update the version to the most recent one)
+* Deployment using Zip is unsupported because IronPDF necessitates the execution of runtime binaries.
+* The default Docker images provided by Google Cloud Functions are incompatible as they lack the necessary packages for Chrome execution. More details can be found in the [Google Cloud System Packages](https://cloud.google.com/functions/docs/reference/system-packages).
+* Opt for a custom Dockerfile that includes all necessary packages. For in-depth guidance, refer to our [Linux Deployment Guide](https://ironpdf.com/how-to/linux/).
+* Add the `ironpdf-engine-linux-x64` dependency to your project with the latest version number:
 
     ```xml
     <dependency>
@@ -20,7 +20,7 @@
     </dependency>
     ```
 
-* Consider incorporating this plugin:
+* You **might** need this plugin:
 
     ```xml
     <plugin>
@@ -33,6 +33,7 @@
                 <goals>
                     <goal>shade</goal>
                 </goals>
+                
                 <configuration>
                     <transformers>
                         <transformer
@@ -44,7 +45,7 @@
     </plugin>
     ```
 
-* The following dependencies might be required:
+* These dependencies **might** also be needed:
 
     ```xml
     <dependency>
@@ -66,10 +67,10 @@
     </dependency>
     ```
 
-* Set the `timeout` to `330 seconds` due to anticipated initialization delays.
-* Allocate at least `2048 MB` for `memory size`.
-* Set `EphemeralStorage Size` to a minimum of `1024 MB`.
-* In certain setups, you might need to specify an `IronPdfEngineWorkingDirectory` and configure execution permissions:
+* Configure your `timeout` to `330 seconds` as startup can be slow.
+* Ensure the `memory size` is set to a minimum of `2048 MB`.
+* Allocate at least `1024 MB` to `EphemeralStorage Size`.
+* In some setups, you may need to specify an `IronPdfEngineWorkingDirectory` and update execution permissions therein:
 
     ```java
     Setting.setIronPdfEngineWorkingDirectory(Paths.get("/tmp/"));

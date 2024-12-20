@@ -1,18 +1,18 @@
 ***Based on <https://ironpdf.com/examples/pdf-cover-page/>***
 
-IronPDF's `PdfDocument.merge` method facilitates the appending of one PDF's content to another.
+The `PdfDocument.merge` method from IronPDF allows you to append the content of one PDF document to another.
 
 ```java
-PdfDocument.merge(PdfDocument firstPdf, PdfDocument secondPdf);
+PdfDocument.merge(PdfDocument a, PdfDocument b);
 ```
 
-The `PdfDocument.merge` method, upon execution, will position all pages of the second PDF (`secondPdf`) after the pages of the first PDF (`firstPdf`).
+When executed, this method incorporates all pages from PDF document b at the end of the pages in PDF document a.
 
-The example below illustrates how to utilize this method for adding a cover page to an existing PDF document. Start by either creating a cover page using the `PdfDocument.renderHtmlAsPdf` or by loading an already created one with `PdfDocument.fromFile`. Subsequently, open (or generate) the main PDF document to be appended with the cover. Use `PdfDocument.merge`, providing the cover page as the first argument, and the main document as the second.
+Below is an example that illustrates how developers might leverage this method to append cover pages to existing PDF documents. First, generate your cover page using `PdfDocument.renderHtmlAsPdf` or obtain an already prepared one with `PdfDocument.fromFile`. Next, acquire (or generate) the main PDF document where the cover needs to be added and use `PdfDocument.merge` to merge them, placing the cover page as the initial document in the merge call.
 
-Note the implementation of `setFirstPageNumber` on the `ChromePdfRenderOptions` object, set to page 2 on line 15 in the given code snippet. This setup aids in updating the numbering of the pages to account for the newly added cover before merging. This adjustment is only tactible for on-the-fly generated documents; it's necessary to alter page numbers of pre-existing documents ahead of merging by alternative methods.
+It’s important to adjust the page numbering for documents generated this way, as seen with the `setFirstPageNumber` method applied to a `ChromePdfRenderOptions` instance, setting it to Page 2 on the 15th line of the sample code. This modification is crucial for the document’s pagination to accurately reflect the added cover page. Keep in mind, this adjustment is only possible for documents created on-the-fly; existing documents will need their page numbers modified beforehand through other techniques.
 
-Furthermore, a cover page can be prepended to a PDF utilizing the [`PdfDocument.prependPdf` method](https://ironpdf.com/docs/object-reference/api/com/ironsoftware/ironpdf/PdfDocument.html#prependPdf(com.ironsoftware.ironpdf.PdfDocument)).
+Alternatively, a cover page can be prepended to a PDF using the [`PdfDocument.prependPdf` method](https://ironpdf.com/docs/object-reference/api/com/ironsoftware/ironpdf/PdfDocument.html#prependPdf(com.ironsoftware.ironpdf.PdfDocument)).
 
 ```java
 PdfDocument.prependPdf(PdfDocument anotherPdfFile)

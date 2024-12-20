@@ -1,9 +1,23 @@
 ***Based on <https://ironpdf.com/examples/delete-specific-pages/>***
 
-### Extracting Specific PDF Pages Using IronPDF
+### PDF Page Removal Using IronPDF
 
-IronPDF simplifies the process of extracting pages from a PDF document seamlessly.
+IronPDF makes it straightforward to extract and discard specific pages from a PDF document.
 
-In this example, the `removePages` function is utilized to manipulate a created-on-the-spot four-page PDF, demonstrating the action. After processing, the modified PDF, saved locally, retains only the first and fourth pages, with the intervening two pages removed as intended.
+The provided code snippet demonstrates how to employ the `removePages` method to alter a PDF document created for this example. This four-page document is modified in such a way that only the first and last pages are preserved, while the second and third pages are removed.
 
-The `PageSelection` class plays a crucial role in this operation, dictating which pages the `removePages` function should remove from an existing `PdfDocument`. Developers can leverage the static `pageRange` method to specify a consecutive sequence of pages to remove (for instance, pages 4 through 18 in a hypothetical document). Alternatively, for non-consecutive pages, passing a `List` of specific page numbers to `pageRange` facilitates their removal:
+Utilizing the `PageSelection` class, developers can define which pages are to be excluded from a `PdfDocument`. If you need to remove pages sequentially, such as pages 4 through 18, you can use the static method `pageRange` to specify this range. In cases where you need to delete a non-sequential set of pages, simply pass a `List` containing the specific page indices to the `pageRange` method:
+
+```csharp
+// Create an instance of PdfDocument
+PdfDocument document = PdfDocument.FromFile("path-to-your-document.pdf");
+
+// Remove specific pages using the PageSelection class
+PageSelection pagesToRemove = PageSelection.pageRange(2, 3); // Removes the second and third pages
+document.removePages(pagesToRemove);
+
+// Save the modified document
+document.SaveAs("path-to-save-modified-document.pdf");
+```
+
+In this example, after deleting pages from the document, the modified version is saved back to the local storage. This allows for easy management and manipulation of PDF files using IronPDF in your .NET projects.

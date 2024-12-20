@@ -1,12 +1,12 @@
 ***Based on <https://ironpdf.com/examples/extract-text-from-pdf/>***
 
-IronPDF boasts a robust suite of capabilities for creating and editing PDFs, including powerful content extraction tools.
+IronPDF boasts an array of PDF creation and manipulation capabilities, including advanced content extraction functions for detailed handling of PDF documents.
 
-Each `PdfDocument` object includes the method `extractAllText`. This method produces a `String` that contains the text from every page of the PDF document.
+Within every instance of the `PdfDocument` object, there is an accessible method called `extractAllText`. This method retrieves all text from each page of the PDF and returns it as a single `String`.
 
-This functionality is especially useful for extracting text from PDF files that span multiple pages. For extracting text specifically from certain pages, one should use the `extractTextFromPage` method.
+This functionality allows for efficient extraction of text at a document-wide level, particularly useful for PDFs that comprise multiple pages. For more targeted text extraction—such as pulling text from specific pages—the `extractTextFromPage` method is the ideal tool.
 
-Below is a simple code example that demonstrates how to retrieve text from the first page of a PDF document:
+Below is a simple example that demonstrates extracting text from the initial page of a PDF document:
 
 ```java
 PdfDocument document = PdfDocument.fromFile(Paths.get("sample.pdf"));

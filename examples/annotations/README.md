@@ -1,15 +1,17 @@
 ***Based on <https://ironpdf.com/examples/annotations/>***
 
-To incorporate "sticky note"-style annotations into specific pages of a PDF document, utilize the `AnnotationManager` and the `AnnotationOptions` class from IronPDF. This allows you to pinpoint the exact location on the page where you wish the annotation to appear by specifying the text and Cartesian (x, y) coordinates in the `AnnotationOption` constructor, as depicted in the previous code snippet. Then, the `addTextAnnotation` method of the `AnnotationManager` can be used to insert the annotation into the working PDF document.
+Employ the `PdfDocument` object's `AnnotationManager` and the `AnnotationOptions` class from IronPDF to insert "sticky note"-style annotations on chosen pages of a PDF document.
 
-The `AnnotationOptions` class provides various methods enabling developers to personalize aspects such as the annotation's opacity, icon, and whether it is editable or printable. Additionally, options to adjust the color, height, width, title, subject, and content of the annotation are available, enhancing its functionality and integration.
+To add a text annotation at a specific spot on a page, provide the text along with Cartesian (x, y) coordinates to the `AnnotationOption` constructor, as demonstrated in the preceding code example. Then, apply the `addTextAnnotation` method from the `AnnotationManager` to append the annotation to the targeted page in your working PDF document.
 
-### Steps to Add Annotations in PDFs Using Java
+Every `AnnotationOptions` object possesses methods that allow developers to modify the appearance and functionality of an annotation. In the prior code example, settings were adjusted for its opacity and icon, and it was configured to be immutable and non-printable. Developers have the option to alter other attributes such as color, height, and title, including its title, subject, content, and placement.
 
-1. First, install the IronPDF Java library which supports adding annotations to PDFs.
-2. Use the `PdfDocument` class to open an existing PDF file in your Java application.
-3. Configure and style annotations with the `AnnotationOptions` class to meet your specific requirements.
-4. Employ the `addTextAnnotation` function from IronPDF to append these annotations onto the chosen pages of the PDF.
-5. Once all annotations are added, export the modified PDF document.
+## Steps for Adding Annotations to PDFs using Java
 
-For further information and step-by-step guides on how to commence adding annotations to PDFs using IronPDF, feel free to explore the [IronPDF Documentation](https://www.ironpdf.com/docs/).
+1. Install the IronPDF Java library, which enables annotation capabilities in PDF documents.
+2. Load an existing PDF file by employing the `PdfDocument` class in Java.
+3. Craft and tailor annotations with the assistance of the `AnnotationOptions` class.
+4. Implement the `addTextAnnotation` function from IronPDF to incorporate annotations on designated pages of the PDF.
+5. Save the PDF document that now includes annotations.
+
+For detailed guidance on initiating annotations in PDFs with IronPDF, refer to the [IronPDF Documentation](https://ironpdf.com/docs/).

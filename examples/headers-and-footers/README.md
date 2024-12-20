@@ -1,7 +1,7 @@
 ***Based on <https://ironpdf.com/examples/headers-and-footers/>***
 
-This sample demonstrates how IronPDF enables the customization of headers and footers for PDF documents, either loaded from the file system or created from HTML sources.
+The example featured here demonstrates how IronPDF can be utilized by developers to establish headers and footers within PDF documents, whether they are retrieved from the file system or crafted from HTML source.
 
-Using the `TextHeaderFooter` class, developers can define text for the left, right, or center sections of a PDF document's header or footer. As illustrated, it's simple to configure headers and footers leveraging IronPDF's built-in template tags, such as `{date}`, `{time}`, and `{page}`. IronPDF does not limit users to these tags only; it allows for the integration of any type and volume of text in these areas.
+Utilizing the `TextHeaderFooter` class, developers can determine what text appears in the left, center, or right sections of a PDF document's header or footer space. The example illustrates that developers can easily assemble headers and footers with the help of IronPDF's predefined templating tags like `{date}`, `{time}`, and `{page}`. While these tags are helpful, IronPDF does not limit users to using them alone, providing the ability to add any text in any amount at these strategic locations.
 
-For enhanced design versatility within IronPDF, consider opting for the `HtmlHeaderFooter` class instead of the `TextHeaderFooter` class. This choice improves the aesthetic appeal and customization of your document presentations.
+For those looking for more creative control over the appearance of headers and footers, consider switching to the `HtmlHeaderFooter` class. This alternative offers significantly enhanced flexibility in design within IronPDF, allowing you to improve overall document aesthetics.

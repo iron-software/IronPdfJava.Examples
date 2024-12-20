@@ -1,127 +1,135 @@
-# How To Combine Two PDF Files Using Java
+# How To Combine PDF Documents with Java
 
 ***Based on <https://ironpdf.com/how-to/how-to-merge-two-pdf-files-java-tutorial/>***
 
 
-## 1. Introduction
+## Introduction
 
-This tutorial will guide you through the process of combining multiple PDF files into one document using Java. This is a frequent requirement in various sectors like document management, reporting, and others.
+This tutorial will explore combining multiple PDFs into a single document using Java. Combining PDF files is frequently needed in industries such as document management and reporting.
 
-We will use [IronPDF for Java](https://ironpdf.com/java/) to demonstrate how to merge PDF documents. This includes setting up your development environment, integrating the necessary library, handling input files, and combining them. By the end of this tutorial, you will have a clear understanding of how to utilize IronPDF for Java for PDF merging tasks.
+Throughout this tutorial, we will use [IronPDF for Java](https://ironpdf.com/java/) to demonstrate how to merge multiple PDFs. We will cover setting up your development environment, incorporating the library, loading PDFs, and merging them into one unified document. By the end of this guide, you'll be able to seamlessly integrate PDF merging capabilities using IronPDF for Java in your applications.
 
-## 2. IronPDF for Java
+## IronPDF for Java
 
-IronPDF for Java is a robust library designed to facilitate the creation and conversion of PDF documents from various file formats. Its capabilities include merging several PDFs into one unified document.
+IronPDF for Java is a versatile library designed for developers to construct new PDFs from scratch or convert different file formats into PDFs, including the capacity to combine several PDF files into a single output file.
 
-The library is user-friendly with an intuitive API that simplifies PDF processing tasks, supporting functionalities such as text and image modifications, form completion, and more.
+The API provided by IronPDF for Java is straightforward and intuitive, making the PDF creation and manipulation accessible. It supports a variety of functionalities, including text and image management, form processing, and much more.
 
-## 3. Prerequisites
+## Prerequisites
 
-Before getting started, ensure the following prerequisites are met:
+A few requirements need to be fulfilled to begin creating PDFs:
 
-1. Java must be installed on your machine with the JAVA_HOME environment variable properly configured. If Java is not installed, you can follow the instructions on this [Java download page](https://www.java.com/en/download/help/download_options.html#windows).
-2. An IDE like Eclipse or IntelliJ is necessary. You can get Eclipse from the [Eclipse download page](https://www.eclipse.org/downloads/) and IntelliJ from the [IntelliJ download page](https://www.jetbrains.com/idea/download/#section=windows).
-3. Download and integrate the IronPDF library by following the steps in the IronPDF [installation guide](https://ironpdf.com/java/).
-4. Ensure Maven is installed and integrated with your IDE. For installation and setup, refer to this [Maven tutorial](https://www.jetbrains.com/idea/guide/tutorials/marco-codes-maven/installing-maven/).
+1. Ensure Java is installed on your machine and properly configured in your environment variables. If you haven't installed Java, you can follow the steps on this [Java download instructions page](https://www.java.com/en/download/help/download_options.html#windows).
+2. An IDE for Java such as Eclipse or IntelliJ should be installed. You can obtain Eclipse from the [Eclipse downloads page](https://www.eclipse.org/downloads/) and IntelliJ from the [IntelliJ download section](https://www.jetbrains.com/idea/download/#section=windows).
+3. Download and integrate the IronPDF library into your Java project. Instructional guidance can be found in the IronPDF [installation guide](https://ironpdf.com/java/).
+4. Ensure Maven is installed and configured in your IDE. For Maven installation and setup, refer to this [Maven installation tutorial](https://www.jetbrains.com/idea/guide/tutorials/marco-codes-maven/installing-maven/).
 
-## 4. Installing IronPDF for Java
+## Installing IronPDF for Java
 
-Once the prerequisites are checked, installing IronPDF for Java is straightforward.
+With all the prerequisites in place, installing IronPDF for Java is straightforward.
 
-Using JetBrains IntelliJ IDEA, create a new Maven project.
+We will use JetBrains IntelliJ IDEA for the installation and example setup.
 
-![Creating a new project](https://ironpdf.com/static-assets/ironpdf-java/howto/how-to-merge-two-pdf-files-java-tutorial/how-to-merge-two-pdf-files-java-tutorial-1.webp)
+Open IntelliJ IDEA and create a new Maven project.
 
-Name your project and finalize it.
+![Step 1](https://ironpdf.com/static-assets/ironpdf-java/howto/how-to-merge-two-pdf-files-java-tutorial/how-to-merge-two-pdf-files-java-tutorial-1.webp)
 
-![Project naming](https://ironpdf.com/static-assets/ironpdf-java/howto/how-to-merge-two-pdf-files-java-tutorial/how-to-merge-two-pdf-files-java-tutorial-2.webp)
+A setup window will appear. Here, name your project and hit 'Finish'.
 
-In the newly created project, open the POM.XML file to manage dependencies.
+![Step 2](https://ironpdf.com/static-assets/ironpdf-java/howto/how-to-merge-two-pdf-files-java-tutorial/how-to-merge-two-pdf-files-java-tutorial-2.webp)
 
-![POM.XML](https://ironpdf.com/static-assets/ironpdf-java/howto/how-to-merge-two-pdf-files-java-tutorial/how-to-merge-two-pdf-files-java-tutorial-3.webp)
+Once you finish, your project will open with a POM.XML file where you can insert Maven dependencies for IronPDF for Java.
 
-Add Maven dependencies for IronPDF, or download the JAR from this [Maven repository](https://search.maven.org/artifact/com.ironsoftware/ironpdf/2022.11.0/jar).
+![Step 3](https://ironpdf.com/static-assets/ironpdf-java/howto/how-to-merge-two-pdf-files-java-tutorial/how-to-merge-two-pdf-files-java-tutorial-3.webp)
 
-```xml
-<!-- Add Maven Dependencies Here -->
-```
+Add IronPDF dependencies in the POM.XML file or download the JAR directly from this [Maven repository](https://search.maven.org/artifact/com.ironsoftware/ironpdf/2022.11.0/jar).
 
-Click the installation icon that appears in the POM.XML to install the dependencies.
+![Step 4](https://ironpdf.com/static-assets/ironpdf-java/howto/how-to-merge-two-pdf-files-java-tutorial/how-to-merge-two-pdf-files-java-tutorial-4.webp)
 
-![Dependency installation](https://ironpdf.com/static-assets/ironpdf-java/howto/how-to-merge-two-pdf-files-java-tutorial/how-to-merge-two-pdf-files-java-tutorial-4.webp)
+Click the icon in the upper right of the XML file to start installing the Maven dependencies. This should only take a moment, depending on your internet speed.
 
-## 5. Merging PDF Documents
+## Merging Multiple PDF Documents
 
-IronPDF facilitates the combining of multiple PDF files into a single file in various ways.
+IronPDF facilitates the merging of multiple PDF documents into one using Java. Here are the methods supported by IronPDF:
 
-### 5.1. Creating and Merging PDF Documents
+1. Generate two individual PDF documents and combine them into one.
+2. Combine existing PDF files into a unified PDF document.
+3. Merge several PDF documents.
 
-Using IronPDF for Java, begin by generating PDF documents from HTML content and then merge them.
+### Generating and Merging PDF Files
 
-```java
-import com.ironsoftware.ironpdf.PdfDocument;
-import java.io.IOException;
-import java.nio.file.Paths;
-
-public class main {
-    public static void main(String[] args) throws IOException {
-        String htmlContent1 = "<p>Document 1 content</p>";
-        String htmlContent2 = "<p>Document 2 content</p>";
-
-        PdfDocument document1 = PdfDocument.renderHtmlAsPdf(htmlContent1);
-        PdfDocument document2 = PdfDocument.renderHtmlAsPdf(htmlContent2);
-        PdfDocument mergedDocument = PdfDocument.merge(document1, document2);
-
-        mergedDocument.saveAs(Paths.get("assets/combined.pdf"));
-    }
-}
-```
-
-### 5.2. Merging Existing PDF Files
-
-You can also merge already existing PDF files into a single document.
+We'll start by creating and combining multiple PDF documents using IronPDF, employing an input stream.
 
 ```java
 import com.ironsoftware.ironpdf.PdfDocument;
 import java.io.IOException;
 import java.nio.file.Paths;
 
-public class main {
-    public static void main(String[] args) throws IOException {
-        PdfDocument firstDocument = PdfDocument.fromFile(Paths.get("assets/first.pdf"));
-        PdfDocument secondDocument = PdfDocument.fromFile(Paths.get("assets/second.pdf"));
-        PdfDocument combinedDocument = PdfDocument.merge(firstDocument, secondDocument);
+public class Main {
+    public static void main(String [] args) throws IOException {
+        String htmlA = "<p> [PDF_1] </p>"
+                + "<p> Welcome to the first PDF  </p>";
+        String htmlB = "<p> [PDF_2] </p>"
+                + "<p> Welcome to the second PDF </p>";
 
-        combinedDocument.saveAs(Paths.get("assets/combined.pdf"));
+        PdfDocument pdfA = PdfDocument.renderHtmlAsPdf(htmlA);
+        PdfDocument pdfB = PdfDocument.renderHtmlAsPdf(htmlB);
+        PdfDocument merged = PdfDocument.merge(pdfA, pdfB);
+
+        merged.saveAs(Paths.get("assets/merged.pdf"));
     }
 }
 ```
 
-### 5.3. Combining Multiple PDF Documents
+![Output Preview 1](https://ironpdf.com/static-assets/ironpdf-java/howto/how-to-merge-two-pdf-files-java-tutorial/how-to-merge-two-pdf-files-java-tutorial-5.webp)
 
-Merging more than two documents is just as straightforward with IronPDF.
+### Combining Existing PDF Files
+
+Merging existing PDF files into a single document is also straightforward. Just specify the input files, and IronPDF will combine them.
 
 ```java
 import com.ironsoftware.ironpdf.PdfDocument;
 import java.io.IOException;
 import java.nio.file.Paths;
 
-public class main {
-    public static void main(String[] args) throws IOException {
-        PdfDocument docA = PdfDocument.fromFile(Paths.get("assets/docA.pdf"));
-        PdfDocument docB = PdfDocument.fromFile(Paths.get("assets/docB.pdf"));
-        PdfDocument docC = PdfDocument.fromFile(Paths.get("assets/docC.pdf"));
-        PdfDocument merged = PdfDocument.merge(docA, docB, docC);
+public class Main {
+    public static void main(String [] args) throws IOException {
+        PdfDocument pdfA = PdfDocument.fromFile(Paths.get("assets/1.pdf"));
+        PdfDocument pdfB = PdfDocument.fromFile(Paths.get("assets/2.pdf"));
+        PdfDocument merged = PdfDocument.merge(pdfA, pdfB);
 
-        merged.saveAs(Paths.get("assets/all-merged.pdf"));
+        merged.saveAs(Paths.get("assets/merged.pdf"));
     }
 }
 ```
 
-## 6. Conclusion
+![Output Preview 2](https://ironpdf.com/static-assets/ironpdf-java/howto/how-to-merge-two-pdf-files-java-tutorial/how-to-merge-two-pdf-files-java-tutorial-6.webp)
 
-This guide has covered the essentials of merging PDF files using Java with the IronPDF library. By following the described steps, you can successfully set up your environment, import the necessary libraries, handle the input files, and merge them into a single document. For more details on merging PDFs using Java, visit the [IronPDF merge examples page](https://ironpdf.com/java/examples/merge-pdfs/).
+### Merging More Than Two Documents
 
-For further learning and tutorials on manipulating PDFs with Java, dive into the [IronPDF documentation](https://ironpdf.com/java/docs/). To explore creating PDFs from HTML, check out this guide on [converting HTML to PDF](https://ironpdf.com/java/examples/using-html-to-create-a-pdf/).
+To merge more than two PDFs, simply specify all the files. The merged result will contain all specified documents.
 
-IronPDF for Java is free for development but requires a commercial license for production use. Explore the [licensing options](https://ironpdf.com/java/licensing/) for more details.
+```java
+import com.ironsoftware.ironpdf.PdfDocument;
+import java.io.IOException;
+import java.nio.file.Paths;
+
+public class Main {
+    public static void main(String [] args) throws IOException {
+        PdfDocument pdfA = PdfDocument.fromFile(Paths.get("assets/1.pdf"));
+        PdfDocument pdfB = PdfDocument.fromFile(Paths.get("assets/2.pdf"));
+        PdfDocument pdfC = PdfDocument.fromFile(Paths.get("assets/3.pdf"));
+        PdfDocument merged = PdfDocument.merge(pdfA, pdfB, pdfC);
+
+        merged.saveAs(Paths.get("assets/merged.pdf"));
+    }
+}
+```
+
+## Conclusion
+
+This guide has meticulously walked you through the process of merging PDF documents using Java and IronPDF. By adhering to the outlined steps, you are now equipped to set up your development environment, integrate the IronPDF library, load and merge PDF files into a single document. IronPDF is a robust tool that enables the creation, conversion, and merging of PDFs effortlessly. For further details on merging PDFs in Java, explore the [IronPDF merge examples](https://ironpdf.com/java/examples/merge-pdfs/).
+
+For additional tutorials on PDF manipulation using Java, refer to the [IronPDF documentation](https://ironpdf.com/java/docs/). Guidance on generating PDFs from HTML can be found in this [HTML to PDF conversion guide](https://ironpdf.com/java/examples/using-html-to-create-a-pdf/).
+
+IronPDF for Java is free for development and requires a license for commercial deployment. More information on licensing can be found on the [IronPDF licensing information page](https://ironpdf.com/java/licensing/).

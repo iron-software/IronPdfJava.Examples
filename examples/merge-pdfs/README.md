@@ -1,18 +1,18 @@
 ***Based on <https://ironpdf.com/examples/merge-pdfs/>***
 
-IronPDF offers the ability to merge multiple PDF documents into a single file. This functionality is particularly useful for appending cover pages to existing PDFs or assembling various documents into a single file for easier printing and distribution.
+IronPDF has the capability to consolidate the contents of several PDF files. This functionality is particularly useful for adding cover pages to existing or new PDF documents. Additionally, it can be used to compile multiple related documents into a single file, which simplifies the processes of printing and sharing.
 
-The provided code example demonstrates how to utilize the `PdfDocument.merge` method to combine the contents of two `PdfDocument` instances, which are both generated from HTML content. The result is a new `PdfDocument` that incorporates the content from the second document appended to that of the first.
+In the preceding code example, the `PdfDocument.merge` method was employed on two `PdfDocument` instances, both of which were created from HTML sources. This method produces a new `PdfDocument` by attaching the content from the second document to the end of the first one.
 
-To merge more than three PDF documents, you should initialize a list with the `PdfDocument` instances and then use this list as a parameter in the `PdfDocument.merge` method:
+To merge more than three PDFs, begin by creating a list that holds the `PdfDocument` instances you want to combine. Then, input this list into the `PdfDocument.merge` method as shown in the following code snippet:
 
 ```java
-List<PdfDocument> pdfList = new ArrayList<>();
-pdfList.add(pdfFirst);
-pdfList.add(pdfSecond);
-pdfList.add(pdfThird);
-pdfList.add(pdfFourth);
-PdfDocument combinedPDF = PdfDocument.merge(pdfList);
+List<PdfDocument> pdfs = new ArrayList<>();
+pdfs.add(pdfA);
+pdfs.add(pdfB);
+pdfs.add(pdfC);
+pdfs.add(pdfD);
+PdfDocument merged = PdfDocument.merge(pdfs); // Create a merged PDF document from all listed PDFs
 ```
 
-For additional resources and guidance on utilizing IronPDF, you can visit the [IronPDF Documentation](https://ironpdf.com/docs/).
+For additional details on the functionalities of IronPDF, please visit the [IronPDF Documentation](https://ironpdf.com/docs/).

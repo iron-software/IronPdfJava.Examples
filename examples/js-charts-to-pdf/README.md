@@ -1,17 +1,17 @@
 ***Based on <https://ironpdf.com/examples/js-charts-to-pdf/>***
 
-IronPDF is capable of rendering web pages that feature advanced JavaScript-created charts, graphs, and other interactive elements.
+IronPDF is adept at converting web pages with various elements, including charts and graphs designed with cutting-edge JavaScript technologies.
 
-Utilizing WebGL technology, IronPDF can effectively handle elements created with web canvas, utilizing the hardware graphics capabilities of the system.
+It also has support for WebGL, which enhances IronPDF's ability to process elements created with web canvas using the device's hardware graphics acceleration.
 
-IronPDF is compatible with numerous third-party chart libraries, such as:
+IronPDF is compatible with every major third-party chart library, such as:
 
 - C3.js
 - D3.js
 - Highcharts
 
-Using the `setEnableJavaScript` method found on the `ChromePdfRenderOptions` object, developers have the option to activate the processing of both internally and externally referenced JavaScript within a web page. This setting must be enabled for IronPDF to successfully process the JavaScript essential for displaying charts and graphics on a webpage.
+The method `setEnableJavaScript` in the `ChromePdfRenderOptions` class allows developers to activate the processing of JavaScript, whether it's linked internally or externally on a webpage. To ensure IronPDF correctly renders charts and graphics on the page, this property must be set to `true`.
 
-Moreover, the `setRenderDelay` allows IronPDF to delay the processing of a web page’s JavaScript slightly, for a predefined period in milliseconds, after the web page's DOM has been fully loaded. This delay is crucial for capturing web content that might only appear moments after a browser has initially loaded the page, particularly applicable for asynchronously executing JavaScript.
+The `setRenderDelay` method delays the JavaScript processing of a web page in IronPDF for a defined time (measured in milliseconds) following the loading of its DOM. This delay is crucial for capturing content that appears on the webpage slightly after the browser has initially completed loading, particularly for asynchronous JavaScript that requires more time to execute.
 
-For a deeper understanding and exploration of the `ChromePdfRenderOptions` class's capabilities, consider visiting the [JavaScript Charts to PDF Code Example](https://ironpdf.com/java/examples/js-charts-to-pdf/) for comprehensive guidance and additional methods.
+For more detailed information on additional capabilities of the `ChromePdfRenderOptions` class, visit the [JavaScript Charts to PDF Code Example](https://ironpdf.com/java/examples/js-charts-to-pdf/).

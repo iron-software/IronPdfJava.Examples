@@ -1,19 +1,19 @@
 ***Based on <https://ironpdf.com/examples/split-pdfs/>***
 
-This coding illustration demonstrates how Java developers can take advantage of IronPDF's PDF modification capabilities to divide a single PDF document into multiple smaller files.
+This code snippet demonstrates how Java programmers can utilize the PDF editing capabilities of IronPDF to efficiently divide a PDF into smaller files.
 
-The `copyPages` function allows developers to swiftly create a new PDF file containing specific pages from the original document.
+Developers can conveniently generate a new PDF that includes a specific range of pages from the original document by employing the `copyPages` method.
 
-In the example provided, this method is employed to generate two separate PDF files. The first file contains only the first page, while the second file comprises the second and third pages of an initially rendered PDF. This method maintains the original document's content and structure while distributing certain parts into new files, essentially "splitting" the document as needed while keeping the original file intact for archival purposes.
+In the provided example, this method is used to create two separate PDF documents. One contains the first page, and the other encompasses the second and third pages of a newly created PDF. This method maintains the integrity and layout of the original document while transferring selected content into new files—essentially segmenting the PDF as required. This technique is particularly useful when it is necessary to keep the unchanged original document as a backup.
 
-An alternative way to split PDF files (where the original document is not retained) involves using `copyPages` together with `removePages`.
+Alternatively, to split a PDF without retaining the original, you can utilize the `copyPages` method along with the `removePages` method.
 
-# How to Split PDF Files in Java
+# Guide to Dividing PDF Files with Java
 
-1. Install the IronPDF Java library to begin splitting PDF documents.
-2. Load an existing PDF or create a new PDF in Java.
-3. Use the `copyPages` method to duplicate selected pages into a different `PdfDocument`.
-4. Output the new `PdfDocument` using the `saveAs` method.
-5. Complete step 3 with a single line of Java code.
+1. Download and install the IronPDF Java library specifically designed for splitting PDFs
+2. Either import an existing PDF or generate a new one in Java
+3. Use the `copyPages` method to replicate desired pages into another `PdfDocument` instance
+4. Utilize the `saveAs` method to save the newly created `PdfDocument`
+5. Execute step 3 in a single line of Java code
 
-For further details on leveraging the comprehensive PDF manipulation tools offered by IronPDF, refer to the [IronPDF PDF Library for Java Documentation](https://ironpdf.com/java/getting-started/).
+For additional details on leveraging the robust PDF manipulation functionalities of IronPDF, check out the [IronPDF PDF Library for Java Documentation](https://www.ironpdf.com/java/getting-started/).
