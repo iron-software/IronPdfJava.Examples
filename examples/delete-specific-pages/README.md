@@ -1,23 +1,23 @@
 ***Based on <https://ironpdf.com/examples/delete-specific-pages/>***
 
-### PDF Page Removal Using IronPDF
+### Managing PDF Pages with IronPDF
 
-IronPDF makes it straightforward to extract and discard specific pages from a PDF document.
+With IronPDF, extracting specific pages from a PDF document is straightforward and efficient.
 
-The provided code snippet demonstrates how to employ the `removePages` method to alter a PDF document created for this example. This four-page document is modified in such a way that only the first and last pages are preserved, while the second and third pages are removed.
+This example demonstrates the utilization of the `removePages` method, which allows you to manipulate a PDF file by removing selected pages. In this instance, a four-page PDF is altered to retain only the first and last pages, thus removing the second and third pages.
 
-Utilizing the `PageSelection` class, developers can define which pages are to be excluded from a `PdfDocument`. If you need to remove pages sequentially, such as pages 4 through 18, you can use the static method `pageRange` to specify this range. In cases where you need to delete a non-sequential set of pages, simply pass a `List` containing the specific page indices to the `pageRange` method:
+Using the `PageSelection` class, the subject pages are chosen for the `removePages` method to excise from the given `PdfDocument`. The `pageRange` method of `PageSelection` facilitates the removal of contiguous page ranges (for example, pages 4 through 18 of a document). Alternatively, for removing non-sequential pages, one can input a `List` of individual page indexes into `pageRange`.
 
-```csharp
-// Create an instance of PdfDocument
-PdfDocument document = PdfDocument.FromFile("path-to-your-document.pdf");
+#### Guide to Deleting PDF Pages Using Java
 
-// Remove specific pages using the PageSelection class
-PageSelection pagesToRemove = PageSelection.pageRange(2, 3); // Removes the second and third pages
-document.removePages(pagesToRemove);
+1. [Install the IronPDF Java Library](https://ironpdf.com/download-modal)
+2. Load an existing PDF or create a new one in Java
+3. Apply the `removePages` method to remove specified pages
+4. Use the `PageSelection` class to choose which pages to delete
+5. Store the altered PDF as a new file
 
-// Save the modified document
-document.SaveAs("path-to-save-modified-document.pdf");
-```
+Below is a Java code snippet that illustrates these steps:
 
-In this example, after deleting pages from the document, the modified version is saved back to the local storage. This allows for easy management and manipulation of PDF files using IronPDF in your .NET projects.
+This method of page removal assures that PDF documents can be tailored to meet precise requirements with minimal effort.
+
+[Discover more about the PdfDocument.removePages Method](https://ironpdf.com/java/object-reference/api/com/ironsoftware/ironpdf/PdfDocument.html#removePages(com.ironsoftware.ironpdf.edit.PageSelection))

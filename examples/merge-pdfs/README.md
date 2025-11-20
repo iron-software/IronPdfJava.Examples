@@ -1,18 +1,9 @@
 ***Based on <https://ironpdf.com/examples/merge-pdfs/>***
 
-IronPDF has the capability to consolidate the contents of several PDF files. This functionality is particularly useful for adding cover pages to existing or new PDF documents. Additionally, it can be used to compile multiple related documents into a single file, which simplifies the processes of printing and sharing.
+IronPDF offers the capability to amalgamate the contents of various PDF files. This function is especially useful for adding cover pages to new or existing PDFs. It also facilitates the consolidation of pertinent documents into a single file, which simplifies both printing and distribution.
 
-In the preceding code example, the `PdfDocument.merge` method was employed on two `PdfDocument` instances, both of which were created from HTML sources. This method produces a new `PdfDocument` by attaching the content from the second document to the end of the first one.
+In the provided code sample, the `PdfDocument.merge` method is applied to two `PdfDocument` instances, both generated from HTML content. The outcome is a newly created `PdfDocument` in which the contents of the second `PdfDocument` are affixed to the conclusion of the first.
 
-To merge more than three PDFs, begin by creating a list that holds the `PdfDocument` instances you want to combine. Then, input this list into the `PdfDocument.merge` method as shown in the following code snippet:
+For merging more than three PDF documents, initiate by forming a list that encompasses the necessary `PdfDocument` objects. Subsequently, submit this list to the `PdfDocument.merge` method as a singular argument:
 
-```java
-List<PdfDocument> pdfs = new ArrayList<>();
-pdfs.add(pdfA);
-pdfs.add(pdfB);
-pdfs.add(pdfC);
-pdfs.add(pdfD);
-PdfDocument merged = PdfDocument.merge(pdfs); // Create a merged PDF document from all listed PDFs
-```
-
-For additional details on the functionalities of IronPDF, please visit the [IronPDF Documentation](https://ironpdf.com/docs/).
+[Explore the PdfDocument.merge Method Documentation.](https://ironpdf.com/java/object-reference/api/com/ironsoftware/ironpdf/PdfDocument.html#merge(java.util.List))

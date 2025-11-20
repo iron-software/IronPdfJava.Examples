@@ -1,16 +1,15 @@
-# How to Add Custom Watermarks to PDF Documents
+# Applying Custom Watermarks to PDF Documents
 
 ***Based on <https://ironpdf.com/how-to/custom-watermark/>***
 
 
-Watermarking is an effective strategy for securing PDF documents and establishing ownership or confidentiality by applying labels such as "Confidential" or adding corporate logos. 
-IronPDF provides a robust solution for this by enabling developers to design custom watermarks using HTML and CSS. This flexibility allows for extensive design options through HTML and CSS capabilities.
+Custom watermarks are an excellent method for safeguarding PDF documents, indicating proprietary information, or showcasing certain statuses such as labeling them "Confidential" or embedding a corporation's logo. IronPDF offers the capability to design unique watermarks using HTML strings, which provide full CSS styling options allowing for extensive customization to include the wide range of styles that HTML and CSS support.
 
-This tutorial will cover how to implement various watermark styles including text and images, position watermarks on the page, and adjust their opacity and rotation. It includes demonstrations on utilizing advanced features through [TextStamper](https://ironpdf.com/java/object-reference/api/com/ironsoftware/ironpdf/stamp/TextStamper.html) and [ImageStamper](https://ironpdf.com/java/object-reference/api/com/ironsoftware/ironpdf/stamp/ImageStamper.html).
+This tutorial will explore various watermark types including text, images, and demonstrate how to adjust watermark properties like location, opacity, and rotation using tools such as [`TextStamper`](https://ironpdf.com/java/object-reference/api/com/ironsoftware/ironpdf/stamp/TextStamper.html) and [`ImageStamper`](https://ironpdf.com/java/object-reference/api/com/ironsoftware/ironpdf/stamp/ImageStamper.html).
 
-## Example of Adding a Text Watermark
+## Applying a Text Watermark
 
-To add a text watermark to a PDF, the `applyWatermark` method is used. This method allows for HTML and CSS to enhance text appearance. For instance, the following example demonstrates how to add the word 'Confidential' in red to a PDF document.
+To insert a text-based watermark into a PDF document, utilize the `applyWatermark` method. This function lets you enter text stylized with HTML and CSS. The following example adds a 'Confidential' watermark in red.
 
 ```java
 import java.io.IOException;
@@ -21,17 +20,19 @@ import com.ironsoftware.ironpdf.PdfDocument;
 
 public class Main {
     public static void main(String[] args) throws IOException {
+        // Initialize the IronPDF license
         License.setLicenseKey("IRONPDF-MYLICENSE-KEY-1EF01");
 
+        // Open an existing PDF file
         PdfDocument pdf = PdfDocument.fromFile(Paths.get("sample.pdf"));
 
-        // Define HTML string for the watermark
+        // HTML code for the watermark
         String watermarkHtml = "<h1 style='color:red;'>Confidential</h1>";
 
-        // Adding the watermark
+        // Apply the text watermark onto the PDF
         pdf.applyWatermark(watermarkHtml);
 
-        // Saving the PDF
+        // Save the modified PDF
         pdf.saveAs("text_watermark.pdf");
     }
 }
@@ -39,15 +40,15 @@ public class Main {
 
 ### Output
 
-The generated PDF file, **'text_watermark.pdf',** will display the watermark 'Confidential' in red, centrally positioned on each page.
+The modified document, named **'text_watermark.pdf,'** will display the 'Confidential' watermark in a bold red font across all its pages.
 
 <iframe loading="lazy" src="https://ironpdf.com/static-assets/ironpdf-java/howto/custom-watermark/text_watermark.pdf" width="100%" height="500px"></iframe>
 
-<hr>
+---
 
-## Example of Adding an Image Watermark
+## Adding an Image Watermark
 
-Similarly, images can also be employed as watermarks using the same method, supporting formats like PNG, JPEG, SVG, etc. The image can be customized and positioned using CSS within the HTML string.
+Similar to the text watermark, images can also be added as watermarks using HTML templates, supporting formats like PNG, JPEG, and SVG. Images can be stylishly positioned with CSS.
 
 ```java
 import java.io.IOException;
@@ -58,17 +59,19 @@ import com.ironsoftware.ironpdf.PdfDocument;
 
 public class Main {
     public static void main(String[] args) throws IOException {
+        // Input IronPDF license key
         License.setLicenseKey("IRONPDF-MYLICENSE-KEY-1EF01");
 
+        // Import an existing PDF document
         PdfDocument pdf = PdfDocument.fromFile(Paths.get("sample.pdf"));
 
-        // HTML string for the image watermark
-        String watermarkHtml = "<img src='logo.png' style='width:100px;'>";
+        // Define HTML image tag for watermark
+        String watermarkHtml = "<img src='logo.png' style='width:100px;'/>";
 
-        // Applying the image watermark
+        // Attach image watermark
         pdf.applyWatermark(watermarkHtml);
 
-        // Saving the PDF
+        // Save the watermarked PDF
         pdf.saveAs("image_watermark.pdf");
     }
 }
@@ -76,15 +79,15 @@ public class Main {
 
 ### Output
 
-The PDF file **'image_watermark.pdf'** will display the image **'logo.png'** as a watermark on every page, scaled to a width of 100 pixels.
+The processed PDF file, **'image_watermark.pdf,'** embeds the 'logo.png' image as a watermark across all pages.
 
 <iframe loading="lazy" src="https://ironpdf.com/static-assets/ironpdf-java/howto/custom-watermark/image_watermark.pdf" width="100%" height="500px"></iframe>
 
-<hr>
+---
 
-## Adjusting Watermark Opacity and Rotation
+## Adjustments for Watermark Opacity and Rotation
 
-The appearance of the watermark can be tailored by adjusting its opacity and applying rotation. The `applyWatermark` method also allows specification of these attributes.
+Enhance watermark customization by altering its opacity and rotation. These properties can be specified using the `applyWatermark` method.
 
 ```java
 import java.io.IOException;
@@ -97,17 +100,19 @@ import com.ironsoftware.ironpdf.stamp.VerticalAlignment;
 
 public class Main {
     public static void main(String[] args) throws IOException {
+        // Activate IronPDF license
         License.setLicenseKey("IRONPDF-MYLICENSE-KEY-1EF01");
 
+        // Load a PDF from file
         PdfDocument pdf = PdfDocument.fromFile(Paths.get("sample.pdf"));
 
-        // HTML string for watermark
+        // HTML for the watermark
         String watermarkHtml = "<h1 style='color:blue;'>Confidential</h1>";
 
-        // Applying HTML watermark with customization
+        // Implement watermark with controlled opacity and alignment
         pdf.applyWatermark(watermarkHtml, 30, VerticalAlignment.TOP, HorizontalAlignment.LEFT);
 
-        // Saving the PDF
+        // Store the altered PDF
         pdf.saveAs("watermark_opacity_rotation.pdf");
     }
 }
@@ -115,11 +120,8 @@ public class Main {
 
 ### Output
 
-The final PDF, **'watermark_opacity_rotation.pdf',** will include the watermark 'Confidential' in blue, positioned at the top-left corner of each page, with an opacity level of 30%.
+The resultant PDF, **'watermark_opacity_rotation.pdf,'** will prominently feature the watermark with 'Confidential' written in blue. The text will be placed with 30% opacity in the top-left corner of each page.
 
 <iframe loading="lazy" src="https://ironpdf.com/static-assets/ironpdf-java/howto/custom-watermark/watermark_opacity_rotation.pdf" width="100%" height="400px"></iframe>
 
-**Application Details**: The `applyWatermark` method integrates the HTML-based watermark across all pages, including settings for:
-- **Opacity**: Applied at `30%`, rendering the watermark partially transparent.
-- **Vertical Alignment**: Options include `TOP`, `MIDDLE`, and `BOTTOM`, with this example using `TOP`.
-- **Horizontal Alignment**: Options include `LEFT`, `CENTER`, and `RIGHT`, with this example using `LEFT`.
+**Applying the Watermark**: Besides altering the opacity, the `applyWatermark` method can specify vertical and horizontal placement within the PDF, allowing for customized positioning.

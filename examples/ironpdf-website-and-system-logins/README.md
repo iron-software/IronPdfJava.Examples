@@ -1,10 +1,11 @@
 ***Based on <https://ironpdf.com/examples/ironpdf-website-and-system-logins/>***
 
-To turn web pages that are secured with HTML forms and password protections into PDF files, the recommended method is to bypass programmatic authentication and form submissions. Instead, use local files or HTML strings to render the content directly, as outlined on [IronPDF's login procedures resource page](https://ironpdf.com/how-to/logins/). However, if accessing the source code of the web pages you wish to convert is difficult, time-consuming, or simply not possible, IronPDF offers a straightforward and efficient solution for generating PDFs from these protected areas.
+Here's a rewritten version of the given article, with altered phrasing and resolved relative URL paths:
 
-When you need to process web pages from password-protected directories, create a `ChromeHttpLoginCredentials` instance filled with valid network credentials that IronPDF's PDF renderer will use. Here's how you can assign this object to a URL for PDF conversion:
+---
 
-```java
-// Create a PDF from a URL using login credentials
-PdfDocument.renderUrlAsPdf(restrictedUrl, loginCredentials).saveAs(Paths.get("secured-output.pdf"));
-```
+To convert web pages that are secured by HTML forms or located within password-protected directories into PDFs, the preferred method is to sidestep the programmatic authentication and directly translate the markup from local files or HTML strings, as detailed on [the IronPDF login procedures resource page](https://ironpdf.com/how-to/logins/). But, for instances where it is impractical or too cumbersome to obtain the source code for the web pages targeted for conversion, IronPDF simplifies the process of generating PDFs from these protected areas.
+
+When dealing with web pages shielded by password security, you can employ a `ChromeHttpLoginCredentials` object to provide a set of valid network credentials to IronPDF’s PDF rendering service. Subsequently, integrate these credentials and the URL of the secure web page into the `PdfDocument.renderUrlAsPdf` method to achieve the conversion.
+
+[Learn more about ChromeHttpLoginCredentials for Java](https://ironpdf.com/java/object-reference/api/com/ironsoftware/ironpdf/render/ChromeHttpLoginCredentials.html)

@@ -36,7 +36,6 @@
             <version>2.0.9</version>
         </dependency>
 
-        <!-- Example: JSON processing library -->
         <dependency>
                                             <groupId>com.ironsoftware</groupId>
                                             <artifactId>ironpdf</artifactId>

@@ -1,12 +1,13 @@
 package com.ironsoftware.ironpdfjava.examples.howTo.javaPrintPdfTutorial;
 
-import java.nio.file.Paths;
-
-import com.ironsoftware.ironpdf.*;
+import com.ironsoftware.ironpdf;
 
 public class Section2 {
     public static void run() {
-        License.setLicenseKey("Enter-Your-License");  
-        PdfDocument pdf = new PdfDocument(Paths.get("MyPdf.pdf"));
+            // Set the license key for IronPDF
+            License.setLicenseKey("Enter-Your-License");  
+            
+            // Load PDF from the filesystem
+            PdfDocument pdf = new PdfDocument(Paths.get("MyPdf.pdf"));
     }
 }

@@ -5,16 +5,16 @@ import com.ironsoftware.ironpdf;
 
 public class Section4 {
     public static void run() {
-            // Load the PDF file
+            // Load the target PDF file
             PdfDocument pdf = PdfDocument.fromFile(Paths.get("sample.pdf"));
             
-            // Create the foreground PDF using HTML content
+            // Render the foreground content from HTML
             PdfDocument foreground = PdfDocument.renderHtmlAsPdf("<h1 style='transform: rotate(-45deg); opacity: 0.5;'>Foreground Example</h1>");
             
             // Add the foreground to a specific page range (from page 2 to page 8)
             pdf.addForegroundPdf(foreground, PageSelection.pageRange(2, 8));
             
-            // Save the modified PDF
+            // Save the modified PDF with a new name
             pdf.saveAs(Paths.get("overlayForeground.pdf"));
     }
 }

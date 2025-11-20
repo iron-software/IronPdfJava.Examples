@@ -1,5 +1,0 @@
-***Based on <https://ironpdf.com/examples/split-pdf-pages-csharp/>***
-
-IronPDF provides functionality to segment PDF files, allowing the extraction of individual pages or page ranges into new `IronPdf.PdfDocument` objects. For comprehensive information on how to extract or replicate pages in PDF files using IronPDF, refer to the [IronPDF Split and Merge Guide](https://ironpdf.com/java/examples/split-pdf/) on the official IronPDF website.
-
-The C# .NET API method for this operation is `IronPdf.PdfDocument.CopyPage`, which essentially serves the purpose of _Extracting Pages_ from existing PDFs into a newly created document. For further details on employing the `CopyPage` method in your endeavors, you can explore the [IronPDF Copy Page Documentation](https://ironpdf.com/object-reference/api/IronPdf.PdfDocument.html#IronPdf_PdfDocument_CopyPage_System_Int32_).

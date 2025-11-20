@@ -1,17 +1,19 @@
 ***Based on <https://ironpdf.com/examples/pdf-signatures/>***
 
-Java developers can programmatically append both electronic and digital signatures to PDF files using the `Signature` and `SignatureManager` classes provided by IronPDF for Java.
+Java programmers can effortlessly embed both electronic and digital signatures into PDF documents using IronPDF for Java, leveraging the `Signature` and `SignatureManager` classes.
 
-To implement digital signatures, developers should initially create an instance of the `Signature` class, specifying the path to a valid `.pfx` or `.p12` certificate and its associated password. Following this, the `signPdfWithSignature` method of the `SignatureManager` associated with the target PDF should be invoked to apply the signature to the document.
+To apply digital signatures, you should initiate a new instance of the `Signature` class, specifying the path to a valid `.pfx` or `.p12` certificate file and its associated password. Subsequently, utilize the `signPdfWithSignature` function of the `SignatureManager` associated with the target PDF document to implement the digital signature.
 
-Moreover, IronPDF facilitates the integration of signature images, which might be computer-generated textual graphics or scanned images of actual handwriting. These images can be incorporated into a signature using the `addSignatureImage` method before the document is signed.
+IronPDF also facilitates the embedding of signature images, such as electronically generated text or scanned handwritten signatures. Implement this by using the `addSignatureImage` method before signing the document.
 
-If you need to incorporate a handwritten signature directly onto a PDF page, you should look towards the [`HtmlStamper`](https://ironpdf.com/object-reference/api/IronPdf.Editing.HtmlStamper.html) class. This class allows for the addition of HTML content and images across one or multiple document pages.
+If your requirement is to append a handwritten signature onto a PDF page, turn to the [`HtmlStamper`](https://ironpdf.com/java/object-reference/api/com/ironsoftware/ironpdf/stamp/HtmlStamper.html) class. This tool allows for adding HTML content, including text and images, to one or several pages within a PDF file.
 
-# Guide to Programmatically Adding a Digital Signature to a PDF in Java
+## Steps to Programmatically Add a Digital Signature to a PDF in Java
 
-1. Install the IronPDF Java library to facilitate digital signing of PDF files.
-2. Leverage easy-to-use APIs to either open existing PDFs or generate new ones.
-3. Initiate a `Signature` object and adjust detailed settings as necessary.
-4. Retrieve the `SignatureManager` by invoking the `getSignature` method on your PDF object.
-5. Use the `signPdfWithSignature` method available on the `SignatureManager` to digitally sign the PDF.
+1. First, install the IronPDF Java library to gain the functionality necessary for digital signatures on PDFs.
+2. Employ the user-friendly APIs to either load an existing PDF or to create a new one from scratch.
+3. Instantiate a `Signature` object and configure its detailed settings.
+4. Retrieve a `SignatureManager` by invoking the `getSignature` method on your PDF object.
+5. Finally, secure the PDF document by signing it with the `signPdfWithSignature` method available in the `SignatureManager`.
+
+[Discover more about the Signature Class for Java Digital Signatures](https://ironpdf.com/java/object-reference/api/com/ironsoftware/ironpdf/signature/Signature.html)

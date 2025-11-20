@@ -1,24 +1,18 @@
 ***Based on <https://ironpdf.com/examples/bookmarks/>***
 
-Developers can utilize the `BookmarkManager` class to incorporate bookmarks into a PDF file. It's accessible by invoking the `getBookmarks` method on the `PdfDocument`.
+Developers can leverage the `BookmarkManager` to insert bookmarks into a PDF file. This can be done by utilizing the `getBookmarks` method from a `PdfDocument`.
 
-```java
-BookmarkManager bookmarks = pdf.getBookmarks();
-```
-
-In the provided code snippet, we employ the `addBookmarkAtEnd` method to insert four sequential top-level bookmarks into the active `PdfDocument` before committing those changes to disk. Once the PDF is opened after running this code, the bookmarks will be displayed in the following sequence:
+In the example provided, we demonstrate how to use the `addBookmarkAtEnd` method to sequentially insert four primary bookmarks into an active `PdfDocument` and then save these changes to the disk. Upon reopening this PDF, you will notice the bookmarks displayed in the following sequence:
 
 - Author's Note
 - Table of Content
 - Summary
 - References
 
-Additionally, the `addBookmarkAtStart` method can be used to insert a bookmark at the beginning of the list, causing it to precede any existing bookmarks. For instance, the following line of code, if executed directly after Line 16 in the featured code example, would position the "Foreword" bookmark at the top of the previously mentioned list.
+To insert a bookmark at the beginning, hence making it show up before any predefined bookmarks, the `addBookmarkAtStart` method can be employed. By inserting the next line of code right after the one in the example, the bookmark "Foreword" would be positioned at the forefront of the list.
 
-```java
-bookmarks.addBookMarkAtStart("Foreword",1);
-```
+IronPDF excels in identifying bookmarks that are added through external software, providing immense versatility for manipulating bookmarks in PDFs that have already been rendered, according to organizational needs.
 
-IronPDF is engineered to detect and integrate bookmarks that were previously placed in PDFs by other third-party applications. This capability enables significant flexibility in managing bookmarks within PDFs that have already been rendered, as might be demanded in various business scenarios.
+For an in-depth guide on managing bookmarks and exploring other PDF capabilities, you can visit the [IronPDF Overview Page on Iron Software](https://ironpdf.com/) which delves into a variety of features and methods for integration.
 
-For a comprehensive exploration of bookmark capabilities and other PDF features, check out the [IronPDF Overview Page on IronSoftware](https://ironpdf.com/) to learn more about the extensive features and integration options.
+[Discover more about how to handle PDF bookmarks in Java](https://ironpdf.com/java/how-to/bookmarks/)

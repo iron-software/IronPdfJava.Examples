@@ -5,17 +5,16 @@ import com.ironsoftware.ironpdf;
 
 public class Section2 {
     public static void run() {
-            // Load the PDF file
+            // Load the target PDF file
             PdfDocument pdf = PdfDocument.fromFile(Paths.get("sample.pdf"));
             
-            // Load the background PDF
+            // Load the background PDF from a file
             PdfDocument background = PdfDocument.fromFile(Paths.get("background.pdf"));
             
-            // Add background only to the first page of the target PDF
-            // The second parameter (0) refers to the first page of the background PDF
+            // Add the first page of the background PDF to the first page of the target PDF
             pdf.addBackgroundPdf(background, 0, PageSelection.firstPage());
             
-            // Save the modified PDF
+            // Save the modified PDF with a new name
             pdf.saveAs(Paths.get("addBackgroundToSpecificPage.pdf"));
     }
 }

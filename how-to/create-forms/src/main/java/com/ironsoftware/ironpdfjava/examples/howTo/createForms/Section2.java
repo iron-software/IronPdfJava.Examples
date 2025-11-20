@@ -5,8 +5,10 @@ import com.ironsoftware.ironpdf;
 
 public class Section2 {
     public static void run() {
+            // Set the license key for IronPDF
             License.setLicenseKey("IRONPDF-MYLICENSE-KEY-1EF01");
             
+            // Define the HTML content with form fields
             String htmlContent = """
             <html>
                 <body>
@@ -26,7 +28,10 @@ public class Section2 {
             </html>
             """;
             
+            // Generate a PDF document from the HTML content
             PdfDocument pdfDoc = PdfDocument.renderHtmlAsPdf(htmlContent);
+            
+            // Save the generated PDF to a file
             pdfDoc.saveAs("checkboxAndComboboxForm.pdf");
     }
 }

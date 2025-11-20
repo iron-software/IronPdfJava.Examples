@@ -1,16 +1,21 @@
 ***Based on <https://ironpdf.com/examples/extract-image-from-pdf/>***
 
-IronPDF provides an extensive toolkit for creating and editing PDF documents, including specific capabilities for detailed content manipulation within PDFs. Notably, IronPDF offers methods that allow for the extraction of various document content.
+IronPDF provides an extensive suite of features for generating and manipulating PDF documents, including powerful options for extracting content from PDFs.
 
-The method `extractAllImages` retrieves a collection of images embedded within a PDF, each as a `BufferedImage` object. This function is especially useful for cases where you need to separate images from a PDF and store them as individual files. The code example provided illustrates this by using the `extractAllImages` method in conjunction with the Java `ImageIO` class to facilitate this action.
+The `extractAllImages` method retrieves every image embedded in a PDF file, returning each as a `BufferedImage` object.
 
-In addition to its capability to manage images directly in their embedded format, IronPDF supports extracting images in their original byte format through the `extractAllRawImages` function. This can be particularly useful for applications that require image data in byte form for further processing or storage.
+A frequent use case in many businesses involves saving images from PDF files as individual files. The following code example illustrates how to accomplish this using the `extractAllImages` method in combination with the Java `ImageIO` class.
 
-IronPDF is also versatile enough to handle image extraction from selected pages of a PDF rather than the entire document. For instance, the following Java code snippet demonstrates how to extract images specifically from pages 3 and 7 of a PDF:
+Alternatively, IronPDF allows for the extraction of images directly in their raw byte format by using the `extractAllRawImages` method.
 
-```java
-PdfDocument document = PdfDocument.fromFile(Paths.get("sample.pdf"));
-List<BufferedImage> pageRangeImages = document.extractAllImagesFromPages(PageSelection.pageRange(3, 7));
-```
+Moreover, it is feasible to extract images from specific pages within a PDF, instead of the whole document. The short code snippet below demonstrates using the `extractAllImagesFromPages` method to extract images from pages 3 and 7 of a sample PDF.
 
-This method, `extractAllImagesFromPages`, allows developers to specify which pages to process, optimizing performance and targeting specific document sections.
+### Extracting Images from PDF using Java with IronPDF
+
+1. [Install the IronPDF Java Library](https://ironpdf.com/java/download-modal)
+2. Utilize the `extractAllImages` method to pull images from a PDF document
+3. Loop through each image in the retrieved images collection
+4. Use the `write` method in Java to save the extracted images
+5. Ensure the extraction process does not modify the original PDF document
+
+[Further explore the IronPDF Java API for Image Extraction](https://ironpdf.com/java/object-reference/api/com/ironsoftware/ironpdf/PdfDocument.html)

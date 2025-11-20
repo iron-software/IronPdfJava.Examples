@@ -1,14 +1,14 @@
 ***Based on <https://ironpdf.com/examples/image-to-pdf/>***
 
-Developers can leverage IronPDF to merge numerous images into one PDF document.
+IronPDF provides developers with the functionality to consolidate multiple images into a single PDF document.
 
-The method `PdfDocument.fromImage` can be used by feeding it a list of `Path` objects, where each `Path` leads to an image located on the local file system. This arrangement offers developers great flexibility to define the list dynamically, enabling the inclusion of images from varied directories or those adhering to certain naming or file type criteria. When all images come from a single directory, it’s straightforward to employ a `DirectoryStream` along with other classes from `java.nio.file` to swiftly compile a list of every image in the directory.
+Using the `PdfDocument.fromImage` method, developers can input a collection of `Path` objects. Each `Path` should correspond to a legitimate image file on the local file system. This approach gives developers substantial flexibility in terms of how they gather their images, whether they're pulling images from multiple folders, selecting images based on specific naming conventions, or file types. For example, if all images originate from the same directory, one can employ a `DirectoryStream` along with other `java.nio.file` classes to efficiently compile a list of all images in that directory.
 
-Each image in the list passed to `PdfDocument.fromImage` will be shown on a new page in the generated PDF file.
+The `PdfDocument.fromImage` function will place each image from the list on its own separate page within the resulting PDF document.
 
-If there is a requirement to create individual PDFs for each image, rather than merging them into a single document, developers have a couple of options:
+If there's a requirement to distribute the images across multiple PDF files, rather than amalgamating them into one, developers can take one of two approaches:
 
-1. Repeatedly invoke `PdfDocument.fromImage` with lists that contain just one `Path` object (for example, `PdfDocument.fromImage(new ArrayList<>().add(Paths.get("path/to/single/image.png"))`));
-2. Aggregate all images into one PDF as demonstrated previously, and subsequently use the `PdfDocument.copyPage` method to extract each image into separate PDF documents.
+1. Repeatedly invoke `PdfDocument.fromImage`, each time with a list containing only one `Path` object.
+2. Assemble all images into a single PDF document as described earlier, and subsequently utilize the `PdfDocument.copyPage` method to replicate each page into separate PDF documents.
 
-For additional insights into managing PDF documents using IronPDF, consult the [IronPDF Developer Documentation](https://ironpdf.com/docs/).
+[Learn to Convert PDFs to Images in Java](https://ironpdf.com/java/how-to/java-pdf-to-image-tutorial/){.code_content__related-link__doc-cta-link}

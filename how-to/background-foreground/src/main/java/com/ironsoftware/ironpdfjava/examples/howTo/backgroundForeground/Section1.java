@@ -5,18 +5,19 @@ import com.ironsoftware.ironpdf;
 
 public class Section1 {
     public static void run() {
+            // Set the license key for using IronPDF
             License.setLicenseKey("IRONPDF-MYLICENSE-KEY-1EF01");
             
-            // Load the PDF file
+            // Load the target PDF file
             PdfDocument pdf = PdfDocument.fromFile(Paths.get("sample.pdf"));
             
-            // Load the background PDF
+            // Render a background PDF from HTML content
             PdfDocument background = PdfDocument.renderHtmlAsPdf("<body style='background-color: cyan;'></body>");
             
-            // Add the background to all pages
+            // Add the rendered background to all pages of the target PDF
             pdf.addBackgroundPdf(background);
             
-            // Save the modified PDF
+            // Save the modified PDF with a new name
             pdf.saveAs(Paths.get("addBackground.pdf"));
     }
 }

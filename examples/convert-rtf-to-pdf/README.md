@@ -1,7 +1,15 @@
 ***Based on <https://ironpdf.com/examples/convert-rtf-to-pdf/>***
 
-Using IronPDF, you can effortlessly transform your RTF (Rich Text Format) documents, even those containing images, into PDF files.
+With IronPDF, you're equipped to transform your Rich Text Format (RTF) documents, including those with embedded images, into PDF formats.
 
-To convert rich-text content into PDF documents, utilize the `PdfDocument.renderRtfAsPdf` method. This method is capable of converting rich text content from both a raw string of data and an external file, which can be specified either as a valid `Path` object or a string path. It produces a `PdfDocument` which a developer can then modify as needed before ultimately storing it on the file system via the `saveAs` method.
+This conversion is facilitated through the `PdfDocument.renderRtfAsPdf` method, which accepts either an RTF string directly or a reference to an external file in the form of a `Path` or `String`. The outcome is a `PdfDocument` which can be customized and saved using the `saveAs(...)` method.
 
-When converting raw strings of rich-text data into PDFs, it is critical to ensure the string is correctly formatted. The `renderRtfAsPdf` method will raise an `IOException` if the string data is improperly formatted or contains elements (such as symbols or tags) that are not recognized.
+Ensure the RTF content is correctly formatted, as the `renderRtfAsPdf` method may generate an `IOException` when encountering formatting issues or elements that it does not recognize.
+
+## Steps to Convert RTF to PDF in Java
+
+1. Incorporate IronPDF into your project, for example, by adding it via Maven.
+2. Apply the `renderRtfAsPdf` method for RTF strings or `renderRtfFileAsPdf` for file-based inputs.
+3. Utilize `saveAs(...)` to store the PDF file that is generated.
+
+[Learn more about rendering RTF files to PDFs in Java](https://ironpdf.com/java/object-reference/api/com/ironsoftware/ironpdf/PdfDocument.html#renderRtfFileAsPdf(java.lang.String))
