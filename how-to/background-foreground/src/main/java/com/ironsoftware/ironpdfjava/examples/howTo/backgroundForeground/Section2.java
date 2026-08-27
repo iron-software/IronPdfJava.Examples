@@ -1,10 +1,11 @@
-package com.ironsoftware.ironpdfjava.examples.howTo.backgroundForeground;
+package com.ironsoftware.ironpdfjava.examples.howTo.backgroundForeground;
 
+import com.ironsoftware.ironpdf.PdfDocument;
 import com.ironsoftware.ironpdf.edit.PageSelection;
-import com.ironsoftware.ironpdf;
+import java.nio.file.Paths;
 
 public class Section2 {
-    public static void run() {
+    public static void run() throws IOException {
             // Load the target PDF file
             PdfDocument pdf = PdfDocument.fromFile(Paths.get("sample.pdf"));
             

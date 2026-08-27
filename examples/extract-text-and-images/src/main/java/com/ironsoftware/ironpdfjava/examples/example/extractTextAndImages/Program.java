@@ -1,9 +1,16 @@
-package com.ironsoftware.ironpdfjava.examples..extractTextAndImages;
+package com.ironsoftware.ironpdfjava.examples.example.extractTextAndImages;
 
-import com.ironsoftware.ironpdf;
+import java.io.IOException;
+
+import com.ironsoftware.ironpdf.PdfDocument;
+import java.awt.image.BufferedImage;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.util.List;
+import javax.imageio.ImageIO;
 
 public class Program {
-    public static void run() {
+    public static void main(String[] args) throws IOException {
             PdfDocument pdf = PdfDocument.renderUrlAsPdf("https://unsplash.com/");
             String text = pdf.extractAllText();
             System.out.println("Text extracted from the website: " + text);

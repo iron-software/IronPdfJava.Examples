@@ -1,10 +1,16 @@
-package com.ironsoftware.ironpdfjava.examples..formData;
+package com.ironsoftware.ironpdfjava.examples.example.formData;
+
+import java.io.IOException;
+
+import com.ironsoftware.ironpdf.PdfDocument;
+import com.ironsoftware.ironpdf.render.ChromePdfRenderOptions;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 
 import java.nio.file.*;
-import com.ironsoftware.ironpdf;
 
 public class Program {
-    public static void run() {
+    public static void main(String[] args) throws IOException {
             // #1 Use Case: Create a PDF Form from HTML Form Markup  
             Path outputLocation = Paths.get("assets/BasicForm.pdf");  
             String formHTML = "<html>"  

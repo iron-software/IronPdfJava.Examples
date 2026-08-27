@@ -1,10 +1,11 @@
-package com.ironsoftware.ironpdfjava.examples.howTo.backgroundForeground;
+package com.ironsoftware.ironpdfjava.examples.howTo.backgroundForeground;
 
+import com.ironsoftware.ironpdf.License;
 import com.ironsoftware.ironpdf.PdfDocument;
-import com.ironsoftware.ironpdf;
+import java.nio.file.Paths;
 
 public class Section3 {
-    public static void run() {
+    public static void run() throws IOException {
             // Set the license key for using IronPDF
             License.setLicenseKey("IRONPDF-MYLICENSE-KEY-1EF01");
             

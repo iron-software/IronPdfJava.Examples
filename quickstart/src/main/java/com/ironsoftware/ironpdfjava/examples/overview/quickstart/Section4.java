@@ -1,6 +1,6 @@
-package com.ironsoftware.ironpdfjava.examples.quickstart.quickstart;
+package com.ironsoftware.ironpdfjava.examples.overview.quickstart;
 
-import com.ironsoftware.ironpdf;
+import com.ironsoftware.ironpdf.Settings;
 
 public class Section4 {
     public static void run() {

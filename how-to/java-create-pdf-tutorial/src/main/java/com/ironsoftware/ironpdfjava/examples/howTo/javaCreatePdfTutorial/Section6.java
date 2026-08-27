@@ -1,6 +1,6 @@
-package com.ironsoftware.ironpdfjava.examples.howTo.javaCreatePdfTutorial;
+package com.ironsoftware.ironpdfjava.examples.howTo.javaCreatePdfTutorial;
 
-import com.ironsoftware.ironpdf;
+import com.ironsoftware.ironpdf.security.SecurityOptions;
 
 public class Section6 {
     public static void run() {

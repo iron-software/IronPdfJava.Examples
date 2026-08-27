@@ -1,10 +1,13 @@
-package com.ironsoftware.ironpdfjava.examples.howTo.javaMergePdfTutorial;
+package com.ironsoftware.ironpdfjava.examples.howTo.javaMergePdfTutorial;
 
+import com.ironsoftware.ironpdf.PdfDocument;
+import java.io.IOException;
+import java.nio.file.Paths;
 import java.util.ArrayList;
-import com.ironsoftware.ironpdf;
+import java.util.List;
 
 public class Section4 {
-    public static void run() {
+    public static void run() throws IOException {
             public static void main(String[] args) throws IOException {
                 String htmlA = "<p> [PDF_A] </p>"
                         + "<p> [PDF_A] 1st Page </p>"

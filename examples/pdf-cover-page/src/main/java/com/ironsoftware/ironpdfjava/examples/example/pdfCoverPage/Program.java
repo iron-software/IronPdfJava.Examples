@@ -1,10 +1,13 @@
-package com.ironsoftware.ironpdfjava.examples..pdfCoverPage;
+package com.ironsoftware.ironpdfjava.examples.example.pdfCoverPage;
 
+import com.ironsoftware.ironpdf.PdfDocument;
+import com.ironsoftware.ironpdf.headerfooter.HeaderFooterOptions;
+import com.ironsoftware.ironpdf.headerfooter.TextHeaderFooter;
+import java.io.IOException;
 import java.nio.file.Paths;
-import com.ironsoftware.ironpdf;
 
 public class Program {
-    public static void run() {
+    public static void main(String[] args) throws IOException {
             // Create a Sample Cover Page using RenderHtmlAsPdf
             PdfDocument coverPage = PdfDocument.renderHtmlAsPdf("<h1>This is a Cover Page</h1>");
             PdfDocument webpage = PdfDocument.renderUrlAsPdf("https://www.nuget.org/packages/IronPdf/");

@@ -1,9 +1,11 @@
-package com.ironsoftware.ironpdfjava.examples.tutorials.generatePdfs;
+package com.ironsoftware.ironpdfjava.examples.tutorial.generatePdfs;
 
-import com.ironsoftware.ironpdf;
+import java.io.IOException;
+
+import com.ironsoftware.ironpdf.PdfDocument;
 
 public class Section7 {
-    public static void run() {
+    public static void run() throws IOException {
             // Convert local HTML file to PDF
             PdfDocument pdf = PdfDocument.renderHtmlFileAsPdf("C:/invoices/TestInvoice1.html");
             // Save the PDF to a local file

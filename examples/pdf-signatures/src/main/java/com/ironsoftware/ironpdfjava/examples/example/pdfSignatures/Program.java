@@ -1,9 +1,15 @@
-package com.ironsoftware.ironpdfjava.examples..pdfSignatures;
+package com.ironsoftware.ironpdfjava.examples.example.pdfSignatures;
 
-import com.ironsoftware.ironpdf;
+import java.io.IOException;
+
+import com.ironsoftware.ironpdf.PdfDocument;
+import com.ironsoftware.ironpdf.signature.Signature;
+import com.ironsoftware.ironpdf.signature.SignatureManager;
+import java.io.File;
+import java.nio.file.Files;
 
 public class Program {
-    public static void run() {
+    public static void main(String[] args) throws IOException {
             // Step 1. Create a PDF
             PdfDocument pdf = PdfDocument.renderHtmlAsPdf("<h1>Testing 2048 bit digital security</h1>");
             
@@ -18,7 +24,7 @@ public class Program {
             signature.setSigningReason("To show how to sign a PDF");
             File imageFile = new File("handwriting.png");
             byte[] imageBytes = Files.readAllBytes(imageFile.toPath());
-            signature.setSignatureImage(imageBytes, new Rectangle(100, 200, 250, 100));
+            signature.setSignatureImage(imageBytes);
             
             // Step 4. Sign the PDF with the PdfSignature. Multiple signing certificates may be used
             SignatureManager signatureManager = pdf.getSignature();

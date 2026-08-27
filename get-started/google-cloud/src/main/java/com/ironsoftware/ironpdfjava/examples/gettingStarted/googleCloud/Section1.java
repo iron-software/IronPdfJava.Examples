@@ -1,6 +1,6 @@
-package com.ironsoftware.ironpdfjava.examples.getStarted.googleCloud;
+package com.ironsoftware.ironpdfjava.examples.gettingStarted.googleCloud;
 
-import com.ironsoftware.ironpdf;
+import java.nio.file.Paths;
 
 public class Section1 {
     public static void run() {

@@ -1,10 +1,13 @@
-package com.ironsoftware.ironpdfjava.examples..ironpdfSetCustomMargins;
+package com.ironsoftware.ironpdfjava.examples.example.ironpdfSetCustomMargins;
 
+import java.io.IOException;
+
+import com.ironsoftware.ironpdf.PdfDocument;
+import com.ironsoftware.ironpdf.render.ChromePdfRenderOptions;
 import java.nio.file.Paths;
-import com.ironsoftware.ironpdf;
 
 public class Program {
-    public static void run() {
+    public static void main(String[] args) throws IOException {
             // Set Margins (in millimeters)  
             ChromePdfRenderOptions renderOptions = new ChromePdfRenderOptions();  
             renderOptions.setMarginTop(40);  

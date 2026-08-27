@@ -1,10 +1,11 @@
-package com.ironsoftware.ironpdfjava.examples..convertRtfToPdf;
+package com.ironsoftware.ironpdfjava.examples.example.convertRtfToPdf;
 
+import com.ironsoftware.ironpdf.PdfDocument;
+import java.io.IOException;
 import java.nio.file.Paths;
-import com.ironsoftware.ironpdf;
 
 public class Program {
-    public static void run() {
+    public static void main(String[] args) throws IOException {
             // Case 1: Generate a PDF from a string of Rich Text Content
             try {
                 String content = "{\\rtf1\\ansi\\ansicpg1252\\deff0\\nouicompat\\deflang1033{\\fonttbl{\\f0\\fnil\\fcharset0 Calibri;}}\n" +

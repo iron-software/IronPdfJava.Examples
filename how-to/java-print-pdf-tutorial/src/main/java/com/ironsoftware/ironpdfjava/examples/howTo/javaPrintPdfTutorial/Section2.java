@@ -1,9 +1,11 @@
-package com.ironsoftware.ironpdfjava.examples.howTo.javaPrintPdfTutorial;
+package com.ironsoftware.ironpdfjava.examples.howTo.javaPrintPdfTutorial;
 
-import com.ironsoftware.ironpdf;
+import com.ironsoftware.ironpdf.License;
+import com.ironsoftware.ironpdf.PdfDocument;
+import java.nio.file.Paths;
 
 public class Section2 {
-    public static void run() {
+    public static void run() throws IOException {
             // Set the license key for IronPDF
             License.setLicenseKey("Enter-Your-License");  
             

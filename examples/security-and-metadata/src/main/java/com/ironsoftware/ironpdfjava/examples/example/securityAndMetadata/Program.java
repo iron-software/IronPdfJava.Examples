@@ -1,10 +1,16 @@
-package com.ironsoftware.ironpdfjava.examples..securityAndMetadata;
+package com.ironsoftware.ironpdfjava.examples.example.securityAndMetadata;
 
-import java.util.Date;
-import com.ironsoftware.ironpdf;
+import java.io.IOException;
+
+import com.ironsoftware.ironpdf.PdfDocument;
+import com.ironsoftware.ironpdf.metadata.MetadataManager;
+import com.ironsoftware.ironpdf.security.PdfPrintSecurity;
+import com.ironsoftware.ironpdf.security.SecurityManager;
+import com.ironsoftware.ironpdf.security.SecurityOptions;
+import java.nio.file.Paths;
 
 public class Program {
-    public static void run() {
+    public static void main(String[] args) throws IOException {
             // Open an encrypted file (or create a new one from HTML)
             PdfDocument pdf = PdfDocument.fromFile(Paths.get("assets/encrypted.pdf"), "password");
             

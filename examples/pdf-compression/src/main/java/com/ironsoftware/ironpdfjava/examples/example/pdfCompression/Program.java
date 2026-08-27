@@ -1,10 +1,12 @@
-package com.ironsoftware.ironpdfjava.examples..pdfCompression;
+package com.ironsoftware.ironpdfjava.examples.example.pdfCompression;
 
+import java.io.IOException;
+
+import com.ironsoftware.ironpdf.PdfDocument;
 import java.nio.file.Paths;
-import com.ironsoftware.ironpdf;
 
 public class Program {
-    public static void run() {
+    public static void main(String[] args) throws IOException {
             PdfDocument pdf = PdfDocument.fromFile(Paths.get("assets/document.pdf"));  
               
             // Valid image compression values range from 1 to 100, where 100 represents 100% of the  

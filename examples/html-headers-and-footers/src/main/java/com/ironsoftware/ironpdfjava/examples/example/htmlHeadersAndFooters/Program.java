@@ -1,10 +1,14 @@
-package com.ironsoftware.ironpdfjava.examples..htmlHeadersAndFooters;
+package com.ironsoftware.ironpdfjava.examples.example.htmlHeadersAndFooters;
 
+import com.ironsoftware.ironpdf.PdfDocument;
+import com.ironsoftware.ironpdf.headerfooter.HtmlHeaderFooter;
+import java.io.IOException;
 import java.nio.file.Paths;
-import com.ironsoftware.ironpdf;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Program {
-    public static void run() {
+    public static void main(String[] args) throws IOException {
             PdfDocument pdf = PdfDocument.renderUrlAsPdf("https://ironpdf.com");
             // Build a footer using HTML
             // Merge Fields are: {page} {total-pages} {url} {date} {time} {html-title} & {pdf-title}

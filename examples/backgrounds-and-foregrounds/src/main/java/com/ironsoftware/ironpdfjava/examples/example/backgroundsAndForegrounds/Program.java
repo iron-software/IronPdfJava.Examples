@@ -1,10 +1,12 @@
-package com.ironsoftware.ironpdfjava.examples..backgroundsAndForegrounds;
+package com.ironsoftware.ironpdfjava.examples.example.backgroundsAndForegrounds;
 
+import java.io.IOException;
+
+import com.ironsoftware.ironpdf.PdfDocument;
 import java.nio.file.Paths;
-import com.ironsoftware.ironpdf;
 
 public class Program {
-    public static void run() {
+    public static void main(String[] args) throws IOException {
             // Load background and foreground PDFs from the filesystem (or create them programmatically)  
             PdfDocument backgroundPdf = PdfDocument.fromFile(Paths.get("assets/MyBackground.pdf"));  
             PdfDocument foregroundPdf = PdfDocument.fromFile(Paths.get("assets/MyForeground.pdf"));  

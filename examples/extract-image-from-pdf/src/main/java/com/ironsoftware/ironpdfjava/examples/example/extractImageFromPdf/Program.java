@@ -1,9 +1,13 @@
-package com.ironsoftware.ironpdfjava.examples..extractImageFromPdf;
+package com.ironsoftware.ironpdfjava.examples.example.extractImageFromPdf;
 
-import com.ironsoftware.ironpdf;
+import java.awt.image.BufferedImage;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.util.List;
+import javax.imageio.ImageIO;
 
 public class Program {
-    public static void run() {
+    public static void main(String[] args) {
             try {
                 List<BufferedImage> images = pdf.extractAllImages();
                 System.out.println("Number of images extracted from the website: " + images.size());

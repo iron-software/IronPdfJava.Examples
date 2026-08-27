@@ -1,9 +1,9 @@
-package com.ironsoftware.ironpdfjava.examples.howTo.javaMergePdfTutorial;
+package com.ironsoftware.ironpdfjava.examples.howTo.javaMergePdfTutorial;
 
-import com.ironsoftware.ironpdf;
+import java.nio.file.Paths;
 
 public class Section3 {
-    public static void run() {
+    public static void run() throws IOException {
             merged.saveAs(Paths.get("assets/merged.pdf"));
     }
 }

@@ -1,9 +1,11 @@
-package com.ironsoftware.ironpdfjava.examples.tutorials.formatPdfs;
+package com.ironsoftware.ironpdfjava.examples.tutorial.formatPdfs;
 
-import com.ironsoftware.ironpdf;
+import java.io.IOException;
+
+import com.ironsoftware.ironpdf.PdfDocument;
 
 public class Section4 {
-    public static void run() {
+    public static void run() throws IOException {
             // Convert a simple HTML string to a PDF document
             PdfDocument pdf = PdfDocument.renderHtmlAsPdf("<h1>Hello from IronPDF!</h1>");
             // Save the PDF document to the filesystem

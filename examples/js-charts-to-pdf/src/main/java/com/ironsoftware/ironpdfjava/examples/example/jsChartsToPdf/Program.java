@@ -1,10 +1,14 @@
-package com.ironsoftware.ironpdfjava.examples..jsChartsToPdf;
+package com.ironsoftware.ironpdfjava.examples.example.jsChartsToPdf;
 
+import com.ironsoftware.ironpdf.PdfDocument;
+import com.ironsoftware.ironpdf.render.ChromePdfRenderOptions;
+import com.ironsoftware.ironpdf.render.CssMediaType;
+import com.ironsoftware.ironpdf.render.WaitFor;
+import java.io.IOException;
 import java.nio.file.Paths;
-import com.ironsoftware.ironpdf;
 
 public class Program {
-    public static void run() {
+    public static void main(String[] args) throws IOException {
             String htmlWithJs = "var htmlWithJs = @\"<!DOCTYPE html>\n" +
                     " <html>\n" +
                     " <head>\n" +

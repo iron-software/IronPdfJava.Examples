@@ -1,10 +1,17 @@
-package com.ironsoftware.ironpdfjava.examples..pdfGenerationSettings;
+package com.ironsoftware.ironpdfjava.examples.example.pdfGenerationSettings;
 
+import com.ironsoftware.ironpdf.License;
+import com.ironsoftware.ironpdf.PdfDocument;
+import com.ironsoftware.ironpdf.Settings;
+import com.ironsoftware.ironpdf.render.ChromePdfRenderOptions;
+import com.ironsoftware.ironpdf.render.CssMediaType;
+import com.ironsoftware.ironpdf.render.PaperOrientation;
+import com.ironsoftware.ironpdf.render.WaitFor;
+import java.io.IOException;
 import java.nio.file.Paths;
-import com.ironsoftware.ironpdf;
 
 public class Program {
-    public static void run() {
+    public static void main(String[] args) throws IOException {
             // Apply your license key
             License.setLicenseKey("YOUR-LICENSE-KEY");
             

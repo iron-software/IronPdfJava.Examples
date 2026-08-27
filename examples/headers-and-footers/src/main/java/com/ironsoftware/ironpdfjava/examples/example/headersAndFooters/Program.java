@@ -1,10 +1,14 @@
-package com.ironsoftware.ironpdfjava.examples..headersAndFooters;
+package com.ironsoftware.ironpdfjava.examples.example.headersAndFooters;
 
+import com.ironsoftware.ironpdf.PdfDocument;
+import com.ironsoftware.ironpdf.font.FontTypes;
+import com.ironsoftware.ironpdf.headerfooter.HeaderFooterOptions;
+import com.ironsoftware.ironpdf.headerfooter.TextHeaderFooter;
 import java.io.IOException;
-import com.ironsoftware.ironpdf;
+import java.nio.file.Paths;
 
 public class Program {
-    public static void run() {
+    public static void main(String[] args) throws IOException {
             // Initialize HeaderFooterOptions object.
             HeaderFooterOptions options = new HeaderFooterOptions();
             PdfDocument pdf = PdfDocument.renderUrlAsPdf("http://www.google.com");

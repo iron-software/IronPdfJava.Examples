@@ -1,10 +1,14 @@
-package com.ironsoftware.ironpdfjava.examples..customPdfPaperSize;
+package com.ironsoftware.ironpdfjava.examples.example.customPdfPaperSize;
 
+import java.io.IOException;
+
+import com.ironsoftware.ironpdf.PdfDocument;
+import com.ironsoftware.ironpdf.render.ChromePdfRenderOptions;
+import com.ironsoftware.ironpdf.render.PaperSize;
 import java.nio.file.Paths;
-import com.ironsoftware.ironpdf;
 
 public class Program {
-    public static void run() {
+    public static void main(String[] args) throws IOException {
             String html = "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>";  
               
             ChromePdfRenderOptions renderOptions = new ChromePdfRenderOptions();  

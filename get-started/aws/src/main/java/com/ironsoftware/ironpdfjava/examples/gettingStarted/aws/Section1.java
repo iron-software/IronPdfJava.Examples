@@ -1,7 +1,7 @@
-package com.ironsoftware.ironpdfjava.examples.getStarted.aws;
+package com.ironsoftware.ironpdfjava.examples.gettingStarted.aws;
 
+import com.ironsoftware.ironpdf.Settings;
 import java.nio.file.Paths;
-import com.ironsoftware.ironpdf;
 
 public class Section1 {
     public static void run() {

@@ -1,10 +1,18 @@
-package com.ironsoftware.ironpdfjava.examples..rasterizeAPdfToImages;
+package com.ironsoftware.ironpdfjava.examples.example.rasterizeAPdfToImages;
 
+import java.io.IOException;
+
+import com.ironsoftware.ironpdf.PdfDocument;
+import com.ironsoftware.ironpdf.edit.PageSelection;
+import com.ironsoftware.ironpdf.image.ToImageOptions;
+import java.awt.image.BufferedImage;
+import java.io.File;
+import java.nio.file.Paths;
 import java.util.List;
-import com.ironsoftware.ironpdf;
+import javax.imageio.ImageIO;
 
 public class Program {
-    public static void run() {
+    public static void main(String[] args) throws IOException {
             PdfDocument pdf = PdfDocument.fromFile(Paths.get("assets/composite.pdf"));
             
             // Extract all the pages from the PDF file.

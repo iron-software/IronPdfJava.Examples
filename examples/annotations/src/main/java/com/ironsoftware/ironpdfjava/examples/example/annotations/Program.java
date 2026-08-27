@@ -1,10 +1,15 @@
-package com.ironsoftware.ironpdfjava.examples..annotations;
+package com.ironsoftware.ironpdfjava.examples.example.annotations;
 
+import java.io.IOException;
+
+import com.ironsoftware.ironpdf.PdfDocument;
+import com.ironsoftware.ironpdf.annotation.AnnotationIcon;
+import com.ironsoftware.ironpdf.annotation.AnnotationManager;
+import com.ironsoftware.ironpdf.annotation.AnnotationOptions;
 import java.nio.file.Paths;
-import com.ironsoftware.ironpdf;
 
 public class Program {
-    public static void run() {
+    public static void main(String[] args) throws IOException {
             // Create a new PDF or load an existing one from the filesystem
             PdfDocument pdf = PdfDocument.fromFile(Paths.get("assets/example.pdf"));
             

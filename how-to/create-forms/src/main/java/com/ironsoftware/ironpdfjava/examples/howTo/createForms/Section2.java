@@ -1,10 +1,10 @@
-package com.ironsoftware.ironpdfjava.examples.howTo.createForms;
+package com.ironsoftware.ironpdfjava.examples.howTo.createForms;
 
+import com.ironsoftware.ironpdf.License;
 import com.ironsoftware.ironpdf.PdfDocument;
-import com.ironsoftware.ironpdf;
 
 public class Section2 {
-    public static void run() {
+    public static void run() throws IOException {
             // Set the license key for IronPDF
             License.setLicenseKey("IRONPDF-MYLICENSE-KEY-1EF01");
             

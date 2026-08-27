@@ -1,9 +1,9 @@
-package com.ironsoftware.ironpdfjava.examples.howTo.javaMergePdfTutorial;
+package com.ironsoftware.ironpdfjava.examples.howTo.javaMergePdfTutorial;
 
-import com.ironsoftware.ironpdf;
+import com.ironsoftware.ironpdf.PdfDocument;
 
 public class Section2 {
-    public static void run() {
+    public static void run() throws IOException {
             String htmlA = "<p> [PDF_A] </p>"
                     + "<p> [PDF_A] 1st Page </p>"
                     + "<div style='page-break-after: always;'></div>"
