@@ -5,6 +5,7 @@ import java.io.IOException;
 import com.ironsoftware.ironpdf.PdfDocument;
 import com.ironsoftware.ironpdf.signature.Signature;
 import com.ironsoftware.ironpdf.signature.SignatureManager;
+import java.awt.Rectangle;
 import java.io.File;
 import java.nio.file.Files;
 
@@ -24,7 +25,7 @@ public class Program {
             signature.setSigningReason("To show how to sign a PDF");
             File imageFile = new File("handwriting.png");
             byte[] imageBytes = Files.readAllBytes(imageFile.toPath());
-            signature.setSignatureImage(imageBytes);
+            signature.setSignatureImage(imageBytes, new Rectangle(100, 200, 250, 100));
             
             // Step 4. Sign the PDF with the PdfSignature. Multiple signing certificates may be used
             SignatureManager signatureManager = pdf.getSignature();
