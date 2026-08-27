@@ -1,4 +1,4 @@
-package com.ironsoftware.ironpdfjava.examples.howTo.printPdf;
+package com.ironsoftware.ironpdfjava.examples.howTo.printPdf;
 
 import java.io.IOException;
 

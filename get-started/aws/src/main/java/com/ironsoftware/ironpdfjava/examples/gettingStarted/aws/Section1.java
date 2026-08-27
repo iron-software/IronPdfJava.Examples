@@ -1,4 +1,4 @@
-package com.ironsoftware.ironpdfjava.examples.gettingStarted.aws;
+package com.ironsoftware.ironpdfjava.examples.gettingStarted.aws;
 
 import java.io.IOException;
 

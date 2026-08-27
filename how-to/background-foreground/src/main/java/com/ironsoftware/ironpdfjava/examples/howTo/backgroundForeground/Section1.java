@@ -1,4 +1,4 @@
-package com.ironsoftware.ironpdfjava.examples.howTo.backgroundForeground;
+package com.ironsoftware.ironpdfjava.examples.howTo.backgroundForeground;
 
 import java.io.IOException;
 
