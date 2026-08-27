@@ -1,4 +1,4 @@
-package com.ironsoftware.ironpdfjava.examples.example.pdfPageOrientation;
+package com.ironsoftware.ironpdfjava.examples.example.pdfPageOrientation;
 
 import java.io.IOException;
 

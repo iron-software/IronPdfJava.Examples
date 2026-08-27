@@ -1,4 +1,4 @@
-package com.ironsoftware.ironpdfjava.examples.example.annotations;
+package com.ironsoftware.ironpdfjava.examples.example.annotations;
 
 import java.io.IOException;
 

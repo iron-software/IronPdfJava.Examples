@@ -1,4 +1,4 @@
-package com.ironsoftware.ironpdfjava.examples.example.mergePdfs;
+package com.ironsoftware.ironpdfjava.examples.example.mergePdfs;
 
 import java.io.IOException;
 

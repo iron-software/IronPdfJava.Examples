@@ -1,4 +1,4 @@
-package com.ironsoftware.ironpdfjava.examples.example.extractTextAndImages;
+package com.ironsoftware.ironpdfjava.examples.example.extractTextAndImages;
 
 import java.io.IOException;
 

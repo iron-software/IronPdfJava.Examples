@@ -1,5 +1,7 @@
 package com.ironsoftware.ironpdfjava.examples.overview.quickstart;
 
+import com.ironsoftware.ironpdf.*;
+
 import java.io.IOException;
 
 import com.ironsoftware.ironpdf.License;
@@ -10,7 +12,7 @@ import java.nio.file.Paths;
 public class Section2 {
     public static void run() throws IOException {
             // Import statement for IronPDF Java
-            import com.ironsoftware.ironpdf.*;
+
             
             // Apply your license key
             License.setLicenseKey("YOUR-LICENSE-KEY");

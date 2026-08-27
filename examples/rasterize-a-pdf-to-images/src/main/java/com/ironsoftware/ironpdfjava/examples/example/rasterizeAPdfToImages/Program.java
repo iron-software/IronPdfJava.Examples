@@ -1,4 +1,4 @@
-package com.ironsoftware.ironpdfjava.examples.example.rasterizeAPdfToImages;
+package com.ironsoftware.ironpdfjava.examples.example.rasterizeAPdfToImages;
 
 import java.io.IOException;
 

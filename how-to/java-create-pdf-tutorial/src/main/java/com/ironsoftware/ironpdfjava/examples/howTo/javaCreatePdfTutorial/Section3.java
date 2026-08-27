@@ -1,5 +1,7 @@
 package com.ironsoftware.ironpdfjava.examples.howTo.javaCreatePdfTutorial;
 
+import java.io.IOException;
+
 import com.ironsoftware.ironpdf.PdfDocument;
 import java.nio.file.Paths;
 

@@ -1,4 +1,4 @@
-package com.ironsoftware.ironpdfjava.examples.example.pdfCompression;
+package com.ironsoftware.ironpdfjava.examples.example.pdfCompression;
 
 import java.io.IOException;
 

@@ -1,5 +1,7 @@
 package com.ironsoftware.ironpdfjava.examples.howTo.javaMergePdfTutorial;
 
+import java.io.IOException;
+
 import java.nio.file.Paths;
 
 public class Section3 {

@@ -1,4 +1,4 @@
-package com.ironsoftware.ironpdfjava.examples.howTo.javaCreatePdfTutorial;
+package com.ironsoftware.ironpdfjava.examples.howTo.javaCreatePdfTutorial;
 
 import com.ironsoftware.ironpdf.License;
 

@@ -1,5 +1,7 @@
 package com.ironsoftware.ironpdfjava.examples.howTo.printPdf;
 
+import java.io.IOException;
+
 import com.ironsoftware.ironpdf.License;
 import com.ironsoftware.ironpdf.PdfDocument;
 

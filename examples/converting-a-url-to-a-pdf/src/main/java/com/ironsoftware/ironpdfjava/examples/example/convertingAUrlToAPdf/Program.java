@@ -1,4 +1,4 @@
-package com.ironsoftware.ironpdfjava.examples.example.convertingAUrlToAPdf;
+package com.ironsoftware.ironpdfjava.examples.example.convertingAUrlToAPdf;
 
 import java.io.IOException;
 

@@ -1,4 +1,4 @@
-package com.ironsoftware.ironpdfjava.examples.example.splitPdfs;
+package com.ironsoftware.ironpdfjava.examples.example.splitPdfs;
 
 import java.io.IOException;
 

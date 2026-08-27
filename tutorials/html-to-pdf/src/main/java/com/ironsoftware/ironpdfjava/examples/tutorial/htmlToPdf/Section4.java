@@ -1,4 +1,4 @@
-package com.ironsoftware.ironpdfjava.examples.tutorial.htmlToPdf;
+package com.ironsoftware.ironpdfjava.examples.tutorial.htmlToPdf;
 
 import java.io.IOException;
 

@@ -1,4 +1,4 @@
-package com.ironsoftware.ironpdfjava.examples.example.extractTextFromPdf;
+package com.ironsoftware.ironpdfjava.examples.example.extractTextFromPdf;
 
 import java.io.IOException;
 

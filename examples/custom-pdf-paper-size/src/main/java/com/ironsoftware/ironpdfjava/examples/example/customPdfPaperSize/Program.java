@@ -1,4 +1,4 @@
-package com.ironsoftware.ironpdfjava.examples.example.customPdfPaperSize;
+package com.ironsoftware.ironpdfjava.examples.example.customPdfPaperSize;
 
 import java.io.IOException;
 

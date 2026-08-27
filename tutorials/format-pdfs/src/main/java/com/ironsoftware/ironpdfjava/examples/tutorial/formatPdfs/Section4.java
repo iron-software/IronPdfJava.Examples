@@ -1,4 +1,4 @@
-package com.ironsoftware.ironpdfjava.examples.tutorial.formatPdfs;
+package com.ironsoftware.ironpdfjava.examples.tutorial.formatPdfs;
 
 import java.io.IOException;
 

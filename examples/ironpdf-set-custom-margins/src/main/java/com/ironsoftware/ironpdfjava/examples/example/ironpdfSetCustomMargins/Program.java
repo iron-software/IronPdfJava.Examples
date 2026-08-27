@@ -1,4 +1,4 @@
-package com.ironsoftware.ironpdfjava.examples.example.ironpdfSetCustomMargins;
+package com.ironsoftware.ironpdfjava.examples.example.ironpdfSetCustomMargins;
 
 import java.io.IOException;
 

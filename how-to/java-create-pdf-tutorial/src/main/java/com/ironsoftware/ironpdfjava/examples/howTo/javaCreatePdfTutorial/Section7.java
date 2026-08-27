@@ -1,5 +1,7 @@
 package com.ironsoftware.ironpdfjava.examples.howTo.javaCreatePdfTutorial;
 
+import java.io.IOException;
+
 import com.ironsoftware.ironpdf.security.SecurityManager;
 
 public class Section7 {

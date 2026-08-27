@@ -1,4 +1,4 @@
-package com.ironsoftware.ironpdfjava.examples.example.usingHtmlToCreateAPdf;
+package com.ironsoftware.ironpdfjava.examples.example.usingHtmlToCreateAPdf;
 
 import java.io.IOException;
 

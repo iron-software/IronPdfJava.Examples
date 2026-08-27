@@ -1,4 +1,4 @@
-package com.ironsoftware.ironpdfjava.examples.example.securityAndMetadata;
+package com.ironsoftware.ironpdfjava.examples.example.securityAndMetadata;
 
 import java.io.IOException;
 

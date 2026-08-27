@@ -1,5 +1,7 @@
 package com.ironsoftware.ironpdfjava.examples.howTo.backgroundForeground;
 
+import java.io.IOException;
+
 import com.ironsoftware.ironpdf.PdfDocument;
 import com.ironsoftware.ironpdf.edit.PageSelection;
 import java.nio.file.Paths;

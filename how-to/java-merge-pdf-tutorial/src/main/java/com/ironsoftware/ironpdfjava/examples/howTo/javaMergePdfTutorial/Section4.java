@@ -1,4 +1,4 @@
-package com.ironsoftware.ironpdfjava.examples.howTo.javaMergePdfTutorial;
+package com.ironsoftware.ironpdfjava.examples.howTo.javaMergePdfTutorial;
 
 import com.ironsoftware.ironpdf.PdfDocument;
 import java.io.IOException;

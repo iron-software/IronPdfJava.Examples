@@ -1,4 +1,4 @@
-package com.ironsoftware.ironpdfjava.examples.example.deleteSpecificPages;
+package com.ironsoftware.ironpdfjava.examples.example.deleteSpecificPages;
 
 import java.io.IOException;
 

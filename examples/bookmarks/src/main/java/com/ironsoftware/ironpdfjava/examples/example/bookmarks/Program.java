@@ -1,4 +1,4 @@
-package com.ironsoftware.ironpdfjava.examples.example.bookmarks;
+package com.ironsoftware.ironpdfjava.examples.example.bookmarks;
 
 import java.io.IOException;
 
