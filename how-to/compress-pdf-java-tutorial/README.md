@@ -1,6 +1,6 @@
 # How to Reduce PDF File Size Using Java
 
-***Based on <https://ironpdf.com/how-to/compress-pdf-java-tutorial/>***
+> Full guide: [How to Reduce PDF File Size Using Java](https://ironpdf.com/java/how-to/compress-pdf-java-tutorial/)
 
 
 PDFs are widely utilized for conveying detailed information through documents. However, the sizable nature of these files may pose challenges in terms of transmission and storage. Utilizing IronPDF, a specialized Java PDF Library, it's feasible to diminish the file sizes of PDF documents through compression, which strips out non-essential resources like redundantly embedded fonts and images.

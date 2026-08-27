@@ -1,4 +1,4 @@
-***Based on <https://ironpdf.com/examples/ironpdf-set-custom-margins/>***
+> Full guide: [Ironpdf set custom margins](https://ironpdf.com/examples/ironpdf-set-custom-margins/)
 
 IronPDF naturally creates PDF documents with default margins of 25 millimeters on all sides. Yet, it provides flexibility for developers to tailor these margins to meet specific layout requirements.
 

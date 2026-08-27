@@ -1,6 +1,6 @@
 # Java Merge PDF Files into a Single PDF
 
-***Based on <https://ironpdf.com/how-to/java-merge-pdf-tutorial/>***
+> Full guide: [Java Merge PDF Files into a Single PDF](https://ironpdf.com/java/how-to/java-merge-pdf-tutorial/)
 
 
 PDF stands for **Portable Document Format**, which is a digital representation of documents incorporating text and images. This format maintains consistent presentation and structure across varying platforms, devices, and software.
@@ -64,3 +64,4 @@ To [merge PDF files](https://ironpdf.com/java/examples/merge-pdfs/), starting wi
 
 ```java
 String htmlA = "<p>PDF_A Content</p>
+```

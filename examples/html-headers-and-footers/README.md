@@ -1,4 +1,4 @@
-***Based on <https://ironpdf.com/examples/html-headers-and-footers/>***
+> Full guide: [HTML headers and footers](https://ironpdf.com/examples/html-headers-and-footers/)
 
 IronPDF provides developers the flexibility to customize PDF documents with personalized headers and footers. The following example illustrates how to use the `ChromePdfRenderOptions` and `HtmlHeaderFooter` classes for this purpose.
 

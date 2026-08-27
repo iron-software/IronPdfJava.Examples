@@ -1,6 +1,6 @@
 # Adding Backgrounds and Overlays to PDFs with IronPDF in Java
 
-***Based on <https://ironpdf.com/how-to/background-foreground/>***
+> Full guide: [Adding Backgrounds and Overlays to PDFs with IronPDF in Java](https://ironpdf.com/how-to/background-foreground/)
 
 
 Integrating a background into a PDF places an image or another PDF document behind the main content, enhancing the visual appeal with elements like watermarks, letterheads, or other design motifs. Overlays, on the other hand, allow you to apply additional details over the PDF content, such as stamps, annotations, or signatures.

@@ -1,4 +1,4 @@
-***Based on <https://ironpdf.com/examples/convert-rtf-to-pdf/>***
+> Full guide: [Convert rtf to PDF](https://ironpdf.com/examples/convert-rtf-to-pdf/)
 
 With IronPDF, you're equipped to transform your Rich Text Format (RTF) documents, including those with embedded images, into PDF formats.
 

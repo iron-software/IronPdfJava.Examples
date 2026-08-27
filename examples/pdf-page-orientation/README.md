@@ -1,4 +1,4 @@
-***Based on <https://ironpdf.com/examples/pdf-page-orientation/>***
+> Full guide: [PDF page orientation](https://ironpdf.com/examples/pdf-page-orientation/)
 
 IronPDF for Java allows developers to alter the page orientation of both new and existing PDF documents.
 

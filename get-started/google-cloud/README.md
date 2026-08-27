@@ -1,6 +1,6 @@
 # Setting up IronPDF for Java in Google Cloud
 
-***Based on <https://ironpdf.com/get-started/google-cloud/>***
+> Full guide: [Setting up IronPDF for Java in Google Cloud](https://ironpdf.com/java/get-started/google-cloud/)
 
 
 <small>Note: Full compatibility with Google Cloud has not yet been established definitively. However, we can provide some <code>Required Settings</code> for experimental integration.</small>

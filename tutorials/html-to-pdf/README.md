@@ -1,6 +1,6 @@
 # HTML to PDF in Java
 
-***Based on <https://ironpdf.com/tutorials/html-to-pdf/>***
+> Full guide: [HTML to PDF in Java](https://ironpdf.com/tutorials/html-to-pdf/)
 
 
 _This guide provides step-by-step instructions for Java developers on using the IronPDF library to convert HTML content into precise PDF documents._

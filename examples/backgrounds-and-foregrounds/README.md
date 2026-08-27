@@ -1,4 +1,4 @@
-***Based on <https://ironpdf.com/examples/backgrounds-and-foregrounds/>***
+> Full guide: [Backgrounds and foregrounds](https://ironpdf.com/examples/backgrounds-and-foregrounds/)
 
 IronPDF offers the unique capability to embellish PDF documents with distinctive backgrounds or foregrounds through the methods `addBackground` and `addForeground`. These functions allow developers to incorporate the contents of one PDF as either the base or the overlay layer of another document. This feature is incredibly beneficial for creating multiple PDFs that follow a unified design theme.
 

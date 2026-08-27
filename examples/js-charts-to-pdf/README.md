@@ -1,4 +1,4 @@
-***Based on <https://ironpdf.com/examples/js-charts-to-pdf/>***
+> Full guide: [JS charts to PDF](https://ironpdf.com/examples/js-charts-to-pdf/)
 
 IronPDF has the capability to convert web pages with interactive features such as charts and graphs, constructed using advanced JavaScript frameworks, into PDFs.
 

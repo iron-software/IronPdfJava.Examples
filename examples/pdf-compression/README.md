@@ -1,4 +1,4 @@
-***Based on <https://ironpdf.com/examples/pdf-compression/>***
+> Full guide: [PDF compression](https://ironpdf.com/examples/pdf-compression/)
 
 IronPDF offers a feature for reducing the file size of PDFs by compressing embedded images. Developers can utilize the `PdfDocument` class's `compressImages` method to decrease the file sizes of PDFs that contain large images and graphical elements, resulting in significant savings in storage, time, and costs involved in sharing PDFs over email and other communication mediums.
 

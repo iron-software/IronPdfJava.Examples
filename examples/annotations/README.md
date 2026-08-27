@@ -1,4 +1,4 @@
-***Based on <https://ironpdf.com/examples/annotations/>***
+> Full guide: [Annotations](https://ironpdf.com/examples/annotations/)
 
 Leverage the `PdfDocument` object's `AnnotationManager` and the `AnnotationOptions` class from IronPDF to incorporate "sticky note"-style annotations on specific pages within a PDF document.
 

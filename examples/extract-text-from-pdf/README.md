@@ -1,4 +1,4 @@
-***Based on <https://ironpdf.com/examples/extract-text-from-pdf/>***
+> Full guide: [Extract text from PDF](https://ironpdf.com/java/examples/extract-text-from-pdf/)
 
 IronPDF offers a robust set of features aimed at both creating and editing PDF documents, including the capability to process the content of PDFs with detailed content extraction methods.
 

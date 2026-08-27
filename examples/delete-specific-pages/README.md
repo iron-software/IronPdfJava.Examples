@@ -1,4 +1,4 @@
-***Based on <https://ironpdf.com/examples/delete-specific-pages/>***
+> Full guide: [Delete specific pages](https://ironpdf.com/java/examples/delete-specific-pages/)
 
 ### Managing PDF Pages with IronPDF
 

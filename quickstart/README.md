@@ -1,6 +1,6 @@
 # IronPDF for Java - Create, Edit, and Read PDFs in Java Applications
 
-***Based on <https://ironpdf.com/docs/docs/>***
+> Docs: [IronPDF for Java documentation](https://ironpdf.com/java/docs/)
 
 
 ## Introduction to IronPDF for Java

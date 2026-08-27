@@ -1,4 +1,4 @@
-***Based on <https://ironpdf.com/examples/split-pdfs/>***
+> Full guide: [Split PDFs](https://ironpdf.com/java/examples/split-pdfs/)
 
 In this code tutorial, we explore how Java developers can utilize IronPDF to manage PDF files effectively, particularly how to divide a PDF into smaller segments.
 

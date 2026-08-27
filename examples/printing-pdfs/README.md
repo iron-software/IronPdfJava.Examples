@@ -1,4 +1,4 @@
-***Based on <https://ironpdf.com/examples/printing-pdfs/>***
+> Full guide: [Printing PDFs](https://ironpdf.com/java/examples/printing-pdfs/)
 
 The code sample highlighted here showcases the document printing feature of IronPDF.
 

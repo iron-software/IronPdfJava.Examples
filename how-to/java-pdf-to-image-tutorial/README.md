@@ -1,6 +1,6 @@
 # Java PDF to Image File
 
-***Based on <https://ironpdf.com/how-to/java-pdf-to-image-tutorial/>***
+> Full guide: [Java PDF to Image File](https://ironpdf.com/java/how-to/java-pdf-to-image-tutorial/)
 
 
 ## 1. Introduction

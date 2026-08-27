@@ -1,4 +1,4 @@
-***Based on <https://ironpdf.com/examples/converting-a-url-to-a-pdf/>***
+> Full guide: [Converting a URL to a PDF](https://ironpdf.com/examples/converting-a-url-to-a-pdf/)
 
 IronPDF simplifies the process of converting HTML to PDF from various sources, such as URLs. The following code snippet illustrates how to obtain a PDF from web pages accessed via local network URLs or hosted on external servers through the `PdfDocument.renderUrlAsPdf` method in Java. This function produces a `PdfDocument` instance, which can be stored using the `saveAs` method.
 

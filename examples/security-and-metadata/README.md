@@ -1,4 +1,4 @@
-***Based on <https://ironpdf.com/examples/security-and-metadata/>***
+> Full guide: [Security and metadata](https://ironpdf.com/examples/security-and-metadata/)
 
 IronPDF facilitates modifications to both PDF metadata and security settings. It has robust features to set PDFs as read-only, unprintable, password-protected, or encrypted. Moreover, users have the capability to add or edit metadata properties.
 

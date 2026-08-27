@@ -1,4 +1,4 @@
-***Based on <https://ironpdf.com/examples/using-html-to-create-a-pdf/>***
+> Full guide: [Using HTML to create a PDF](https://ironpdf.com/examples/using-html-to-create-a-pdf/)
 
 This code snippet demonstrates how IronPDF can convert raw HTML content into high-quality PDF documents that are accurate down to the pixel. IronPDF is capable of rendering both simple HTML structures, as presented earlier, and more complex configurations including nested elements, CSS, and JavaScript.
 

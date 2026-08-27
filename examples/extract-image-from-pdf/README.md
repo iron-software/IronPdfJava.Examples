@@ -1,4 +1,4 @@
-***Based on <https://ironpdf.com/examples/extract-image-from-pdf/>***
+> Full guide: [Extract image from PDF](https://ironpdf.com/java/examples/extract-image-from-pdf/)
 
 IronPDF provides an extensive suite of features for generating and manipulating PDF documents, including powerful options for extracting content from PDFs.
 

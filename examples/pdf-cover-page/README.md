@@ -1,4 +1,4 @@
-***Based on <https://ironpdf.com/examples/pdf-cover-page/>***
+> Full guide: [PDF cover page](https://ironpdf.com/examples/pdf-cover-page/)
 
 Iron Software's `PdfDocument.merge` function is designed to combine two PDF documents into one by appending the content of the second PDF behind the first.
 

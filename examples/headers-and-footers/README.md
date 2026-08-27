@@ -1,4 +1,4 @@
-***Based on <https://ironpdf.com/examples/headers-and-footers/>***
+> Full guide: [Headers and footers](https://ironpdf.com/examples/headers-and-footers/)
 
 In this coding example, we highlight how developers can utilize IronPDF to insert headers and footers in PDF documents, whether they originate from the file system or are created from HTML sources.
 

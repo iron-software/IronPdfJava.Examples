@@ -1,6 +1,6 @@
 # Deploying IronPDF for Java on AWS Lambda
 
-***Based on <https://ironpdf.com/get-started/aws/>***
+> Full guide: [Deploying IronPDF for Java on AWS Lambda](https://ironpdf.com/get-started/aws/)
 
 
 ## Essential Configuration Details
@@ -154,8 +154,6 @@ Globals:
       Size: 1024
 # Preserve other configuration as is
 
-***Based on <https://ironpdf.com/get-started/aws/>***
-
 ```
 
 7. **Revise the Dockerfile:**
@@ -177,8 +175,6 @@ COPY --from=build-image /task/target/classes /var/task/
 COPY --from=build-image /task/target/dependency /var/task/lib
 
 # This command can be modified according to requirements in the template.
-
-***Based on <https://ironpdf.com/get-started/aws/>***
 
 CMD ["helloworld.App::handleRequest"]
 ```

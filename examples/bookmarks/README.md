@@ -1,4 +1,4 @@
-***Based on <https://ironpdf.com/examples/bookmarks/>***
+> Full guide: [Bookmarks](https://ironpdf.com/examples/bookmarks/)
 
 Developers can leverage the `BookmarkManager` to insert bookmarks into a PDF file. This can be done by utilizing the `getBookmarks` method from a `PdfDocument`.
 

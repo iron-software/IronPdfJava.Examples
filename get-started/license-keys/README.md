@@ -1,6 +1,6 @@
 # Implementing Licenses for IronPDF in Java Projects
 
-***Based on <https://ironpdf.com/get-started/license-keys/>***
+> Full guide: [Implementing Licenses for IronPDF in Java Projects](https://ironpdf.com/get-started/license-keys/)
 
 
 ## Acquiring a License Key

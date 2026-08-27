@@ -1,6 +1,6 @@
 # Printing PDF Files Using Java
 
-***Based on <https://ironpdf.com/how-to/java-print-pdf-tutorial/>***
+> Full guide: [Printing PDF Files Using Java](https://ironpdf.com/java/how-to/java-print-pdf-tutorial/)
 
 
 ## Introduction

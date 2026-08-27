@@ -1,6 +1,6 @@
 # Implementing IronPDF for Java in an Azure Function with Docker Deployment
 
-***Based on <https://ironpdf.com/get-started/azure/>***
+> Full guide: [Implementing IronPDF for Java in an Azure Function with Docker Deployment](https://ironpdf.com/get-started/azure/)
 
 
 ## Key Considerations

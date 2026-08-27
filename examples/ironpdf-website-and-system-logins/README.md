@@ -1,8 +1,4 @@
-***Based on <https://ironpdf.com/examples/ironpdf-website-and-system-logins/>***
-
-Here's a rewritten version of the given article, with altered phrasing and resolved relative URL paths:
-
----
+> Full guide: [Ironpdf website and system logins](https://ironpdf.com/examples/ironpdf-website-and-system-logins/)
 
 To convert web pages that are secured by HTML forms or located within password-protected directories into PDFs, the preferred method is to sidestep the programmatic authentication and directly translate the markup from local files or HTML strings, as detailed on [the IronPDF login procedures resource page](https://ironpdf.com/how-to/logins/). But, for instances where it is impractical or too cumbersome to obtain the source code for the web pages targeted for conversion, IronPDF simplifies the process of generating PDFs from these protected areas.
 

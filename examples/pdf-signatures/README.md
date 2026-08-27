@@ -1,4 +1,4 @@
-***Based on <https://ironpdf.com/examples/pdf-signatures/>***
+> Full guide: [PDF signatures](https://ironpdf.com/java/examples/pdf-signatures/)
 
 Java programmers can effortlessly embed both electronic and digital signatures into PDF documents using IronPDF for Java, leveraging the `Signature` and `SignatureManager` classes.
 
