@@ -3,7 +3,7 @@
 > Full guide: [How to Print PDF Files in Java](https://ironpdf.com/how-to/print-pdf/)
 
 
-In Java applications, automating the printing of PDF documents can enhance document management and integrate printing operations seamlessly. Using IronPDF for Java, you have the capability to directly send PDF files to a physical printer with detailed control over printing options, including the number of copies and specified page ranges. This tutorial will demonstrate how to employ IronPDF’s capabilities to optimize printing procedures within your Java applications.
+In Java applications, automating the printing of PDF documents can enhance document management and integrate printing operations. Using IronPDF for Java, you have the capability to directly send PDF files to a physical printer with detailed control over printing options, including the number of copies and specified page ranges. This tutorial will demonstrate how to employ IronPDF’s capabilities to optimize printing procedures within your Java applications.
 
 ## Print PDF
 
@@ -47,4 +47,4 @@ PdfDocument pdf = PdfDocument.renderHtmlAsPdf("<h1>testing</h1>");
 pdf.printWithoutDialog();
 ```
 
-By adopting IronPDF for Java, you can seamlessly manage direct PDF printing operations across different parts of your Java applications.
+By adopting IronPDF for Java, you can manage direct PDF printing operations across different parts of your Java applications.

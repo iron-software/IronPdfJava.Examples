@@ -1,6 +1,6 @@
 > Full guide: [Annotations](https://ironpdf.com/examples/annotations/)
 
-Leverage the `PdfDocument` object's `AnnotationManager` and the `AnnotationOptions` class from IronPDF to incorporate "sticky note"-style annotations on specific pages within a PDF document.
+Use the `PdfDocument` object's `AnnotationManager` and the `AnnotationOptions` class from IronPDF to incorporate "sticky note"-style annotations on specific pages within a PDF document.
 
 To insert a text-based annotation at a precise location on a page, utilize the coordinates (x, y) as parameters in the `AnnotationOptions` constructor, as demonstrated in the following code sample. Then, apply the `addTextAnnotation` method of the `AnnotationManager` to append the annotation to the targeted page in the current PDF document.
 

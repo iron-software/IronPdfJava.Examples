@@ -5,7 +5,7 @@
 
 Adding bookmarks and outlines to your PDF documents within a Java application can dramatically enhance user experience by simplifying navigation. This is akin to incorporating a "table of contents" that users can use to jump directly to specific sections within the PDF.
 
-IronPDF offers robust functionality for PDF operations, including effortless methods to create and manage bookmarks, making it an excellent tool for PDF manipulation.
+IronPDF offers functionality for PDF operations, including methods to create and manage bookmarks, making it an excellent tool for PDF manipulation.
 
 ## Preliminary Setup
 

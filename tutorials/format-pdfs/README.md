@@ -143,7 +143,7 @@ webPdf.saveAs("web_article.pdf");
 <div class="content-img-align-center">
 <div class="center-image-wrapper">
 <a rel="nofollow" href="https://ironpdf.com/static-assets/pdf/java/tutorials/html-to-pdf/html-to-pdf-7.webp" target="_blank"><img src="https://ironpdf.com/static-assets/pdf/java/tutorials/html-to-pdf/html-to-pdf-7.webp" alt="" class="img-responsive add-shadow"></a>
-    <p class="content__image-caption">Harness the power of IronPDF to convert entire web pages into PDF documents seamlessly with the <code>PdfDocument.renderUrlAsPdf</code> method.</p>
+    <p class="content__image-caption">Convert an entire web page into a PDF with the <code>PdfDocument.renderUrlAsPdf</code> method.</p>
 </div>
 </div>
 

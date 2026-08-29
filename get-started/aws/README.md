@@ -157,7 +157,7 @@ Globals:
 ```
 
 7. **Revise the Dockerfile:**
-* Note: For Java 8, it is recommended to use `java8.al2` images to leverage `AmazonLinux2`.
+* Note: For Java 8, it is recommended to use `java8.al2` images to use `AmazonLinux2`.
 
 ```dockerfile
 FROM public.ecr.aws/sam/build-java8.al2:latest as build-image

@@ -2,7 +2,7 @@
 
 IronPDF provides developers the flexibility to customize PDF documents with personalized headers and footers. The following example illustrates how to use the `ChromePdfRenderOptions` and `HtmlHeaderFooter` classes for this purpose.
 
-The `HtmlHeaderFooter` class enables developers to design a PDF's header or footer using HTML, offering a more versatile approach than the simpler `TextHeaderFooter` class which is limited to plain text. To set up HTML content for headers or footers, utilize the `addHtmlFragment` method available in the `HtmlHeaderFooter` class. This method requires a string filled with valid HTML5, CSS3, and JavaScript (ECMAScript 6). IronPDF treats this string as rich hypertext markup, rendering it in the PDF just like a web browser would render on a webpage.
+The `HtmlHeaderFooter` class enables developers to design a PDF's header or footer using HTML, where `TextHeaderFooter` is limited to plain text. To set up HTML content for headers or footers, utilize the `addHtmlFragment` method available in the `HtmlHeaderFooter` class. This method requires a string filled with valid HTML5, CSS3, and JavaScript (ECMAScript 6). IronPDF treats this string as rich hypertext markup, rendering it in the PDF just like a web browser would render on a webpage.
 
 This functionality allows for the inclusion of images, diverse color schemes, sophisticated fonts, and other intricate design elements in PDF headers.
 

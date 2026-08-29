@@ -2,7 +2,7 @@
 
 > Full guide: [HTML to PDF Conversion in Java Using IronPDF](https://ironpdf.com/java/tutorials/generate-pdfs/)
 
-*In this guide, Java programmers will learn how to leverage the IronPDF library to transform HTML into accurately rendered PDFs.*
+*In this guide, Java programmers will learn how to use the IronPDF library to transform HTML into accurately rendered PDFs.*
 
 *IronPDF excels in PDF creation and manipulation tasks and supports both [.NET](https://ironpdf.com) and [Java](https://ironpdf.com/java/) environments. Here, we'll particularly focus on the Java implementation for transforming HTML content, such as files or snippets, into PDFs. For the .NET equivalent, visit our [HTML to PDF for .NET Tutorial](https://ironpdf.com/tutorials/html-to-pdf/).*
 
@@ -164,7 +164,7 @@ IronPDF maintains all style and script influences from the original HTML, ensuri
 
 While this tutorial covers basic functionalities, IronPDF offers far more. Learn about customizing PDF appearance, adding elements like headers or watermarks, managing page settings, and extracting contents through our detailed [examples and tutorials](https://ironpdf.com/java/examples/using-html-to-create-a-pdf/).
 
-You might also want to delve into our [API documentations](https://ironpdf.com/java/object-reference/api/) for comprehensive insights into the IronPDF capabilities.
+You might also want to look at our [API documentations](https://ironpdf.com/java/object-reference/api/) for comprehensive insights into the IronPDF capabilities.
 
 <hr class="separator">
 
@@ -190,7 +190,7 @@ You might also want to delve into our [API documentations](https://ironpdf.com/j
   <div class="row">
     <div class="col-sm-8">
       <h3>Explore this Project on GitHub</h3>
-      <p>Find the full source code on GitHub and start integrating it into your Java projects within minutes. The project is formatted for the IntelliJ IDE but is versatile for use in other environments too.</p>
+      <p>Find the full source code on GitHub and start integrating it into your Java projects within minutes. The project is set up for IntelliJ but builds in any IDE.</p>
       <a class="doc-link" href="#" target="_blank">Java HTML to PDF <i class="fa fa-chevron-right"></i></a>
     </div>
     <div class="col-sm-4">

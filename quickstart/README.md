@@ -5,7 +5,7 @@
 
 ## Introduction to IronPDF for Java
 
-IronPDF for Java by Iron Software is a robust library that aids Software Engineers in creating, editing, and extracting content from PDFs within Java 8+, Kotlin, and Scala projects.
+IronPDF for Java by Iron Software is a library that aids Software Engineers in creating, editing, and extracting content from PDFs within Java 8+, Kotlin, and Scala projects.
 
 `IronPDF for Java` extends the widespread recognition and capabilities of [IronPDF for .NET](https://ironpdf.com).
 

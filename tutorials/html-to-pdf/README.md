@@ -65,7 +65,7 @@ Get the IronPDF JAR from [here](https://ironpdf.com/static-assets/ironpdf-java/p
 
 ## 2. Converting HTML to PDF
 
-Here, we delve into IronPDF's capabilities for converting HTML content to PDF.
+Here, we look at IronPDF's capabilities for converting HTML content to PDF.
 
 The `PdfDocument` class serves as the gateway to all of IronPDF’s document rendering and manipulation operations. It offers powerful methods to convert HTML to PDF in three main scenarios: from HTML strings or markup, from HTML files, and from URLs. This section briefly explores these capabilities, providing links for further exploration.
 
@@ -162,7 +162,7 @@ IronPDF resolves all relative URLs, ensuring that the generated PDF perfectly re
 
 ## 3. Further Resources
 
-Dive deeper into the versatile features of IronPDF for Java with these resources:
+Dive deeper into the features of IronPDF for Java with these resources:
 
 1. Explore [advanced PDF generation settings](https://ironpdf.com/java/examples/pdf-generation-settings/) for customizing the PDF look and feel.
 2. Learn to create PDFs with [custom headers and footers](https://ironpdf.com/java/examples/html-headers-and-footers/), adjustable [margins](https://ironpdf.com/java/examples/ironpdf-set-custom-margins/), [custom page sizes](https://ironpdf.com/java/examples/custom-pdf-paper-size/), [watermarks](https://ironpdf.com/java/examples/backgrounds-and-foregrounds/), and more.
