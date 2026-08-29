@@ -8,7 +8,6 @@ import java.util.List;
 
 public class Section4 {
     public static void run() throws IOException {
-            public static void main(String[] args) throws IOException {
                 String htmlA = "<p> [PDF_A] </p>"
                         + "<p> [PDF_A] 1st Page </p>"
                         + "<div style='page-break-after: always;'></div>"
@@ -44,6 +43,5 @@ public class Section4 {
             
                 // Save the merged PDF document
                 merged.saveAs(Paths.get("assets/more_than_two_merged.pdf"));
-            }
     }
 }

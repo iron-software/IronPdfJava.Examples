@@ -74,7 +74,7 @@
 
   ```java
   // Specify the IronPDF Engine's working directory
-  Setting.setIronPdfEngineWorkingDirectory(Paths.get("/tmp/"));
+  Settings.setIronPdfEngineWorkingDirectory(Paths.get("/tmp/"));
   ```
 
   ```docker

@@ -8,6 +8,7 @@ import com.ironsoftware.ironpdf.security.PdfPrintSecurity;
 import com.ironsoftware.ironpdf.security.SecurityManager;
 import com.ironsoftware.ironpdf.security.SecurityOptions;
 import java.nio.file.Paths;
+import java.util.Date;
 
 public class Program {
     public static void main(String[] args) throws IOException {

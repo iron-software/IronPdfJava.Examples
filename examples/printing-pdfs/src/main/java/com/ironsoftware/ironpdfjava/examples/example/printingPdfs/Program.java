@@ -3,6 +3,7 @@ package com.ironsoftware.ironpdfjava.examples.example.printingPdfs;
 import java.io.IOException;
 
 import com.ironsoftware.ironpdf.PdfDocument;
+import java.awt.print.PrinterException;
 
 public class Program {
     public static void main(String[] args) throws IOException {

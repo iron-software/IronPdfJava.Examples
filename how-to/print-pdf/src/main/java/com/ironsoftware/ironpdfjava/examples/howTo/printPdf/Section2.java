@@ -4,9 +4,10 @@ import java.io.IOException;
 
 import com.ironsoftware.ironpdf.License;
 import com.ironsoftware.ironpdf.PdfDocument;
+import java.awt.print.PrinterException;
 
 public class Section2 {
-    public static void run() throws IOException {
+    public static void run() throws IOException, PrinterException {
             // Set the license key for IronPDF
             License.setLicenseKey("IRONPDF-MYLICENSE-KEY-1EF01");
             
