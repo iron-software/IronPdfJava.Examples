@@ -170,9 +170,12 @@ PdfDocument finalPdf = PdfDocument.merge(existingPdf, selectedPages);
 finalPdf.saveAs(Paths.get("merged_selective.pdf"));
 ```
 
-> The guide writes that call as `newPages.extractPages(1, 3)`. IronPDF for Java
-> 2026.8.2 ships no `extractPages`; the method that copies a page range is
-> `copyPages(startIndex, endIndex)`. This example uses the shipped name.
+> The guide writes that call as `newPages.extractPages(1, 3)`. There is no
+> `extractPages` method in IronPDF for Java — it is an error on the page, not a
+> renamed or removed API. The method that copies a page range is
+> `copyPages(startIndex, endIndex)`, which is what this example uses. The
+> library's naming is consistent on this point: everything named `extract*`
+> returns page *content* (`extractAllText`, `extractAllImages`), never pages.
 
 ## Summary
 
