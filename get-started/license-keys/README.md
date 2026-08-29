@@ -7,7 +7,7 @@
 
 To run your project live without any limitations or watermarking, it's essential to integrate an IronPDF license key.
 
-Purchase a valid [IronPDF license here](https://ironpdf.com/java/licensing/) or opt for a [free 30-day trial license](#trial-license).
+Purchase a valid [IronPDF license here](https://ironpdf.com/java/licensing/) or opt for a free 30-day trial license.
 
 ## Step 1: Configure IronPDF as a Java Dependency
 
@@ -99,4 +99,4 @@ Learn how to begin using IronPDF in your Java projects with our [Get Started Gui
 
 Explore extensive [IronPDF Java resources](https://ironpdf.com/java/) including examples, tutorials, and thorough documentation.
 
-If further help is required, don't hesitate to [reach out to our support](#live-chat-support).
+If further help is required, don't hesitate to reach out to our support.

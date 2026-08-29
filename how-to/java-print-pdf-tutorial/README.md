@@ -120,4 +120,4 @@ Further details on [PDF Printing in Java](https://ironpdf.com/java/docs/) with I
 
 IronPDF provides a robust and easy-to-use interface for managing PDF tasks in Java applications. From generating to customizing PDFs, IronPDF simplifies processes for creating professional documents for printing or distribution. Ideal for generating invoices, reports, or various document types, IronPDF ensures quality and efficiency.
 
-Explore IronPDF with a [free trial for production testing](https://ironpdf.com/java/licensing/). Starting prices for IronPDF are available from `$liteLicense`. [Try IronPDF today](#trial-license) and enhance your PDF handling capabilities in Java applications.
+Explore IronPDF with a [free trial for production testing](https://ironpdf.com/java/licensing/). Starting prices for IronPDF are available from `$liteLicense`. Try IronPDF today and enhance your PDF handling capabilities in Java applications.
