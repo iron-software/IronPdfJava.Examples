@@ -67,12 +67,12 @@ This key should be set early in your application prior to any PDF operation.
 
 <div class="content-img-align-center">
 <div class="center-image-wrapper">
-<a rel="nofollow" href="https://ironpdf.com/static-assets/pdf/java/tutorials/html-to-pdf/html-to-pdf-23.webp?utm_source=github" target="_blank"><img src="https://ironpdf.com/static-assets/pdf/java/tutorials/html-to-pdf/html-to-pdf-23.webp" alt="" class="img-responsive add-shadow"></a>
+<a rel="nofollow" href="https://ironpdf.com/static-assets/ironpdf-java/tutorials/html-to-pdf/html-to-pdf-23.webp?utm_source=github" target="_blank"><img src="https://ironpdf.com/static-assets/ironpdf-java/tutorials/html-to-pdf/html-to-pdf-23.webp" alt="" class="img-responsive add-shadow"></a>
     <p class="content__image-caption">Secure your license at [Iron Software’s licensing page](https://ironpdf.com/java/licensing/?utm_source=github) for watermark-free PDF operations.</p>
 </div>
 </div>
 
-[Purchase a License](https://ironpdf.com/java/licensing/?utm_source=github) or [inquire about a trial](https://ironpdf.com/trial-license?utm_source=github).
+[Purchase a License](https://ironpdf.com/java/licensing/?utm_source=github) or [inquire about a trial](https://ironpdf.com/?utm_source=github#trial-license).
 
 ### 1.5 Log File Configuration (Optional)
 

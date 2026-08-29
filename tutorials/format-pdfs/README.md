@@ -63,12 +63,12 @@ Implement this configuration prior to any PDF generation activities for optimal 
 
 <div class="content-img-align-center">
 <div class="center-image-wrapper">
-<a rel="nofollow" href="https://ironpdf.com/static-assets/pdf/java/tutorials/html-to-pdf/html-to-pdf-23.webp?utm_source=github" target="_blank"><img src="https://ironpdf.com/static-assets/pdf/java/tutorials/html-to-pdf/html-to-pdf-23.webp" alt="" class="img-responsive add-shadow"></a>
+<a rel="nofollow" href="https://ironpdf.com/static-assets/ironpdf-java/tutorials/html-to-pdf/html-to-pdf-23.webp?utm_source=github" target="_blank"><img src="https://ironpdf.com/static-assets/ironpdf-java/tutorials/html-to-pdf/html-to-pdf-23.webp" alt="" class="img-responsive add-shadow"></a>
     <p class="content__image-caption">Visit ironpdf.com/java/licensing/ to obtain a license key and enhance your PDF processing capabilities without watermarks.</p>
 </div>
 </div>
 
-[Acquire a license from the IronPDF licensing page](https://ironpdf.com/java/licensing/?utm_source=github), or ask about [receiving a trial license](https://ironpdf.com/trial-license?utm_source=github).
+[Acquire a license from the IronPDF licensing page](https://ironpdf.com/java/licensing/?utm_source=github), or ask about [receiving a trial license](https://ironpdf.com/?utm_source=github#trial-license).
 
 ### 1.5 Specify Log File Location (Optional)
 
@@ -102,7 +102,7 @@ pdf.saveAs("example_from_string.pdf");
 
 <div class="content-img-align-center">
 <div class="center-image-wrapper">
-<a rel="nofollow" href="https://ironpdf.com/static-assets/pdf/java/tutorials/html-to-pdf/html-to-pdf-5.webp?utm_source=github" target="_blank"><img src="https://ironpdf.com/static-assets/pdf/java/tutorials/html-to-pdf/html-to-pdf-5.webp" alt="" class="img-responsive add-shadow"></a>
+<a rel="nofollow" href="https://ironpdf.com/static-assets/ironpdf-java/tutorials/html-to-pdf/html-to-pdf-5.webp?utm_source=github" target="_blank"><img src="https://ironpdf.com/static-assets/ironpdf-java/tutorials/html-to-pdf/html-to-pdf-5.webp" alt="" class="img-responsive add-shadow"></a>
     <p class="content__image-caption">Utilize the <code>PdfDocument.renderHtmlAsPdf</code> method to transform HTML markup directly into a PDF file, supporting any valid W3C HTML/CSS.</p>
 </div>
 </div>
@@ -120,7 +120,7 @@ createdPdf.saveAs("complete_example.pdf");
 
 <div class="content-img-align-center">
 <div class="center-image-wrapper">
-<a rel="nofollow" href="https://ironpdf.com/static-assets/pdf/java/tutorials/html-to-pdf/html-to-pdf-24.webp?utm_source=github" target="_blank"><img src="https://ironpdf.com/static-assets/pdf/java/tutorials/html-to-pdf/html-to-pdf-24.webp" alt="" class="img-responsive add-shadow"></a>
+<a rel="nofollow" href="https://ironpdf.com/static-assets/ironpdf-java/tutorials/html-to-pdf/html-to-pdf-24.webp?utm_source=github" target="_blank"><img src="https://ironpdf.com/static-assets/ironpdf-java/tutorials/html-to-pdf/html-to-pdf-24.webp" alt="" class="img-responsive add-shadow"></a>
     <p class="content__image-caption">Rich media elements and complex web content can be flawlessly converted into PDFs, resembling their display in browsers like Chrome.</p>
 </div>
 </div>
@@ -142,7 +142,7 @@ webPdf.saveAs("web_article.pdf");
 
 <div class="content-img-align-center">
 <div class="center-image-wrapper">
-<a rel="nofollow" href="https://ironpdf.com/static-assets/pdf/java/tutorials/html-to-pdf/html-to-pdf-7.webp?utm_source=github" target="_blank"><img src="https://ironpdf.com/static-assets/pdf/java/tutorials/html-to-pdf/html-to-pdf-7.webp" alt="" class="img-responsive add-shadow"></a>
+<a rel="nofollow" href="https://ironpdf.com/static-assets/ironpdf-java/tutorials/html-to-pdf/html-to-pdf-7.webp?utm_source=github" target="_blank"><img src="https://ironpdf.com/static-assets/ironpdf-java/tutorials/html-to-pdf/html-to-pdf-7.webp" alt="" class="img-responsive add-shadow"></a>
     <p class="content__image-caption">Convert an entire web page into a PDF with the <code>PdfDocument.renderUrlAsPdf</code> method.</p>
 </div>
 </div>
@@ -167,7 +167,7 @@ Like the HTML-string method, this process respects all linked media, ensuring a 
 Expand your skills with IronPDF, exploring advanced scenarios and configurations.
 
 1. Enhance your PDFs' appearance with configurable settings and elements like watermarks. Dive into customizations with our [feature guide](https://ironpdf.com/java/examples/pdf-generation-settings/?utm_source=github).
-2. Read how to adjust margins, headers, footers, and page dimensions through our [comprehensive examples](https://ironpdf.com/java/examples/?utm_source=github).
+2. Read how to adjust margins, headers, footers, and page dimensions through our [comprehensive examples](https://ironpdf.com/java/docs/?utm_source=github).
 3. For content extraction, PDF optimization, and programmatic printing, see our [in-depth tutorials](https://ironpdf.com/java/examples/printing-pdfs/?utm_source=github).
 
 Access richer insights and controls with the [IronPDF Java API Reference](https://ironpdf.com/java/object-reference/api/?utm_source=github).

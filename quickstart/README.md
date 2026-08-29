@@ -47,7 +47,7 @@ Include IronPDF in your `pom.xml` as follows:
 
 #### Manual JAR File Download
 
-If preferred, the IronPDF JAR file can be [downloaded manually here](https://ironpdf.com/download-modal?utm_source=github) for use without dependency management tools.
+If preferred, the IronPDF JAR file can be [downloaded manually here](https://ironpdf.com/?utm_source=github#download-modal) for use without dependency management tools.
 
 ### Initial Setup and Execution
 
@@ -207,7 +207,7 @@ com.ironsoftware.ironpdf.Settings.setLogPath(Paths.get("C:/tmp/myIronPdfEngineLo
 
 ## Licensing & Support
 
-To obtain a license for commercial use of IronPDF, please [purchase a license here](https://ironpdf.com/java/licensing/?utm_source=github). A 30-day trial is also available for [trial users](https://ironpdf.com/trial-license?utm_source=github).
+To obtain a license for commercial use of IronPDF, please [purchase a license here](https://ironpdf.com/java/licensing/?utm_source=github). A 30-day trial is also available for [trial users](https://ironpdf.com/?utm_source=github#trial-license).
 
 For a full suite of code examples, tutorials, licensing details, and documentation, please visit: [IronPDF for Java resources](https://ironpdf.com/java/?utm_source=github).
 

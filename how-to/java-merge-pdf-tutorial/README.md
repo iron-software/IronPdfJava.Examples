@@ -190,7 +190,7 @@ rendering work as IronPDF for .NET. For cloud deployment, see the guides for
 [Azure](https://ironpdf.com/java/get-started/azure/?utm_source=github) and
 [Google Cloud](https://ironpdf.com/java/get-started/google-cloud/?utm_source=github).
 
-The [code examples pages](https://ironpdf.com/java/examples/?utm_source=github) cover the rest of
+The [code examples pages](https://ironpdf.com/java/docs/?utm_source=github) cover the rest of
 the API. IronPDF is free for development and licensed for commercial use.
 
 ## Frequently Asked Questions

@@ -103,7 +103,7 @@
    RUN apt-get install -y xvfb libva-dev libgdiplus
    ```
 
-   For additional Linux configurations, consult the [IronPDF Linux Installation Guide](https://ironpdf.com/how-to/linux/?utm_source=github).
+   For additional Linux configurations, consult the [IronPDF Linux Installation Guide](https://ironpdf.com/get-started/linux/?utm_source=github).
 
 5. **Redeploy to Azure**
    Proceed with the following sequence:

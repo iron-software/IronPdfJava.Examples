@@ -118,7 +118,7 @@ String ironPdfEngineVersion = com.ironsoftware.ironpdf.Settings.getIronPdfEngine
 
 If IronPdfEngine is hosted remotely, say at `123.456.7.8:33350`, ensure compatibility by setting up the connection properly.
 
-[Read detailed instructions on setting up and activating IronPdfEngine remotely](https://ironpdf.com/how-to/pull-run-ironpdfengine/?utm_source=github)
+[Read detailed instructions on setting up and activating IronPdfEngine remotely](https://ironpdf.com/get-started/ironpdfengine-docker/?utm_source=github)
 
 Add the following at the start-up of your application or prior to any IronPdf method use:
 

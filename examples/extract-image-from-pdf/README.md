@@ -12,7 +12,7 @@ Moreover, it is feasible to extract images from specific pages within a PDF, ins
 
 ### Extracting Images from PDF using Java with IronPDF
 
-1. [Install the IronPDF Java Library](https://ironpdf.com/java/download-modal?utm_source=github)
+1. [Install the IronPDF Java Library](https://ironpdf.com/?utm_source=github#download-modal)
 2. Utilize the `extractAllImages` method to pull images from a PDF document
 3. Loop through each image in the retrieved images collection
 4. Use the `write` method in Java to save the extracted images

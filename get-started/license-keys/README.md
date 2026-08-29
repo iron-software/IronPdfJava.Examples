@@ -35,7 +35,7 @@ Insert the following code snippet into your `pom.xml` to set IronPDF as a projec
 
 ### Option 2: Jar File Installation
 
-Alternatively, you can [manually download the IronPDF Java jar file](https://ironpdf.com/$downloadPackage?utm_source=github).
+Alternatively, you can [manually download the IronPDF Java jar file](https://ironpdf.com/static-assets/ironpdf-java/packages/ironpdf-2026.8.2-fat-jar.jar?utm_source=github).
 
 ## Step 2: License Key Application
 

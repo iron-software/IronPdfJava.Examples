@@ -87,7 +87,7 @@ While IronPDF for Java is usable for free, it applies a watermark to PDFs when u
 License.setLicenseKey("YOUR-LICENSE-KEY");
 ```
 
-It’s best to set your license key before employing any other functionalities. To acquire a license, visit the [IronPDF licensing page](https://ironpdf.com/java/licensing/?utm_source=github), or get in touch to request a [free trial key](https://ironpdf.com/trial-license?utm_source=github).
+It’s best to set your license key before employing any other functionalities. To acquire a license, visit the [IronPDF licensing page](https://ironpdf.com/java/licensing/?utm_source=github), or get in touch to request a [free trial key](https://ironpdf.com/?utm_source=github#trial-license).
 
 ### 2.3 Specify the Log File Location (optional)
 

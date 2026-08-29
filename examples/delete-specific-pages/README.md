@@ -10,7 +10,7 @@ Using the `PageSelection` class, the subject pages are chosen for the `removePag
 
 #### Guide to Deleting PDF Pages Using Java
 
-1. [Install the IronPDF Java Library](https://ironpdf.com/download-modal?utm_source=github)
+1. [Install the IronPDF Java Library](https://ironpdf.com/?utm_source=github#download-modal)
 2. Load an existing PDF or create a new one in Java
 3. Apply the `removePages` method to remove specified pages
 4. Use the `PageSelection` class to choose which pages to delete

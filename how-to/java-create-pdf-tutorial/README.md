@@ -50,7 +50,7 @@ Next, activate IronPDF by inputting a valid license key in your `main` method:
 License.setLicenseKey("Your license key");
 ```
 
-**Note**: *License keys are necessary for watermark-free PDF creation. [Purchase a License Key](https://ironpdf.com/java/licensing/?utm_source=github) or [Obtain a Free Trial License Key](https://ironpdf.com/trial-license?utm_source=github). Without a license key, PDFs will contain watermarks.*
+**Note**: *License keys are necessary for watermark-free PDF creation. [Purchase a License Key](https://ironpdf.com/java/licensing/?utm_source=github) or [Obtain a Free Trial License Key](https://ironpdf.com/?utm_source=github#trial-license). Without a license key, PDFs will contain watermarks.*
 
 ## Creating a PDF from HTML Content
 
@@ -175,4 +175,4 @@ IronPDF renders elements consistently with web standards, supporting interactive
 
 ## Summary
 
-This guide examined the process of generating PDFs using Java with IronPDF. Its API creates PDFs from several kinds of content. Though it is a commercial product, you can start with a [Free Trial](https://ironpdf.com/trial-license?utm_source=github).
+This guide examined the process of generating PDFs using Java with IronPDF. Its API creates PDFs from several kinds of content. Though it is a commercial product, you can start with a [Free Trial](https://ironpdf.com/?utm_source=github#trial-license).
