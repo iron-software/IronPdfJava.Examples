@@ -1,10 +1,16 @@
-package com.ironsoftware.ironpdfjava.examples..pdfPageOrientation;
+package com.ironsoftware.ironpdfjava.examples.example.pdfPageOrientation;
 
+import java.io.IOException;
+
+import com.ironsoftware.ironpdf.PdfDocument;
+import com.ironsoftware.ironpdf.edit.PageSelection;
+import com.ironsoftware.ironpdf.page.PageRotation;
+import com.ironsoftware.ironpdf.render.ChromePdfRenderOptions;
+import com.ironsoftware.ironpdf.render.PaperOrientation;
 import java.nio.file.Paths;
-import com.ironsoftware.ironpdf;
 
 public class Program {
-    public static void run() {
+    public static void main(String[] args) throws IOException {
             // Use the setPaperOrientation method to set rendered PDFs in portrait or landscape orientation.  
             // Note: This will only work for newly-created PDFs!  
             ChromePdfRenderOptions renderOptions = new ChromePdfRenderOptions();  

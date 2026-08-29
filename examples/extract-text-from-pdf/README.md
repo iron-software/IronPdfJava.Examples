@@ -1,6 +1,6 @@
-***Based on <https://ironpdf.com/examples/extract-text-from-pdf/>***
+> Full guide: [Extract text from PDF](https://ironpdf.com/java/examples/extract-text-from-pdf/)
 
-IronPDF offers a robust set of features aimed at both creating and editing PDF documents, including the capability to process the content of PDFs with detailed content extraction methods.
+IronPDF offers a set of features aimed at both creating and editing PDF documents, including the capability to process the content of PDFs with detailed content extraction methods.
 
 Each `PdfDocument` object includes the `extractAllText` method. This method returns a `String` that encapsulates all the text from every page of the PDF in question.
 

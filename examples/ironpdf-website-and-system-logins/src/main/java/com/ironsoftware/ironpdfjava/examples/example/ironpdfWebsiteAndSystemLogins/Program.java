@@ -1,10 +1,14 @@
-package com.ironsoftware.ironpdfjava.examples..ironpdfWebsiteAndSystemLogins;
+package com.ironsoftware.ironpdfjava.examples.example.ironpdfWebsiteAndSystemLogins;
 
+import com.ironsoftware.ironpdf.PdfDocument;
+import com.ironsoftware.ironpdf.headerfooter.TextHeaderFooter;
+import com.ironsoftware.ironpdf.render.ChromeHttpLoginCredentials;
+import com.ironsoftware.ironpdf.render.ChromePdfRenderOptions;
+import java.io.IOException;
 import java.nio.file.Paths;
-import com.ironsoftware.ironpdf;
 
 public class Program {
-    public static void run() {
+    public static void main(String[] args) throws IOException {
             String url = "http://localhost:51169/Invoice";
             
             ChromePdfRenderOptions renderOptions = new ChromePdfRenderOptions();

@@ -1,10 +1,15 @@
-package com.ironsoftware.ironpdfjava.examples..bookmarks;
+package com.ironsoftware.ironpdfjava.examples.example.bookmarks;
 
+import java.io.IOException;
+
+import com.ironsoftware.ironpdf.PdfDocument;
+import com.ironsoftware.ironpdf.bookmark.Bookmark;
+import com.ironsoftware.ironpdf.bookmark.BookmarkManager;
+import java.nio.file.Paths;
 import java.util.List;
-import com.ironsoftware.ironpdf;
 
 public class Program {
-    public static void run() {
+    public static void main(String[] args) throws IOException {
             // Load an existing PDF from the file system (or create a new one from HTML)
             PdfDocument pdf = PdfDocument.fromFile(Paths.get("assets/book.pdf"));
             

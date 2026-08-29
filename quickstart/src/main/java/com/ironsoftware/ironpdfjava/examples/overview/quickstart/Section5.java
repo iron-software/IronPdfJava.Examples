@@ -1,6 +1,7 @@
-package com.ironsoftware.ironpdfjava.examples.quickstart.quickstart;
+package com.ironsoftware.ironpdfjava.examples.overview.quickstart;
 
-import com.ironsoftware.ironpdf;
+import com.ironsoftware.ironpdf.Settings;
+import java.nio.file.Paths;
 
 public class Section5 {
     public static void run() {

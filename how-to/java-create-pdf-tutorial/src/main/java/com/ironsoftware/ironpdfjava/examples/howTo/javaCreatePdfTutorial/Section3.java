@@ -1,9 +1,12 @@
 package com.ironsoftware.ironpdfjava.examples.howTo.javaCreatePdfTutorial;
 
-import com.ironsoftware.ironpdf;
+import java.io.IOException;
+
+import com.ironsoftware.ironpdf.PdfDocument;
+import java.nio.file.Paths;
 
 public class Section3 {
-    public static void run() {
+    public static void run() throws IOException {
             // HTML content to be converted to PDF
             String htmlString = "<h1>Hello World!</h1><p>This is an example HTML string.</p>";
             

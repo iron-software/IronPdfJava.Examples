@@ -1,11 +1,13 @@
 package com.ironsoftware.ironpdfjava.examples.howTo.javaMergePdfTutorial;
 
+import com.ironsoftware.ironpdf.PdfDocument;
+import java.io.IOException;
+import java.nio.file.Paths;
 import java.util.ArrayList;
-import com.ironsoftware.ironpdf;
+import java.util.List;
 
 public class Section4 {
-    public static void run() {
-            public static void main(String[] args) throws IOException {
+    public static void run() throws IOException {
                 String htmlA = "<p> [PDF_A] </p>"
                         + "<p> [PDF_A] 1st Page </p>"
                         + "<div style='page-break-after: always;'></div>"
@@ -41,6 +43,5 @@ public class Section4 {
             
                 // Save the merged PDF document
                 merged.saveAs(Paths.get("assets/more_than_two_merged.pdf"));
-            }
     }
 }

@@ -1,9 +1,11 @@
-package com.ironsoftware.ironpdfjava.examples.tutorials.generatePdfs;
+package com.ironsoftware.ironpdfjava.examples.tutorial.generatePdfs;
 
-import com.ironsoftware.ironpdf;
+import java.io.IOException;
+
+import com.ironsoftware.ironpdf.PdfDocument;
 
 public class Section5 {
-    public static void run() {
+    public static void run() throws IOException {
             // HTML content with references to local assets
             String html = "<html>" +
                               "<head>" +

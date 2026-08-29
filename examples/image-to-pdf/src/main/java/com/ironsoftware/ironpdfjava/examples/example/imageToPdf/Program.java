@@ -1,10 +1,16 @@
-package com.ironsoftware.ironpdfjava.examples..imageToPdf;
+package com.ironsoftware.ironpdfjava.examples.example.imageToPdf;
 
+import com.ironsoftware.ironpdf.PdfDocument;
+import java.io.IOException;
+import java.nio.file.DirectoryStream;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.util.ArrayList;
 import java.util.List;
-import com.ironsoftware.ironpdf;
 
 public class Program {
-    public static void run() {
+    public static void main(String[] args) {
             // Reference to the directory containing the images that we desire to convert
             Path imageDirectory = Paths.get("assets/images");
             

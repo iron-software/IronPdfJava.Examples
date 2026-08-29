@@ -1,4 +1,4 @@
-***Based on <https://ironpdf.com/examples/rasterize-a-pdf-to-images/>***
+> Full guide: [Rasterize a PDF to images](https://ironpdf.com/examples/rasterize-a-pdf-to-images/)
 
 After being loaded from various sources like files, webpages, or URLs, or after undergoing modifications such as adding margins or custom headers and footers, IronPDF offers the capability to transform PDF document pages into images. These images can subsequently be stored in a file system, saved in a database, or transmitted across networks, among other potential applications.
 

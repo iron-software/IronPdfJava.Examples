@@ -1,9 +1,17 @@
 package com.ironsoftware.ironpdfjava.examples.howTo.javaPrintPdfTutorial;
 
-import com.ironsoftware.ironpdf;
+import java.io.IOException;
+import java.awt.print.PrinterException;
+import java.nio.file.Paths;
+import com.ironsoftware.ironpdf.PdfDocument;
+
 
 public class Section4 {
-    public static void run() {
+    public static void run() throws IOException, PrinterException {
+            // The page opens this before the snippet; opened here so the
+            // section stands on its own.
+            PdfDocument pdf = new PdfDocument(Paths.get("MyPdf.pdf"));
+
             // Display print dialog to let the user specify printing options
             pdf.print();
     }

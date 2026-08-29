@@ -1,6 +1,6 @@
 # How to Generate PDF Files Using Java
 
-***Based on <https://ironpdf.com/how-to/java-create-pdf-tutorial/>***
+> Full guide: [How to Generate PDF Files Using Java](https://ironpdf.com/java/how-to/java-create-pdf-tutorial/)
 
 
 *Automatically creating PDFs via Java programming greatly enhances the ability to produce documents dynamically, catering to needs such as generating invoices, reports, or other custom PDFs as required.*
@@ -175,4 +175,4 @@ IronPDF renders elements consistently with web standards, supporting interactive
 
 ## Summary
 
-This guide examined the process of generating PDFs using Java with IronPDF. IronPDF is robust, offering an easy-to-use API for creating PDFs from various kinds of content. Though it is a commercial product, you can start with a [Free Trial](https://ironpdf.com/trial-license).
+This guide examined the process of generating PDFs using Java with IronPDF. Its API creates PDFs from several kinds of content. Though it is a commercial product, you can start with a [Free Trial](https://ironpdf.com/trial-license).

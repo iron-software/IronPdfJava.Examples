@@ -1,6 +1,6 @@
-package com.ironsoftware.ironpdfjava.examples.getStarted.useIronpdfengine;
+package com.ironsoftware.ironpdfjava.examples.gettingStarted.useIronpdfengine;
 
-import com.ironsoftware.ironpdf;
+import com.ironsoftware.ironpdf.Settings;
 
 public class Section2 {
     public static void run() {

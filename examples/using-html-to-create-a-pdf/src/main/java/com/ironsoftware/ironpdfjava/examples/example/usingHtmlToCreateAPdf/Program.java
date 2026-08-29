@@ -1,10 +1,14 @@
-package com.ironsoftware.ironpdfjava.examples..usingHtmlToCreateAPdf;
+package com.ironsoftware.ironpdfjava.examples.example.usingHtmlToCreateAPdf;
 
+import java.io.IOException;
+
+import com.ironsoftware.ironpdf.License;
+import com.ironsoftware.ironpdf.PdfDocument;
+import com.ironsoftware.ironpdf.Settings;
 import java.nio.file.Paths;
-import com.ironsoftware.ironpdf;
 
 public class Program {
-    public static void run() {
+    public static void main(String[] args) throws IOException {
             // Apply your license key
             License.setLicenseKey("YOUR-LICENSE-KEY");
             

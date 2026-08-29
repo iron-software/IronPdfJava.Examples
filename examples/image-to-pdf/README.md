@@ -1,4 +1,4 @@
-***Based on <https://ironpdf.com/examples/image-to-pdf/>***
+> Full guide: [Image to PDF](https://ironpdf.com/examples/image-to-pdf/)
 
 IronPDF provides developers with the functionality to consolidate multiple images into a single PDF document.
 

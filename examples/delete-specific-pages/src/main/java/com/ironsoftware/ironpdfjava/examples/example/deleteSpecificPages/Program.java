@@ -1,9 +1,12 @@
-package com.ironsoftware.ironpdfjava.examples..deleteSpecificPages;
+package com.ironsoftware.ironpdfjava.examples.example.deleteSpecificPages;
 
-import com.ironsoftware.ironpdf;
+import java.io.IOException;
+
+import com.ironsoftware.ironpdf.PdfDocument;
+import com.ironsoftware.ironpdf.edit.PageSelection;
 
 public class Program {
-    public static void run() {
+    public static void main(String[] args) throws IOException {
             // 4-Paged HTML Document example:
             String html = "<p> Hello Iron</p>"
                 + "<p> This is 1st Page </p>"

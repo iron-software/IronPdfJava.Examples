@@ -1,6 +1,6 @@
 # How to Combine Multiple PDFs into One Using Java
 
-***Based on <https://ironpdf.com/how-to/how-to-merge-two-pdf-files-java-tutorial/>***
+> Docs: [IronPDF for Java documentation](https://ironpdf.com/java/docs/)
 
 
 ## 1. Overview

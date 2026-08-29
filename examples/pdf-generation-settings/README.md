@@ -1,6 +1,6 @@
-***Based on <https://ironpdf.com/examples/pdf-generation-settings/>***
+> Full guide: [PDF generation settings](https://ironpdf.com/examples/pdf-generation-settings/)
 
-The following code example illustrates the robust capabilities of IronPDF, enabling developers to transform HTML content into PDF files effectively.
+The following code example illustrates IronPDF, enabling developers to transform HTML content into PDF files effectively.
 
 The `ChromePdfRenderOptions` class provides comprehensive control over the conversion of web pages to PDF formats.
 

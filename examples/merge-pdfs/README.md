@@ -1,4 +1,4 @@
-***Based on <https://ironpdf.com/examples/merge-pdfs/>***
+> Full guide: [Merge PDFs](https://ironpdf.com/examples/merge-pdfs/)
 
 IronPDF offers the capability to amalgamate the contents of various PDF files. This function is especially useful for adding cover pages to new or existing PDFs. It also facilitates the consolidation of pertinent documents into a single file, which simplifies both printing and distribution.
 

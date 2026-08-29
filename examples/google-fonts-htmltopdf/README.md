@@ -1,4 +1,4 @@
-***Based on <https://ironpdf.com/examples/google-fonts-htmltopdf/>***
+> Full guide: [Google fonts htmltopdf](https://ironpdf.com/examples/google-fonts-htmltopdf/)
 
 IronPDF delivers high-fidelity renderings of PDFs from HTML, including flawless depiction of custom web fonts and font icons from libraries like [Font Awesome](https://fontawesome.com/) and [Bootstrap Components](https://getbootstrap.com/docs/3.3/components/).
 

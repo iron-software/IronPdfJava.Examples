@@ -1,7 +1,6 @@
 # HTML to PDF in Java
 
-***Based on <https://ironpdf.com/tutorials/html-to-pdf/>***
-
+> Full guide: [HTML to PDF in Java](https://ironpdf.com/tutorials/html-to-pdf/)
 
 _This guide provides step-by-step instructions for Java developers on using the IronPDF library to convert HTML content into precise PDF documents._
 
@@ -13,19 +12,13 @@ _IronPDF offers a comprehensive set of tools for converting and processing PDF d
 
 ![How to Convert HTML to PDF in Java](https://ironpdf.com/static-assets/pdf/images/html-to-pdf-java.png)
 
-1. [Set up the Java library for HTML to PDF conversion](#installing-library)
+1. Set up the Java library for HTML to PDF conversion
 2. Convert HTML Strings to PDF documents using the `renderHtmlAsPdf` method
 3. Create PDFs from website URLs in Java
 4. Convert HTML files to PDF using the `renderHtmlFileAsPdf` method
 5. Save the newly created PDF document
 
 --------------------------------------------------------------------------------
-
-## Getting Started
-
-!!!--LIBRARY_START_TRIAL_BLOCK--!!!
-
---------------
 
 ## 1. Installing the IronPDF PDF Library for Java
 
@@ -72,7 +65,7 @@ Get the IronPDF JAR from [here](https://ironpdf.com/static-assets/ironpdf-java/p
 
 ## 2. Converting HTML to PDF
 
-Here, we delve into IronPDF's capabilities for converting HTML content to PDF.
+Here, we look at IronPDF's capabilities for converting HTML content to PDF.
 
 The `PdfDocument` class serves as the gateway to all of IronPDF’s document rendering and manipulation operations. It offers powerful methods to convert HTML to PDF in three main scenarios: from HTML strings or markup, from HTML files, and from URLs. This section briefly explores these capabilities, providing links for further exploration.
 
@@ -169,7 +162,7 @@ IronPDF resolves all relative URLs, ensuring that the generated PDF perfectly re
 
 ## 3. Further Resources
 
-Dive deeper into the versatile features of IronPDF for Java with these resources:
+Dive deeper into the features of IronPDF for Java with these resources:
 
 1. Explore [advanced PDF generation settings](https://ironpdf.com/java/examples/pdf-generation-settings/) for customizing the PDF look and feel.
 2. Learn to create PDFs with [custom headers and footers](https://ironpdf.com/java/examples/html-headers-and-footers/), adjustable [margins](https://ironpdf.com/java/examples/ironpdf-set-custom-margins/), [custom page sizes](https://ironpdf.com/java/examples/custom-pdf-paper-size/), [watermarks](https://ironpdf.com/java/examples/backgrounds-and-foregrounds/), and more.

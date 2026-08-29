@@ -1,4 +1,4 @@
-***Based on <https://ironpdf.com/examples/file-to-pdf/>***
+> Full guide: [File to PDF](https://ironpdf.com/examples/file-to-pdf/)
 
 IronPDF enables the conversion of HTML files situated on local drives or network paths. To perform this conversion, utilize the `PdfDocument.renderHtmlFileAsPdf` method, as demonstrated in the example provided.
 

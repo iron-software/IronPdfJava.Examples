@@ -1,6 +1,6 @@
-package com.ironsoftware.ironpdfjava.examples.tutorials.htmlToPdf;
+package com.ironsoftware.ironpdfjava.examples.tutorial.htmlToPdf;
 
-import com.ironsoftware.ironpdf;
+import com.ironsoftware.ironpdf.License;
 
 public class Section2 {
     public static void run() {

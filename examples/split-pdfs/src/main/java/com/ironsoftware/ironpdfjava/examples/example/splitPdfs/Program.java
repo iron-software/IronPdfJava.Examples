@@ -1,9 +1,11 @@
-package com.ironsoftware.ironpdfjava.examples..splitPdfs;
+package com.ironsoftware.ironpdfjava.examples.example.splitPdfs;
 
-import com.ironsoftware.ironpdf;
+import java.io.IOException;
+
+import com.ironsoftware.ironpdf.PdfDocument;
 
 public class Program {
-    public static void run() {
+    public static void main(String[] args) throws IOException {
             String html = "<p> Hello Iron </p>"
                 + "<p> This is 1st Page </p>"
                 + "<div style = 'page-break-after: always;' ></div>"

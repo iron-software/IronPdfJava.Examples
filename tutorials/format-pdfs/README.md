@@ -1,7 +1,6 @@
 # HTML to PDF in Java
 
-***Based on <https://ironpdf.com/tutorials/format-pdfs/>***
-
+> Full guide: [HTML to PDF in Java](https://ironpdf.com/java/tutorials/format-pdfs/)
 
 *This guide provides a step-by-step approach for Java developers to convert HTML content into high-quality PDF documents using IronPDF.*
 
@@ -14,8 +13,6 @@
 <hr style="clear: both;" class="separator">
 
 <p class="main-content__segment-title">Getting Started</p>
-
-!!!--LIBRARY_START_TRIAL_BLOCK--!!!
 
 ## 1. Setting Up IronPDF PDF Library for Java
 
@@ -146,7 +143,7 @@ webPdf.saveAs("web_article.pdf");
 <div class="content-img-align-center">
 <div class="center-image-wrapper">
 <a rel="nofollow" href="https://ironpdf.com/static-assets/pdf/java/tutorials/html-to-pdf/html-to-pdf-7.webp" target="_blank"><img src="https://ironpdf.com/static-assets/pdf/java/tutorials/html-to-pdf/html-to-pdf-7.webp" alt="" class="img-responsive add-shadow"></a>
-    <p class="content__image-caption">Harness the power of IronPDF to convert entire web pages into PDF documents seamlessly with the <code>PdfDocument.renderUrlAsPdf</code> method.</p>
+    <p class="content__image-caption">Convert an entire web page into a PDF with the <code>PdfDocument.renderUrlAsPdf</code> method.</p>
 </div>
 </div>
 

@@ -1,6 +1,7 @@
-package com.ironsoftware.ironpdfjava.examples.tutorials.generatePdfs;
+package com.ironsoftware.ironpdfjava.examples.tutorial.generatePdfs;
 
-import com.ironsoftware.ironpdf;
+import com.ironsoftware.ironpdf.Settings;
+import java.nio.file.Paths;
 
 public class Section3 {
     public static void run() {

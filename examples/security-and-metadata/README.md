@@ -1,6 +1,6 @@
-***Based on <https://ironpdf.com/examples/security-and-metadata/>***
+> Full guide: [Security and metadata](https://ironpdf.com/examples/security-and-metadata/)
 
-IronPDF facilitates modifications to both PDF metadata and security settings. It has robust features to set PDFs as read-only, unprintable, password-protected, or encrypted. Moreover, users have the capability to add or edit metadata properties.
+IronPDF facilitates modifications to both PDF metadata and security settings. It has features to set PDFs as read-only, unprintable, password-protected, or encrypted. Moreover, users have the capability to add or edit metadata properties.
 
 For Java developers, handling a PDF's metadata with IronPDF requires obtaining a reference to the `MetadataManager`. This component allows for the direct manipulation and retrieval of a PDF's metadata. Developers can easily access and modify common metadata properties via provided getter and setter methods.
 

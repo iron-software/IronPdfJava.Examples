@@ -1,4 +1,4 @@
-***Based on <https://ironpdf.com/examples/custom-pdf-paper-size/>***
+> Full guide: [Custom PDF paper size](https://ironpdf.com/examples/custom-pdf-paper-size/)
 
 IronPDF allows developers to create PDF documents in sizes beyond the standard A4 dimensions (8½ by 11 inches, or 21.59 by 27.94 centimeters).
 

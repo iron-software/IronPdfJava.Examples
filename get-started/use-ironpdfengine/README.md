@@ -1,6 +1,6 @@
 # Utilizing the IronPdfEngine
 
-***Based on <https://ironpdf.com/get-started/use-ironpdfengine/>***
+> Full guide: [Utilizing the IronPdfEngine](https://ironpdf.com/java/get-started/use-ironpdfengine/)
 
 
 The IronPdfEngine operates as a gRPC server handling multiple operations for IronPDF, such as creation, modification, and reading of PDFs.
@@ -128,4 +128,4 @@ com.ironsoftware.ironpdf.Settings.setIronPdfEngineHost("123.456.7.8");
 com.ironsoftware.ironpdf.Settings.setIronPdfEnginePort(33350);
 ```
 
-This code snippet seamlessly integrates your application with the remote IronPdfEngine, negating the need to embed IronPdfEngine as a local dependency.
+This code snippet integrates your application with the remote IronPdfEngine, negating the need to embed IronPdfEngine as a local dependency.

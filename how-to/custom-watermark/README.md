@@ -1,6 +1,6 @@
 # Applying Custom Watermarks to PDF Documents
 
-***Based on <https://ironpdf.com/how-to/custom-watermark/>***
+> Full guide: [Applying Custom Watermarks to PDF Documents](https://ironpdf.com/how-to/custom-watermark/)
 
 
 Custom watermarks are an excellent method for safeguarding PDF documents, indicating proprietary information, or showcasing certain statuses such as labeling them "Confidential" or embedding a corporation's logo. IronPDF offers the capability to design unique watermarks using HTML strings, which provide full CSS styling options allowing for extensive customization to include the wide range of styles that HTML and CSS support.

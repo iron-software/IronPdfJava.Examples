@@ -1,9 +1,16 @@
-package com.ironsoftware.ironpdfjava.examples..pdfSignatures;
+package com.ironsoftware.ironpdfjava.examples.example.pdfSignatures;
 
-import com.ironsoftware.ironpdf;
+import java.io.IOException;
+
+import com.ironsoftware.ironpdf.PdfDocument;
+import com.ironsoftware.ironpdf.signature.Signature;
+import com.ironsoftware.ironpdf.signature.SignatureManager;
+import java.awt.Rectangle;
+import java.io.File;
+import java.nio.file.Files;
 
 public class Program {
-    public static void run() {
+    public static void main(String[] args) throws IOException {
             // Step 1. Create a PDF
             PdfDocument pdf = PdfDocument.renderHtmlAsPdf("<h1>Testing 2048 bit digital security</h1>");
             

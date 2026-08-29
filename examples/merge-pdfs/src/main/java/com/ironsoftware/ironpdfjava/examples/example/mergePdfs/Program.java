@@ -1,10 +1,12 @@
-package com.ironsoftware.ironpdfjava.examples..mergePdfs;
+package com.ironsoftware.ironpdfjava.examples.example.mergePdfs;
 
+import java.io.IOException;
+
+import com.ironsoftware.ironpdf.PdfDocument;
 import java.nio.file.Paths;
-import com.ironsoftware.ironpdf;
 
 public class Program {
-    public static void run() {
+    public static void main(String[] args) throws IOException {
             String htmlA = "<p> [PDF_A] </p>"
                     + "<p> [PDF_A] 1st Page </p>"
                     + "<div style = 'page-break-after: always;' ></div>"
