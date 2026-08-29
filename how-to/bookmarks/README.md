@@ -1,6 +1,6 @@
 # Enhancing Java PDFs with Bookmarks and Outlines
 
-> Full guide: [Enhancing Java PDFs with Bookmarks and Outlines](https://ironpdf.com/how-to/bookmarks/)
+> Full guide: [Enhancing Java PDFs with Bookmarks and Outlines](https://ironpdf.com/how-to/bookmarks/?utm_source=github)
 
 
 Adding bookmarks and outlines to your PDF documents within a Java application can dramatically enhance user experience by simplifying navigation. This is akin to incorporating a "table of contents" that users can use to jump directly to specific sections within the PDF.
@@ -13,11 +13,11 @@ Before starting, ensure your IronPDF license key is correctly configured as Iron
 
 ## Implementing Bookmarks and Outline
 
-Let’s walk through adding bookmarks using this [sample PDF](https://ironpdf.com/static-assets/ironpdf-java/howto/bookmarks/NovelSample.pdf).
+Let’s walk through adding bookmarks using this [sample PDF](https://ironpdf.com/static-assets/ironpdf-java/howto/bookmarks/NovelSample.pdf?utm_source=github).
 
 ### Creating a Simple Bookmark Layer
 
-We begin by loading the PDF using the [`PdfDocument`](https://ironpdf.com/java/object-reference/api/com/ironsoftware/ironpdf/PdfDocument.html) class. Subsequently, we can obtain the [`BookmarkManager`](https://ironpdf.com/java/object-reference/api/com/ironsoftware/ironpdf/bookmark/BookmarkManager.html) from this class and begin adding bookmarks:
+We begin by loading the PDF using the [`PdfDocument`](https://ironpdf.com/java/object-reference/api/com/ironsoftware/ironpdf/PdfDocument.html?utm_source=github) class. Subsequently, we can obtain the [`BookmarkManager`](https://ironpdf.com/java/object-reference/api/com/ironsoftware/ironpdf/bookmark/BookmarkManager.html?utm_source=github) from this class and begin adding bookmarks:
 
 ```java
 import java.io.IOException;

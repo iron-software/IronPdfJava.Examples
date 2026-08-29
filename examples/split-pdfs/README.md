@@ -1,4 +1,4 @@
-> Full guide: [Split PDFs](https://ironpdf.com/java/examples/split-pdfs/)
+> Full guide: [Split PDFs](https://ironpdf.com/java/examples/split-pdfs/?utm_source=github)
 
 In this code tutorial, we explore how Java developers can utilize IronPDF to manage PDF files effectively, particularly how to divide a PDF into smaller segments.
 
@@ -16,4 +16,4 @@ Alternatively, for cases where maintaining the original file is not essential, d
 4. Save the newly created `PdfDocument` using the `saveAs` method.
 5. Simplify the above process in a single line of Java code.
 
-[Discover more about the `copyPage` method in Java](https://ironpdf.com/java/object-reference/api/com/ironsoftware/ironpdf/PdfDocument.html#copyPage(int)).
+[Discover more about the `copyPage` method in Java](https://ironpdf.com/java/object-reference/api/com/ironsoftware/ironpdf/PdfDocument.html?utm_source=github#copyPage(int)).

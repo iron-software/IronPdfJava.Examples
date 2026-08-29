@@ -1,6 +1,6 @@
 # Java-Based PDF Form Creation with IronPDF
 
-> Full guide: [Java-Based PDF Form Creation with IronPDF](https://ironpdf.com/how-to/create-forms/)
+> Full guide: [Java-Based PDF Form Creation with IronPDF](https://ironpdf.com/how-to/create-forms/?utm_source=github)
 
 
 For businesses seeking to reduce expenditure on their PDF form creation and customization tools annually, IronPDF for Java offers a solution. It allows you to construct dynamic, interactive PDF forms that can receive user input, make selections, and save modifications. Whether you need text inputs, checkboxes, or other sophisticated form fields, this introduction will guide you through the essentials.
@@ -47,7 +47,7 @@ This example highlights how to integrate and personalize HTML forms within a PDF
 
 <iframe src="https://ironpdf.com/static-assets/ironpdf-java/howto/create-forms/textAreaAndInputForm.pdf" width="100%" height="400px">
     This browser does not support PDFs. Please download the PDF to view it:
-    <a href="https://ironpdf.com/static-assets/ironpdf-java/howto/create-forms/textAreaAndInputForm.pdf">Download PDF</a>.
+    <a href="https://ironpdf.com/static-assets/ironpdf-java/howto/create-forms/textAreaAndInputForm.pdf?utm_source=github">Download PDF</a>.
 </iframe>
 
 <hr>
@@ -96,7 +96,7 @@ pdfDoc.saveAs("checkboxAndComboboxForm.pdf");
 
 <iframe src="https://ironpdf.com/static-assets/ironpdf-java/howto/create-forms/checkboxAndComboboxForm.pdf" width="100%" height="400px">
     This browser does not support PDFs. Please download the PDF to view it:
-    <a href="https://ironpdf.com/static-assets/ironpdf-java/howto/create-forms/checkboxAndComboboxForm.pdf">Download PDF</a>.
+    <a href="https://ironpdf.com/static-assets/ironpdf-java/howto/create-forms/checkboxAndComboboxForm.pdf?utm_source=github">Download PDF</a>.
 </iframe>
 
 <hr>

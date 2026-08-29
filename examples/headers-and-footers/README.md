@@ -1,4 +1,4 @@
-> Full guide: [Headers and footers](https://ironpdf.com/examples/headers-and-footers/)
+> Full guide: [Headers and footers](https://ironpdf.com/examples/headers-and-footers/?utm_source=github)
 
 In this coding example, we highlight how developers can utilize IronPDF to insert headers and footers in PDF documents, whether they originate from the file system or are created from HTML sources.
 
@@ -6,4 +6,4 @@ The `TextHeaderFooter` class provides an opportunity for developers to define te
 
 For a header or footer that needs more than plain text, use `HtmlHeaderFooter` in place of `TextHeaderFooter`.
 
-[Explore the TextHeaderFooter Class Documentation](https://ironpdf.com/java/object-reference/api/com/ironsoftware/ironpdf/headerfooter/TextHeaderFooter.html) for more detailed insights and capabilities.
+[Explore the TextHeaderFooter Class Documentation](https://ironpdf.com/java/object-reference/api/com/ironsoftware/ironpdf/headerfooter/TextHeaderFooter.html?utm_source=github) for more detailed insights and capabilities.

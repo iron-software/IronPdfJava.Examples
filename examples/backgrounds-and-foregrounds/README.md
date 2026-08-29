@@ -1,4 +1,4 @@
-> Full guide: [Backgrounds and foregrounds](https://ironpdf.com/examples/backgrounds-and-foregrounds/)
+> Full guide: [Backgrounds and foregrounds](https://ironpdf.com/examples/backgrounds-and-foregrounds/?utm_source=github)
 
 IronPDF offers the unique capability to embellish PDF documents with distinctive backgrounds or foregrounds through the methods `addBackground` and `addForeground`. These functions allow developers to incorporate the contents of one PDF as either the base or the overlay layer of another document. This feature is incredibly beneficial for creating multiple PDFs that follow a unified design theme.
 
@@ -10,6 +10,6 @@ If you need to set a PDF as the background or foreground for specific pages of a
 
 For tasks where you need to watermark PDFs, consider using the `addWatermark` method. This alternative provides enhanced control over the positioning and opacity of the background elements.
 
-For comprehensive details on manipulating PDF files, view the documentation at [IronPDF's Features and Documentation](https://ironpdf.com).
+For comprehensive details on manipulating PDF files, view the documentation at [IronPDF's Features and Documentation](https://ironpdf.com?utm_source=github).
 
-To learn more about editing backgrounds and foregrounds in PDF documents using Java from IronPDF, visit [Learn to Edit PDF Backgrounds & Foregrounds in Java](https://ironpdf.com/java/how-to/background-foreground/).
+To learn more about editing backgrounds and foregrounds in PDF documents using Java from IronPDF, visit [Learn to Edit PDF Backgrounds & Foregrounds in Java](https://ironpdf.com/java/how-to/background-foreground/?utm_source=github).

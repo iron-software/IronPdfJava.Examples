@@ -1,4 +1,4 @@
-> Full guide: [Security and metadata](https://ironpdf.com/examples/security-and-metadata/)
+> Full guide: [Security and metadata](https://ironpdf.com/examples/security-and-metadata/?utm_source=github)
 
 IronPDF facilitates modifications to both PDF metadata and security settings. It has features to set PDFs as read-only, unprintable, password-protected, or encrypted. Moreover, users have the capability to add or edit metadata properties.
 
@@ -24,4 +24,4 @@ Adjusting security features of a PDF involves the `SecurityManager`. By invoking
 Java developers can further refine security settings by using a `SecurityOptions` object, which offers more detailed control over the security aspects of a PDF.
 
 For an in-depth understanding of the MetadataManager in IronPDF for Java, refer to the following documentation:
-[Explore MetadataManager API for Java PDF Management](https://ironpdf.com/java/object-reference/api/com/ironsoftware/ironpdf/metadata/MetadataManager.html)
+[Explore MetadataManager API for Java PDF Management](https://ironpdf.com/java/object-reference/api/com/ironsoftware/ironpdf/metadata/MetadataManager.html?utm_source=github)

@@ -1,4 +1,4 @@
-> Full guide: [Merge PDFs](https://ironpdf.com/examples/merge-pdfs/)
+> Full guide: [Merge PDFs](https://ironpdf.com/examples/merge-pdfs/?utm_source=github)
 
 IronPDF offers the capability to amalgamate the contents of various PDF files. This function is especially useful for adding cover pages to new or existing PDFs. It also facilitates the consolidation of pertinent documents into a single file, which simplifies both printing and distribution.
 
@@ -6,4 +6,4 @@ In the provided code sample, the `PdfDocument.merge` method is applied to two `P
 
 For merging more than three PDF documents, initiate by forming a list that encompasses the necessary `PdfDocument` objects. Subsequently, submit this list to the `PdfDocument.merge` method as a singular argument:
 
-[Explore the PdfDocument.merge Method Documentation.](https://ironpdf.com/java/object-reference/api/com/ironsoftware/ironpdf/PdfDocument.html#merge(java.util.List))
+[Explore the PdfDocument.merge Method Documentation.](https://ironpdf.com/java/object-reference/api/com/ironsoftware/ironpdf/PdfDocument.html?utm_source=github#merge(java.util.List))

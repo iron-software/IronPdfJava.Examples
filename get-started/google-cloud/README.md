@@ -1,6 +1,6 @@
 # Setting up IronPDF for Java in Google Cloud
 
-> Full guide: [Setting up IronPDF for Java in Google Cloud](https://ironpdf.com/java/get-started/google-cloud/)
+> Full guide: [Setting up IronPDF for Java in Google Cloud](https://ironpdf.com/java/get-started/google-cloud/?utm_source=github)
 
 
 <small>Note: Full compatibility with Google Cloud has not yet been established definitively. However, we can provide some <code>Required Settings</code> for experimental integration.</small>
@@ -9,7 +9,7 @@
 
 * Utilizing Zip Deployment is nonviable with IronPDF as the operation requires binary executions.
 * The standard Docker images provided by Cloud Functions are inadequate due to missing packages necessary for Chrome execution. For further details, refer to the [Google Cloud System Packages](https://cloud.google.com/functions/docs/reference/system-packages).
-* A custom Dockerfile should be prepared with all necessary packages installed. Further guidance can be found in our [Linux Deployment Guide](https://ironpdf.com/how-to/linux/).
+* A custom Dockerfile should be prepared with all necessary packages installed. Further guidance can be found in our [Linux Deployment Guide](https://ironpdf.com/how-to/linux/?utm_source=github).
 
 * Adding the `ironpdf-engine-linux-x64` dependency to your project is recommended (ensure version is latest):
 

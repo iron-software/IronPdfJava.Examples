@@ -1,7 +1,7 @@
-> Full guide: [Ironpdf website and system logins](https://ironpdf.com/examples/ironpdf-website-and-system-logins/)
+> Full guide: [Ironpdf website and system logins](https://ironpdf.com/examples/ironpdf-website-and-system-logins/?utm_source=github)
 
-To convert web pages that are secured by HTML forms or located within password-protected directories into PDFs, the preferred method is to sidestep the programmatic authentication and directly translate the markup from local files or HTML strings, as detailed on [the IronPDF login procedures resource page](https://ironpdf.com/how-to/logins/). But, for instances where it is impractical or too cumbersome to obtain the source code for the web pages targeted for conversion, IronPDF simplifies the process of generating PDFs from these protected areas.
+To convert web pages that are secured by HTML forms or located within password-protected directories into PDFs, the preferred method is to sidestep the programmatic authentication and directly translate the markup from local files or HTML strings, as detailed on [the IronPDF login procedures resource page](https://ironpdf.com/how-to/logins/?utm_source=github). But, for instances where it is impractical or too cumbersome to obtain the source code for the web pages targeted for conversion, IronPDF simplifies the process of generating PDFs from these protected areas.
 
 When dealing with web pages shielded by password security, you can employ a `ChromeHttpLoginCredentials` object to provide a set of valid network credentials to IronPDF’s PDF rendering service. Subsequently, integrate these credentials and the URL of the secure web page into the `PdfDocument.renderUrlAsPdf` method to achieve the conversion.
 
-[Learn more about ChromeHttpLoginCredentials for Java](https://ironpdf.com/java/object-reference/api/com/ironsoftware/ironpdf/render/ChromeHttpLoginCredentials.html)
+[Learn more about ChromeHttpLoginCredentials for Java](https://ironpdf.com/java/object-reference/api/com/ironsoftware/ironpdf/render/ChromeHttpLoginCredentials.html?utm_source=github)

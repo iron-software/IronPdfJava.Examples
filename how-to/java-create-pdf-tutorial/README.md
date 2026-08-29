@@ -1,6 +1,6 @@
 # How to Generate PDF Files Using Java
 
-> Full guide: [How to Generate PDF Files Using Java](https://ironpdf.com/java/how-to/java-create-pdf-tutorial/)
+> Full guide: [How to Generate PDF Files Using Java](https://ironpdf.com/java/how-to/java-create-pdf-tutorial/?utm_source=github)
 
 
 *Automatically creating PDFs via Java programming greatly enhances the ability to produce documents dynamically, catering to needs such as generating invoices, reports, or other custom PDFs as required.*
@@ -50,7 +50,7 @@ Next, activate IronPDF by inputting a valid license key in your `main` method:
 License.setLicenseKey("Your license key");
 ```
 
-**Note**: *License keys are necessary for watermark-free PDF creation. [Purchase a License Key](https://ironpdf.com/java/licensing/) or [Obtain a Free Trial License Key](https://ironpdf.com/trial-license). Without a license key, PDFs will contain watermarks.*
+**Note**: *License keys are necessary for watermark-free PDF creation. [Purchase a License Key](https://ironpdf.com/java/licensing/?utm_source=github) or [Obtain a Free Trial License Key](https://ironpdf.com/trial-license?utm_source=github). Without a license key, PDFs will contain watermarks.*
 
 ## Creating a PDF from HTML Content
 
@@ -95,7 +95,7 @@ PdfDocument urlToPdf = PdfDocument.renderUrlAsPdf("https://ironpdf.com");
 urlToPdf.saveAs(Paths.get("urlToPdf.pdf"));
 ```
 
-Learn more about URL to PDF conversions on the [Converting a URL to a PDF Tutorial](https://ironpdf.com/java/examples/converting-a-url-to-a-pdf/) page.
+Learn more about URL to PDF conversions on the [Converting a URL to a PDF Tutorial](https://ironpdf.com/java/examples/converting-a-url-to-a-pdf/?utm_source=github) page.
 
 ## Customizing PDF Formatting
 
@@ -107,7 +107,7 @@ ChromePdfRenderOptions options = new ChromePdfRenderOptions();
 // Custom settings can be applied here
 ```
 
-Detailed instructions for using this class can be found in the [PDF Generation Settings Tutorial](https://ironpdf.com/java/examples/pdf-generation-settings/).
+Detailed instructions for using this class can be found in the [PDF Generation Settings Tutorial](https://ironpdf.com/java/examples/pdf-generation-settings/?utm_source=github).
 
 ## Securing PDF Files
 
@@ -132,7 +132,7 @@ Protected PDFs will prompt for the password upon access:
 
 ![Java Create PDFs - Figure 2](https://ironpdf.com/static-assets/ironpdf-java/howto/java-create-pdf/java-create-pdf-2.webp)
 
-For more on security and metadata, explore the [Security and Metadata Tutorial](https://ironpdf.com/java/examples/security-and-metadata/).
+For more on security and metadata, explore the [Security and Metadata Tutorial](https://ironpdf.com/java/examples/security-and-metadata/?utm_source=github).
 
 ## Complete Source Code
 
@@ -175,4 +175,4 @@ IronPDF renders elements consistently with web standards, supporting interactive
 
 ## Summary
 
-This guide examined the process of generating PDFs using Java with IronPDF. Its API creates PDFs from several kinds of content. Though it is a commercial product, you can start with a [Free Trial](https://ironpdf.com/trial-license).
+This guide examined the process of generating PDFs using Java with IronPDF. Its API creates PDFs from several kinds of content. Though it is a commercial product, you can start with a [Free Trial](https://ironpdf.com/trial-license?utm_source=github).

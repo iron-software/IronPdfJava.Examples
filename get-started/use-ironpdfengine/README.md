@@ -1,11 +1,11 @@
 # Utilizing the IronPdfEngine
 
-> Full guide: [Utilizing the IronPdfEngine](https://ironpdf.com/java/get-started/use-ironpdfengine/)
+> Full guide: [Utilizing the IronPdfEngine](https://ironpdf.com/java/get-started/use-ironpdfengine/?utm_source=github)
 
 
 The IronPdfEngine operates as a gRPC server handling multiple operations for IronPDF, such as creation, modification, and reading of PDFs.
 
-[Download IronPDF for Java at ironsoftware.com](https://ironpdf.com/java/)
+[Download IronPDF for Java at ironsoftware.com](https://ironpdf.com/java/?utm_source=github)
 
 ## Integration of IronPdf with Java through IronPdfEngine
 
@@ -118,7 +118,7 @@ String ironPdfEngineVersion = com.ironsoftware.ironpdf.Settings.getIronPdfEngine
 
 If IronPdfEngine is hosted remotely, say at `123.456.7.8:33350`, ensure compatibility by setting up the connection properly.
 
-[Read detailed instructions on setting up and activating IronPdfEngine remotely](https://ironpdf.com/how-to/pull-run-ironpdfengine/)
+[Read detailed instructions on setting up and activating IronPdfEngine remotely](https://ironpdf.com/how-to/pull-run-ironpdfengine/?utm_source=github)
 
 Add the following at the start-up of your application or prior to any IronPdf method use:
 

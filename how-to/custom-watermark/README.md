@@ -1,11 +1,11 @@
 # Applying Custom Watermarks to PDF Documents
 
-> Full guide: [Applying Custom Watermarks to PDF Documents](https://ironpdf.com/how-to/custom-watermark/)
+> Full guide: [Applying Custom Watermarks to PDF Documents](https://ironpdf.com/how-to/custom-watermark/?utm_source=github)
 
 
 Custom watermarks are an excellent method for safeguarding PDF documents, indicating proprietary information, or showcasing certain statuses such as labeling them "Confidential" or embedding a corporation's logo. IronPDF offers the capability to design unique watermarks using HTML strings, which provide full CSS styling options allowing for extensive customization to include the wide range of styles that HTML and CSS support.
 
-This tutorial will explore various watermark types including text, images, and demonstrate how to adjust watermark properties like location, opacity, and rotation using tools such as [`TextStamper`](https://ironpdf.com/java/object-reference/api/com/ironsoftware/ironpdf/stamp/TextStamper.html) and [`ImageStamper`](https://ironpdf.com/java/object-reference/api/com/ironsoftware/ironpdf/stamp/ImageStamper.html).
+This tutorial will explore various watermark types including text, images, and demonstrate how to adjust watermark properties like location, opacity, and rotation using tools such as [`TextStamper`](https://ironpdf.com/java/object-reference/api/com/ironsoftware/ironpdf/stamp/TextStamper.html?utm_source=github) and [`ImageStamper`](https://ironpdf.com/java/object-reference/api/com/ironsoftware/ironpdf/stamp/ImageStamper.html?utm_source=github).
 
 ## Applying a Text Watermark
 

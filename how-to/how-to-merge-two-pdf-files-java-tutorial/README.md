@@ -1,11 +1,11 @@
 # How to Combine Multiple PDFs into One Using Java
 
-> Docs: [IronPDF for Java documentation](https://ironpdf.com/java/docs/)
+> Docs: [IronPDF for Java documentation](https://ironpdf.com/java/docs/?utm_source=github)
 
 
 ## 1. Overview
 
-This tutorial explains the process of combining several PDF documents into one using Java. Combining PDFs is an essential task in fields like document management and reporting. Throughout this guide, we will use [IronPDF for Java](https://ironpdf.com/java/) to demonstrate merging multiple PDF documents into a unified file. By the end of this tutorial, you’ll have learned to set up your Java environment, integrate the IronPDF library, and effectively merge PDF files.
+This tutorial explains the process of combining several PDF documents into one using Java. Combining PDFs is an essential task in fields like document management and reporting. Throughout this guide, we will use [IronPDF for Java](https://ironpdf.com/java/?utm_source=github) to demonstrate merging multiple PDF documents into a unified file. By the end of this tutorial, you’ll have learned to set up your Java environment, integrate the IronPDF library, and effectively merge PDF files.
 
 ## 2. What is IronPDF for Java?
 
@@ -17,7 +17,7 @@ Before initiating the merging process, ensure the following prerequisites are sa
 
 1. Java must be installed on your system with the correct environment variable settings. If Java is not yet installed, see the [Java download instructions](https://www.java.com/en/download/help/download_options.html#windows).
 2. A Java IDE such as Eclipse or IntelliJ is necessary. Eclipse can be obtained from the [Eclipse downloads](https://www.eclipse.org/downloads/), while IntelliJ can be downloaded from [IntelliJ’s website](https://www.jetbrains.com/idea/download/#section=windows).
-3. The IronPDF library for Java needs to be included as a project dependency. Visit the IronPDF [installation page](https://ironpdf.com/java/) for setup instructions.
+3. The IronPDF library for Java needs to be included as a project dependency. Visit the IronPDF [installation page](https://ironpdf.com/java/?utm_source=github) for setup instructions.
 4. Maven should be installed and configured in your IDE. For installation guidance, check out this [Maven installation tutorial](https://www.jetbrains.com/idea/guide/tutorials/marco-codes-maven/installing-maven/).
 
 ## 4. Installing IronPDF for Java
@@ -117,8 +117,8 @@ public class Main {
 
 ## 6. Wrap Up
 
-This tutorial provides a detailed guide on using Java and the IronPDF library to merge multiple PDFs into a single file. The methods shown will help you in setting up, importing your library, and merging documents efficiently. For more details on PDF merging in Java using IronPDF, refer to the [merge PDF examples](https://ironpdf.com/java/examples/merge-pdfs/).
+This tutorial provides a detailed guide on using Java and the IronPDF library to merge multiple PDFs into a single file. The methods shown will help you in setting up, importing your library, and merging documents efficiently. For more details on PDF merging in Java using IronPDF, refer to the [merge PDF examples](https://ironpdf.com/java/examples/merge-pdfs/?utm_source=github).
 
-For further documentation on manipulating PDFs with Java, please view the [IronPDF guide](https://ironpdf.com/java/docs/). For creating PDFs from HTML, explore the [HTML to PDF conversion guide](https://ironpdf.com/java/examples/using-html-to-create-a-pdf/).
+For further documentation on manipulating PDFs with Java, please view the [IronPDF guide](https://ironpdf.com/java/docs/?utm_source=github). For creating PDFs from HTML, explore the [HTML to PDF conversion guide](https://ironpdf.com/java/examples/using-html-to-create-a-pdf/?utm_source=github).
 
-IronPDF for Java is freely available for development but commercial use requires licensing. Learn about licensing on the [IronPDF licensing information page](https://ironpdf.com/java/licensing/).
+IronPDF for Java is freely available for development but commercial use requires licensing. Learn about licensing on the [IronPDF licensing information page](https://ironpdf.com/java/licensing/?utm_source=github).

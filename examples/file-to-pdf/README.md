@@ -1,4 +1,4 @@
-> Full guide: [File to PDF](https://ironpdf.com/examples/file-to-pdf/)
+> Full guide: [File to PDF](https://ironpdf.com/examples/file-to-pdf/?utm_source=github)
 
 IronPDF enables the conversion of HTML files situated on local drives or network paths. To perform this conversion, utilize the `PdfDocument.renderHtmlFileAsPdf` method, as demonstrated in the example provided.
 
@@ -8,6 +8,6 @@ Essentially, the output PDF document will mirror the appearance of the HTML file
 
 The `PdfDocument.renderHtmlFileAsPdf` method might issue an `IOException` if it fails to locate or open the specified HTML file.
 
-For additional details on customizing the resulting PDF's appearance using the `renderHtmlFileAsPdf` method, consult the [IronPDF API Documentation for ChromePdfRenderOptions](https://ironpdf.com/java/object-reference/api/com/ironsoftware/ironpdf/render/ChromePdfRenderOptions.html).
+For additional details on customizing the resulting PDF's appearance using the `renderHtmlFileAsPdf` method, consult the [IronPDF API Documentation for ChromePdfRenderOptions](https://ironpdf.com/java/object-reference/api/com/ironsoftware/ironpdf/render/ChromePdfRenderOptions.html?utm_source=github).
 
-[Learn to Convert HTML to PDF with Java Tutorial](https://ironpdf.com/java/tutorials/html-to-pdf/) provides further insights and guidance on this process.
+[Learn to Convert HTML to PDF with Java Tutorial](https://ironpdf.com/java/tutorials/html-to-pdf/?utm_source=github) provides further insights and guidance on this process.

@@ -1,6 +1,6 @@
 # Adding Backgrounds and Overlays to PDFs with IronPDF in Java
 
-> Full guide: [Adding Backgrounds and Overlays to PDFs with IronPDF in Java](https://ironpdf.com/how-to/background-foreground/)
+> Full guide: [Adding Backgrounds and Overlays to PDFs with IronPDF in Java](https://ironpdf.com/how-to/background-foreground/?utm_source=github)
 
 
 Integrating a background into a PDF places an image or another PDF document behind the main content, enhancing the visual appeal with elements like watermarks, letterheads, or other design motifs. Overlays, on the other hand, allow you to apply additional details over the PDF content, such as stamps, annotations, or signatures.
@@ -36,7 +36,7 @@ pdf.saveAs(Paths.get("addBackground.pdf"));
 The resulting PDF is displayed as follows:
 
 <iframe src="https://ironpdf.com/static-assets/ironpdf-java/howto/background-foreground/addBackground.pdf" width="100%" height="400px">
-    This browser does not support PDFs. Please download the PDF to view it: <a href="https://ironpdf.com/static-assets/ironpdf-java/howto/background-foreground/addBackground.pdf">Download PDF</a>.
+    This browser does not support PDFs. Please download the PDF to view it: <a href="https://ironpdf.com/static-assets/ironpdf-java/howto/background-foreground/addBackground.pdf?utm_source=github">Download PDF</a>.
 </iframe>
 
 ## Embedding a Background on Selected Pages
@@ -93,7 +93,7 @@ pdf.saveAs(Paths.get("overlayForeground.pdf"));
 The PDF with the added foreground appears as:
 
 <iframe src="https://ironpdf.com/static-assets/ironpdf-java/howto/background-foreground/overlayForeground.pdf" width="100%" height="400px">
-    This browser does not support PDFs. Please download the PDF to view it: <a href="https://ironpdf.com/static-assets/ironpdf-java/howto/background-foreground/overlayForeground.pdf">Download PDF</a>.
+    This browser does not support PDFs. Please download the PDF to view it: <a href="https://ironpdf.com/static-assets/ironpdf-java/howto/background-foreground/overlayForeground.pdf?utm_source=github">Download PDF</a>.
 </iframe>
 
 ## Applying Foreground to Specific Pages

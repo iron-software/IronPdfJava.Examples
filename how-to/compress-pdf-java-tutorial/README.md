@@ -1,6 +1,6 @@
 # How to Reduce PDF File Size Using Java
 
-> Full guide: [How to Reduce PDF File Size Using Java](https://ironpdf.com/java/how-to/compress-pdf-java-tutorial/)
+> Full guide: [How to Reduce PDF File Size Using Java](https://ironpdf.com/java/how-to/compress-pdf-java-tutorial/?utm_source=github)
 
 
 PDFs are widely utilized for conveying detailed information through documents. However, the sizable nature of these files may pose challenges in terms of transmission and storage. Utilizing IronPDF, a specialized Java PDF Library, it's feasible to diminish the file sizes of PDF documents through compression, which strips out non-essential resources like redundantly embedded fonts and images.
@@ -9,13 +9,13 @@ In this tutorial, we'll look at the utilization of the IronPDF library for PDF c
 
 ## Explore IronPDF: A Java PDF Library
 
-IronPDF stands out as a [Java PDF library](https://ironpdf.com/java/) recognized for its comprehensive abilities. It enables users to create, manipulate, compress, and manage PDF files across any programming environment. Beyond merely crafting accurate PDFs, IronPDF excels in compressing existing documents, greatly reducing their file size while preserving quality, which is essential for managing extensive documents bandwidth-efficiently.
+IronPDF stands out as a [Java PDF library](https://ironpdf.com/java/?utm_source=github) recognized for its comprehensive abilities. It enables users to create, manipulate, compress, and manage PDF files across any programming environment. Beyond merely crafting accurate PDFs, IronPDF excels in compressing existing documents, greatly reducing their file size while preserving quality, which is essential for managing extensive documents bandwidth-efficiently.
 
 ## Steps to Compress PDF Files Using IronPDF
 
 ### Setting Up IronPDF with Java Maven
 
-- Begin by incorporating IronPDF into your [Java Maven project](https://ironpdf.com/java/docs/). Insert the IronPDF Maven repository and its dependency in your `pom.xml`:
+- Begin by incorporating IronPDF into your [Java Maven project](https://ironpdf.com/java/docs/?utm_source=github). Insert the IronPDF Maven repository and its dependency in your `pom.xml`:
 
     ```xml
     <dependency>
@@ -31,7 +31,7 @@ With IronPDF configured, you’re ready to use its capabilities in your Java pro
 
 ### Example of PDF Compression
 
-The following Java application demonstrates how to repurpose Ironpdf for [PDF compression](https://ironpdf.com/java/examples/pdf-compression/):
+The following Java application demonstrates how to repurpose Ironpdf for [PDF compression](https://ironpdf.com/java/examples/pdf-compression/?utm_source=github):
 
 ```java
 import com.ironsoftware.ironpdf.*;
@@ -80,4 +80,4 @@ This script illustrates compressing and saving a PDF at different quality levels
 
 ## Conclusion
 
-IronPDF serves as a budget-friendly, powerful tool for Java developers needing to compress PDF files without compromising on functionality, offering features like HTML to PDF conversion and advanced image processing. With [licensing options](https://ironpdf.com/java/licensing/) starting from `$liteLicense`, IronPDF is accessible for developers who require a reliable solution for PDF optimization at a cost-effective price point.
+IronPDF serves as a budget-friendly, powerful tool for Java developers needing to compress PDF files without compromising on functionality, offering features like HTML to PDF conversion and advanced image processing. With [licensing options](https://ironpdf.com/java/licensing/?utm_source=github) starting from `$liteLicense`, IronPDF is accessible for developers who require a reliable solution for PDF optimization at a cost-effective price point.
