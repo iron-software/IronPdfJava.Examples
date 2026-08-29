@@ -1,15 +1,15 @@
 # Java PDF to Image File
 
-> Full guide: [Java PDF to Image File](https://ironpdf.com/java/how-to/java-pdf-to-image-tutorial/)
+> Full guide: [Java PDF to Image File](https://ironpdf.com/java/how-to/java-pdf-to-image-tutorial/?utm_source=github)
 
 
 ## 1. Introduction
 
-Transforming PDF documents or pages into image formats like JPEG, PNG, or TIFF is a common requirement in the software industry. Occasionally, there might be a need to convert specific PDF pages into images for use in different contexts, and taking a screenshot may be the only quick solution available. Consider a scenario in a Java project where you need to load and transform a PDF page into image files. Using standard Java programming, this task can be quite challenging. For such purposes, we will utilize [IronPDF for Java](https://ironpdf.com/java/).
+Transforming PDF documents or pages into image formats like JPEG, PNG, or TIFF is a common requirement in the software industry. Occasionally, there might be a need to convert specific PDF pages into images for use in different contexts, and taking a screenshot may be the only quick solution available. Consider a scenario in a Java project where you need to load and transform a PDF page into image files. Using standard Java programming, this task can be quite challenging. For such purposes, we will utilize [IronPDF for Java](https://ironpdf.com/java/?utm_source=github).
 
 ## 2. IronPDF for Java
 
-[IronPDF for Java](https://ironpdf.com/java/) is a library designed for creating, processing, and managing PDF files. It is widely used by developers due to its comprehensive PDF manipulation capabilities, which include reading, generating, and modifying PDFs without Adobe Acrobat. IronPDF for Java offers features like custom headers and footers, digital signatures, attachments, password protection, and security. It also supports multithreading and asynchronous operations, making it suitable for use in Maven-based projects.
+[IronPDF for Java](https://ironpdf.com/java/?utm_source=github) is a library designed for creating, processing, and managing PDF files. It is widely used by developers due to its comprehensive PDF manipulation capabilities, which include reading, generating, and modifying PDFs without Adobe Acrobat. IronPDF for Java offers features like custom headers and footers, digital signatures, attachments, password protection, and security. It also supports multithreading and asynchronous operations, making it suitable for use in Maven-based projects.
 
 Let’s explore how to convert PDF pages to image formats such as JPEG, JPG, or PNG using Java.
 
@@ -151,6 +151,6 @@ options.setImageMaxWidth(500);
 
 This guide demonstrated how to transform PDFs into images using IronPDF for Java, allowing you to integrate image extraction from PDF content in your Java applications. IronPDF supports various image formats and provides extensive control over image resolution.
 
-For further information on IronPDF for Java, refer to the [IronPDF Documentation for Java](https://ironpdf.com/java/docs/). For detailed examples of conversions, visit [IronPDF PDF to Images Example](https://ironpdf.com/java/examples/rasterize-a-pdf-to-images/).
+For further information on IronPDF for Java, refer to the [IronPDF Documentation for Java](https://ironpdf.com/java/docs/?utm_source=github). For detailed examples of conversions, visit [IronPDF PDF to Images Example](https://ironpdf.com/java/examples/rasterize-a-pdf-to-images/?utm_source=github).
 
-IronPDF for Java is free for development and requires a license for commercial deployment. For licensing details, visit the [IronPDF Java Licensing page](https://ironpdf.com/java/licensing/).
+IronPDF for Java is free for development and requires a license for commercial deployment. For licensing details, visit the [IronPDF Java Licensing page](https://ironpdf.com/java/licensing/?utm_source=github).

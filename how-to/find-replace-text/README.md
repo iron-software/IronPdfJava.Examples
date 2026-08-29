@@ -1,6 +1,6 @@
 # How to Replace Text in a PDF
 
-> Full guide: [How to Replace Text in a PDF](https://ironpdf.com/how-to/find-replace-text/)
+> Full guide: [How to Replace Text in a PDF](https://ironpdf.com/how-to/find-replace-text/?utm_source=github)
 
 
 Replacing text within a PDF is highly useful for quickly and accurately making modifications. This functionality is ideal for correcting errors, updating details, or customizing templates for specific purposes. It proves to be especially beneficial for documents that require regular revision or a customized approach.

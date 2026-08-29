@@ -1,4 +1,4 @@
-> Full guide: [Bookmarks](https://ironpdf.com/examples/bookmarks/)
+> Full guide: [Bookmarks](https://ironpdf.com/examples/bookmarks/?utm_source=github)
 
 Developers can use the `BookmarkManager` to insert bookmarks into a PDF file. This can be done by utilizing the `getBookmarks` method from a `PdfDocument`.
 
@@ -13,6 +13,6 @@ To insert a bookmark at the beginning, hence making it show up before any predef
 
 IronPDF excels in identifying bookmarks that are added through external software, so bookmarks can be reorganised in a document that was rendered elsewhere.
 
-For an in-depth guide on managing bookmarks and exploring other PDF capabilities, you can visit the [IronPDF Overview Page on Iron Software](https://ironpdf.com/) which looks at a variety of features and methods for integration.
+For an in-depth guide on managing bookmarks and exploring other PDF capabilities, you can visit the [IronPDF Overview Page on Iron Software](https://ironpdf.com/?utm_source=github) which looks at a variety of features and methods for integration.
 
-[Discover more about how to handle PDF bookmarks in Java](https://ironpdf.com/java/how-to/bookmarks/)
+[Discover more about how to handle PDF bookmarks in Java](https://ironpdf.com/java/how-to/bookmarks/?utm_source=github)

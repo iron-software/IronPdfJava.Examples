@@ -1,10 +1,10 @@
 # HTML to PDF Conversion in Java Using IronPDF
 
-> Full guide: [HTML to PDF Conversion in Java Using IronPDF](https://ironpdf.com/java/tutorials/generate-pdfs/)
+> Full guide: [HTML to PDF Conversion in Java Using IronPDF](https://ironpdf.com/java/tutorials/generate-pdfs/?utm_source=github)
 
 *In this guide, Java programmers will learn how to use the IronPDF library to transform HTML into accurately rendered PDFs.*
 
-*IronPDF excels in PDF creation and manipulation tasks and supports both [.NET](https://ironpdf.com) and [Java](https://ironpdf.com/java/) environments. Here, we'll particularly focus on the Java implementation for transforming HTML content, such as files or snippets, into PDFs. For the .NET equivalent, visit our [HTML to PDF for .NET Tutorial](https://ironpdf.com/tutorials/html-to-pdf/).*
+*IronPDF excels in PDF creation and manipulation tasks and supports both [.NET](https://ironpdf.com?utm_source=github) and [Java](https://ironpdf.com/java/?utm_source=github) environments. Here, we'll particularly focus on the Java implementation for transforming HTML content, such as files or snippets, into PDFs. For the .NET equivalent, visit our [HTML to PDF for .NET Tutorial](https://ironpdf.com/tutorials/html-to-pdf/?utm_source=github).*
 
 <hr class="separator">
 
@@ -35,15 +35,15 @@ For Java projects with Maven, integrate IronPDF by inserting these dependencies 
 </dependency>
 ```
 
-These artifacts point to the [most recent iteration of the IronPDF library](https://ironpdf.com/java/product-updates/changelog/) and an SL4J logging implementation essential for logging activities during processing. Adjust the logging dependency as needed or omit if such functionality is not required.
+These artifacts point to the [most recent iteration of the IronPDF library](https://ironpdf.com/java/product-updates/changelog/?utm_source=github) and an SL4J logging implementation essential for logging activities during processing. Adjust the logging dependency as needed or omit if such functionality is not required.
 
 Execute the `mvn install` command within your project's root directory via a terminal to install these dependencies.
 
 ### 1.2 Manual Library Installation
 
-For setups without dependency managers like Maven, manually download and implement the [IronPDF JAR](https://ironpdf.com/static-assets/ironpdf-java/packages/ironpdf-2022.12.0-fat-jar.jar) into your project alongside the optional [SL4J library](https://mvnrepository.com/artifact/org.slf4j/slf4j-simple).
+For setups without dependency managers like Maven, manually download and implement the [IronPDF JAR](https://ironpdf.com/static-assets/ironpdf-java/packages/ironpdf-2022.12.0-fat-jar.jar?utm_source=github) into your project alongside the optional [SL4J library](https://mvnrepository.com/artifact/org.slf4j/slf4j-simple).
 
-Directly download the JAR from IronPDF's [Java JAR Download Page](https://ironpdf.com/static-assets/ironpdf-java/packages/ironpdf-2024.9.1-fat-jar.jar).
+Directly download the JAR from IronPDF's [Java JAR Download Page](https://ironpdf.com/static-assets/ironpdf-java/packages/ironpdf-2024.9.1-fat-jar.jar?utm_source=github).
 
 ### 1.3 Make IronPDF Components Accessible
 
@@ -67,12 +67,12 @@ This key should be set early in your application prior to any PDF operation.
 
 <div class="content-img-align-center">
 <div class="center-image-wrapper">
-<a rel="nofollow" href="https://ironpdf.com/static-assets/pdf/java/tutorials/html-to-pdf/html-to-pdf-23.webp" target="_blank"><img src="https://ironpdf.com/static-assets/pdf/java/tutorials/html-to-pdf/html-to-pdf-23.webp" alt="" class="img-responsive add-shadow"></a>
-    <p class="content__image-caption">Secure your license at [Iron Software’s licensing page](https://ironpdf.com/java/licensing/) for watermark-free PDF operations.</p>
+<a rel="nofollow" href="https://ironpdf.com/static-assets/ironpdf-java/tutorials/html-to-pdf/html-to-pdf-23.webp?utm_source=github" target="_blank"><img src="https://ironpdf.com/static-assets/ironpdf-java/tutorials/html-to-pdf/html-to-pdf-23.webp" alt="" class="img-responsive add-shadow"></a>
+    <p class="content__image-caption">Secure your license at [Iron Software’s licensing page](https://ironpdf.com/java/licensing/?utm_source=github) for watermark-free PDF operations.</p>
 </div>
 </div>
 
-[Purchase a License](https://ironpdf.com/java/licensing/) or [inquire about a trial](https://ironpdf.com/trial-license).
+[Purchase a License](https://ironpdf.com/java/licensing/?utm_source=github) or [inquire about a trial](https://ironpdf.com/?utm_source=github#trial-license).
 
 ### 1.5 Log File Configuration (Optional)
 
@@ -130,7 +130,7 @@ PdfDocument pdf = PdfDocument.renderHtmlAsPdf(html);
 pdf.saveAs("output.pdf");
 ```
 
-For details on rendering settings, explore [this guide](https://ironpdf.com/java/examples/pdf-generation-settings/).
+For details on rendering settings, explore [this guide](https://ironpdf.com/java/examples/pdf-generation-settings/?utm_source=github).
 
 ### 2.2. Convert a URL to PDF
 
@@ -145,7 +145,7 @@ pdf.saveAs("url_to_pdf.pdf");
 
 This demonstrates IronPDF's ability to faithfully reproduce web content as a static PDF.
 
-For an in-depth tutorial on converting URL to PDF, refer to [this example](https://ironpdf.com/java/examples/converting-a-url-to-a-pdf/).
+For an in-depth tutorial on converting URL to PDF, refer to [this example](https://ironpdf.com/java/examples/converting-a-url-to-a-pdf/?utm_source=github).
 
 ### 2.3. Convert HTML File to PDF
 
@@ -162,9 +162,9 @@ IronPDF maintains all style and script influences from the original HTML, ensuri
 
 ## 3. Advanced Features and Further Reading
 
-While this tutorial covers basic functionalities, IronPDF offers far more. Learn about customizing PDF appearance, adding elements like headers or watermarks, managing page settings, and extracting contents through our detailed [examples and tutorials](https://ironpdf.com/java/examples/using-html-to-create-a-pdf/).
+While this tutorial covers basic functionalities, IronPDF offers far more. Learn about customizing PDF appearance, adding elements like headers or watermarks, managing page settings, and extracting contents through our detailed [examples and tutorials](https://ironpdf.com/java/examples/using-html-to-create-a-pdf/?utm_source=github).
 
-You might also want to look at our [API documentations](https://ironpdf.com/java/object-reference/api/) for comprehensive insights into the IronPDF capabilities.
+You might also want to look at our [API documentations](https://ironpdf.com/java/object-reference/api/?utm_source=github) for comprehensive insights into the IronPDF capabilities.
 
 <hr class="separator">
 

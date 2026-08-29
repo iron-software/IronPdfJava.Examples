@@ -1,4 +1,4 @@
-> Full guide: [Image to PDF](https://ironpdf.com/examples/image-to-pdf/)
+> Full guide: [Image to PDF](https://ironpdf.com/examples/image-to-pdf/?utm_source=github)
 
 IronPDF provides developers with the functionality to consolidate multiple images into a single PDF document.
 
@@ -11,4 +11,4 @@ If there's a requirement to distribute the images across multiple PDF files, rat
 1. Repeatedly invoke `PdfDocument.fromImage`, each time with a list containing only one `Path` object.
 2. Assemble all images into a single PDF document as described earlier, and subsequently utilize the `PdfDocument.copyPage` method to replicate each page into separate PDF documents.
 
-[Learn to Convert PDFs to Images in Java](https://ironpdf.com/java/how-to/java-pdf-to-image-tutorial/){.code_content__related-link__doc-cta-link}
+[Learn to Convert PDFs to Images in Java](https://ironpdf.com/java/how-to/java-pdf-to-image-tutorial/?utm_source=github){.code_content__related-link__doc-cta-link}

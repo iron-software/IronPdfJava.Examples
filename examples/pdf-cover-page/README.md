@@ -1,4 +1,4 @@
-> Full guide: [PDF cover page](https://ironpdf.com/examples/pdf-cover-page/)
+> Full guide: [PDF cover page](https://ironpdf.com/examples/pdf-cover-page/?utm_source=github)
 
 Iron Software's `PdfDocument.merge` function is designed to combine two PDF documents into one by appending the content of the second PDF behind the first.
 
@@ -10,4 +10,4 @@ In the given example, there's an implementation of `setFirstPageNumber` within t
 
 Additionally, developers have the option to prepend a cover page using the `PdfDocument.prependPdf` method.
 
-[Learn more about the PdfDocument.merge method](https://ironpdf.com/java/object-reference/api/com/ironsoftware/ironpdf/PdfDocument.html#merge\(com.ironsoftware.ironpdf.PdfDocument,com.ironsoftware.ironpdf.PdfDocument\))
+[Learn more about the PdfDocument.merge method](https://ironpdf.com/java/object-reference/api/com/ironsoftware/ironpdf/PdfDocument.html?utm_source=github#merge\(com.ironsoftware.ironpdf.PdfDocument,com.ironsoftware.ironpdf.PdfDocument\))

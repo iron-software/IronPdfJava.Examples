@@ -1,6 +1,6 @@
 # Java Merge PDF Files into a Single PDF
 
-> Full guide: [Java Merge PDF Files into a Single PDF](https://ironpdf.com/java/how-to/java-merge-pdf-tutorial/)
+> Full guide: [Java Merge PDF Files into a Single PDF](https://ironpdf.com/java/how-to/java-merge-pdf-tutorial/?utm_source=github)
 
 
 PDF stands for **Portable Document Format**, which is a digital representation of documents incorporating text and images. This format maintains consistent presentation and structure across varying platforms, devices, and software.
@@ -26,7 +26,7 @@ To start merging PDF files, the first step involves integrating the IronPDF Java
 
 1. Insert the IronPDF dependency into the `pom.xml` of your Maven project and utilize either the command-line or an IDE to facilitate automatic library retrieval from the central repository.
 2. Alternatively, procure the latest IronPDF version directly from the Maven repository [here](https://search.maven.org/artifact/com.ironsoftware/ironpdf).
-3. Another option is to download from the IronPDF official website using this [link](https://ironpdf.com/java/).
+3. Another option is to download from the IronPDF official website using this [link](https://ironpdf.com/java/?utm_source=github).
 
 Add the following dependency snippet to your `pom.xml`:
 
@@ -60,7 +60,7 @@ import java.nio.file.Paths;
 
 ## Merge Two PDF Source Files in Java using IronPDF
 
-To [merge PDF files](https://ironpdf.com/java/examples/merge-pdfs/), starting with PDF creation and culminating in a combined PDF file, use the following example:
+To [merge PDF files](https://ironpdf.com/java/examples/merge-pdfs/?utm_source=github), starting with PDF creation and culminating in a combined PDF file, use the following example:
 
 ```java
 String htmlA = "<p> [PDF_A] </p>"
@@ -186,11 +186,11 @@ single file.
 The Java engine converts HTML, a URL or a string into a PDF using open standard
 document types (HTML, CSS, JS, JPG and PNG) and is built on the same
 rendering work as IronPDF for .NET. For cloud deployment, see the guides for
-[AWS](https://ironpdf.com/java/get-started/aws/),
-[Azure](https://ironpdf.com/java/get-started/azure/) and
-[Google Cloud](https://ironpdf.com/java/get-started/google-cloud/).
+[AWS](https://ironpdf.com/java/get-started/aws/?utm_source=github),
+[Azure](https://ironpdf.com/java/get-started/azure/?utm_source=github) and
+[Google Cloud](https://ironpdf.com/java/get-started/google-cloud/?utm_source=github).
 
-The [code examples pages](https://ironpdf.com/java/examples/) cover the rest of
+The [code examples pages](https://ironpdf.com/java/docs/?utm_source=github) cover the rest of
 the API. IronPDF is free for development and licensed for commercial use.
 
 ## Frequently Asked Questions

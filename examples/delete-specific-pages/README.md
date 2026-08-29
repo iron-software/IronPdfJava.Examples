@@ -1,4 +1,4 @@
-> Full guide: [Delete specific pages](https://ironpdf.com/java/examples/delete-specific-pages/)
+> Full guide: [Delete specific pages](https://ironpdf.com/java/examples/delete-specific-pages/?utm_source=github)
 
 ### Managing PDF Pages with IronPDF
 
@@ -10,7 +10,7 @@ Using the `PageSelection` class, the subject pages are chosen for the `removePag
 
 #### Guide to Deleting PDF Pages Using Java
 
-1. [Install the IronPDF Java Library](https://ironpdf.com/download-modal)
+1. [Install the IronPDF Java Library](https://ironpdf.com/?utm_source=github#download-modal)
 2. Load an existing PDF or create a new one in Java
 3. Apply the `removePages` method to remove specified pages
 4. Use the `PageSelection` class to choose which pages to delete
@@ -20,4 +20,4 @@ Below is a Java code snippet that illustrates these steps:
 
 This method of page removal assures that PDF documents can be tailored to meet precise requirements with minimal effort.
 
-[Discover more about the PdfDocument.removePages Method](https://ironpdf.com/java/object-reference/api/com/ironsoftware/ironpdf/PdfDocument.html#removePages(com.ironsoftware.ironpdf.edit.PageSelection))
+[Discover more about the PdfDocument.removePages Method](https://ironpdf.com/java/object-reference/api/com/ironsoftware/ironpdf/PdfDocument.html?utm_source=github#removePages(com.ironsoftware.ironpdf.edit.PageSelection))

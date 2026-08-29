@@ -1,4 +1,4 @@
-> Full guide: [PDF compression](https://ironpdf.com/examples/pdf-compression/)
+> Full guide: [PDF compression](https://ironpdf.com/examples/pdf-compression/?utm_source=github)
 
 IronPDF offers a feature for reducing the file size of PDFs by compressing embedded images. Developers can utilize the `PdfDocument` class's `compressImages` method to decrease the file sizes of PDFs that contain large images and graphical elements, resulting in significant savings in storage, time, and costs involved in sharing PDFs over email and other communication mediums.
 
@@ -8,4 +8,4 @@ In the IronPDF image compression tutorial, a practical example demonstrates the 
 
 Determining the optimal quality setting for compression depends on individual needs and might require some trial and error to balance between acceptable image quality and file size reduction.
 
-[Learn How to Compress PDFs in Java with IronPDF](https://ironpdf.com/java/how-to/compress-pdf-java-tutorial/)
+[Learn How to Compress PDFs in Java with IronPDF](https://ironpdf.com/java/how-to/compress-pdf-java-tutorial/?utm_source=github)

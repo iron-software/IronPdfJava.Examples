@@ -1,13 +1,13 @@
 # IronPDF for Java - Create, Edit, and Read PDFs in Java Applications
 
-> Docs: [IronPDF for Java documentation](https://ironpdf.com/java/docs/)
+> Docs: [IronPDF for Java documentation](https://ironpdf.com/java/docs/?utm_source=github)
 
 
 ## Introduction to IronPDF for Java
 
 IronPDF for Java by Iron Software is a library that aids Software Engineers in creating, editing, and extracting content from PDFs within Java 8+, Kotlin, and Scala projects.
 
-`IronPDF for Java` extends the widespread recognition and capabilities of [IronPDF for .NET](https://ironpdf.com).
+`IronPDF for Java` extends the widespread recognition and capabilities of [IronPDF for .NET](https://ironpdf.com?utm_source=github).
 
 Communication with the `IronPdfEngine` in IronPDF for Java is facilitated through gRPC technology.
 
@@ -16,7 +16,7 @@ Communication with the `IronPdfEngine` in IronPDF for Java is facilitated throug
 - Creation of PDFs from various sources like HTML, URL, JavaScript, CSS, and various image formats.
 - Capability to add headers, footers, digital signatures, attachments, and implement security measures like passwords.
 - Optimized for performance with support for Full Multithreading and Asynchronous operations.
-- Discover more at our website by checking all our code demos and a [comprehensive list of over 50 features](https://ironpdf.com/java/#page-home-section-columns-of-features).
+- Discover more at our website by checking all our code demos and a [comprehensive list of over 50 features](https://ironpdf.com/java/?utm_source=github#page-home-section-columns-of-features).
 
 ## Implementing IronPDF in Java Projects
 
@@ -47,7 +47,7 @@ Include IronPDF in your `pom.xml` as follows:
 
 #### Manual JAR File Download
 
-If preferred, the IronPDF JAR file can be [downloaded manually here](https://ironpdf.com/download-modal) for use without dependency management tools.
+If preferred, the IronPDF JAR file can be [downloaded manually here](https://ironpdf.com/?utm_source=github#download-modal) for use without dependency management tools.
 
 ### Initial Setup and Execution
 
@@ -207,8 +207,8 @@ com.ironsoftware.ironpdf.Settings.setLogPath(Paths.get("C:/tmp/myIronPdfEngineLo
 
 ## Licensing & Support
 
-To obtain a license for commercial use of IronPDF, please [purchase a license here](https://ironpdf.com/java/licensing/). A 30-day trial is also available for [trial users](https://ironpdf.com/trial-license).
+To obtain a license for commercial use of IronPDF, please [purchase a license here](https://ironpdf.com/java/licensing/?utm_source=github). A 30-day trial is also available for [trial users](https://ironpdf.com/?utm_source=github#trial-license).
 
-For a full suite of code examples, tutorials, licensing details, and documentation, please visit: [IronPDF for Java resources](https://ironpdf.com/java/).
+For a full suite of code examples, tutorials, licensing details, and documentation, please visit: [IronPDF for Java resources](https://ironpdf.com/java/?utm_source=github).
 
-For further support and questions, you might [contact our support team directly](https://ironpdf.com/java/#live-chat-support).
+For further support and questions, you might [contact our support team directly](https://ironpdf.com/java/?utm_source=github#live-chat-support).

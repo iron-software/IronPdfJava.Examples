@@ -1,6 +1,6 @@
 # Implementing IronPDF for Java in an Azure Function with Docker Deployment
 
-> Full guide: [Implementing IronPDF for Java in an Azure Function with Docker Deployment](https://ironpdf.com/get-started/azure/)
+> Full guide: [Implementing IronPDF for Java in an Azure Function with Docker Deployment](https://ironpdf.com/get-started/azure/?utm_source=github)
 
 
 ## Key Considerations
@@ -103,7 +103,7 @@
    RUN apt-get install -y xvfb libva-dev libgdiplus
    ```
 
-   For additional Linux configurations, consult the [IronPDF Linux Installation Guide](https://ironpdf.com/how-to/linux/).
+   For additional Linux configurations, consult the [IronPDF Linux Installation Guide](https://ironpdf.com/get-started/linux/?utm_source=github).
 
 5. **Redeploy to Azure**
    Proceed with the following sequence:

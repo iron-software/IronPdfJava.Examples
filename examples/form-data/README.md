@@ -1,4 +1,4 @@
-> Full guide: [Form data](https://ironpdf.com/examples/form-data/)
+> Full guide: [Form data](https://ironpdf.com/examples/form-data/?utm_source=github)
 
 This code sample shows how developers can utilize IronPDF to generate and modify PDF documents containing fillable forms.
 
@@ -12,4 +12,4 @@ As demonstrated in lines 26 and 29 of the provided code, a developer can directl
 
 To extract a value from a form field, it is necessary to first secure a direct reference to the desired `FormField` from the `FormManager`’s indexed collection of fields. The following example illustrates how to accomplish this:
 
-[Learn to Create PDF Forms in Java with IronPDF](https://ironpdf.com/java/how-to/create-forms/)
+[Learn to Create PDF Forms in Java with IronPDF](https://ironpdf.com/java/how-to/create-forms/?utm_source=github)

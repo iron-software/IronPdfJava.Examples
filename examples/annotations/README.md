@@ -1,4 +1,4 @@
-> Full guide: [Annotations](https://ironpdf.com/examples/annotations/)
+> Full guide: [Annotations](https://ironpdf.com/examples/annotations/?utm_source=github)
 
 Use the `PdfDocument` object's `AnnotationManager` and the `AnnotationOptions` class from IronPDF to incorporate "sticky note"-style annotations on specific pages within a PDF document.
 
@@ -14,6 +14,6 @@ Each `AnnotationOptions` object provides methods that allow developers to tailor
 4. Implement `addTextAnnotation` from IronPDF to place annotations on predetermined pages of the PDF.
 5. Save the modified PDF document with the annotations.
 
-For additional guidance on initiating annotations in PDFs via IronPDF, access the [IronPDF Documentation](https://ironpdf.com/docs/).
+For additional guidance on initiating annotations in PDFs via IronPDF, access the [IronPDF Documentation](https://ironpdf.com/docs/?utm_source=github).
 
-[Discover more about AnnotationOptions on IronPDF Java Docs](https://ironpdf.com/java/object-reference/api/com/ironsoftware/ironpdf/annotation/AnnotationOptions.html)
+[Discover more about AnnotationOptions on IronPDF Java Docs](https://ironpdf.com/java/object-reference/api/com/ironsoftware/ironpdf/annotation/AnnotationOptions.html?utm_source=github)

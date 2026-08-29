@@ -1,4 +1,4 @@
-> Full guide: [Printing PDFs](https://ironpdf.com/java/examples/printing-pdfs/)
+> Full guide: [Printing PDFs](https://ironpdf.com/java/examples/printing-pdfs/?utm_source=github)
 
 The code sample highlighted here showcases the document printing feature of IronPDF.
 
@@ -6,4 +6,4 @@ By utilizing the `print` method, developers can integrate PDF printing capabilit
 
 Alternatively, if you wish to execute printing directly using the system's default settings, opt for the `printWithoutDialog` method instead of the traditional `print` method.
 
-[Learn more about printing PDFs using IronPDF for Java](https://ironpdf.com/java/how-to/print-pdf/)
+[Learn more about printing PDFs using IronPDF for Java](https://ironpdf.com/java/how-to/print-pdf/?utm_source=github)
