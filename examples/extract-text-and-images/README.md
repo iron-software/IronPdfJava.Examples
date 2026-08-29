@@ -1,4 +1,4 @@
-> Full guide: [Extract text and images](https://ironpdf.com/java/examples/extract-text-and-images/)
+> Full guide: [Extract text and images](https://ironpdf.com/java/examples/extract-text-from-pdf/)
 
 IronPDF offers a comprehensive suite of PDF creation and editing capabilities, including detailed methods for content extraction from PDF documents.
 
